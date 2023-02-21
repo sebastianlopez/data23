@@ -1,0 +1,343 @@
+$(document).ready(function() {
+  //Solicitar nuevo demo
+  $("#formDemo").on("submit", function(e) {
+    $("#errorsFormDemo").css("display", "none");
+    e.preventDefault();
+    $("#formDemo")
+      .find("button")
+      .attr("disabled", true);
+    var email = $("#formDemo #email").val();
+    var company = $("#formDemo #company").val();
+    $.ajax({
+      type: "GET",
+      url: "https://www.datacrm.com/find-demo",
+      data: { email: email, company: company },
+      beforeSend: function() {
+        // setting a timeout
+        $("#gif_loader").fadeIn();
+        $("#formDemo")
+          .find("button")
+          .attr("disabled", true);
+      },
+      success: function(msg) {
+        $("#gif_loader").fadeOut();
+        $("#formDemo")
+          .find("button")
+          .attr("disabled", false);
+        if (!msg.success) {
+          var data = "";
+          $.each(msg.result, function(indexInArray, valueOfElement) {
+            data += "<li>" + valueOfElement + "</li>";
+          });
+          $("#errorsFormDemo ul").html(data);
+          $("#errorsFormDemo").css("display", "block");
+        } else {
+          $("#formDemo #email").val("");
+          $("#formDemo #company").val("");
+          redirecCreateCrm(email, company, msg.result);
+        }
+      }
+    });
+  });
+
+  function redirecCreateCrm(email, company, url) {
+    window.location =
+      url + "create-demo-view?company=" + company + "&email=" + email;
+  }
+
+  //Cambiar a pagina de olvido contraseña
+  $(".pagForgotPass").click(function(e) {
+    $("#pagLoginCrm").css("display", "none");
+    $("#forgotPasswordDiv").css("display", "block");
+  });
+
+  //Cambiar a pagina de login
+  $(".forgotPasswordLink").click(function(e) {
+    $("#pagLoginCrm").css("display", "block");
+    $("#forgotPasswordDiv").css("display", "none");
+  });
+
+  //Solicitar correo de nueva contraseña
+  $("#formRequestPass").on("submit", function(e) {
+    e.preventDefault();
+    var email = $("#email").val();
+    $.ajax({
+      type: "GET",
+      url: "https://www.datacrm.com/request-pass",
+      data: { email: email },
+      success: function(msg) {
+        if (!msg.success) {
+          var data = "";
+          $.each(msg.result, function(indexInArray, valueOfElement) {
+            data += "<li>" + valueOfElement + "</li>";
+          });
+          $("#errorsFormRequestPass ul").html(data);
+          $("#errorsFormRequestPass").css("display", "block");
+        } else {
+          var data = "<li>" + msg.result + "</li>";
+          $("#errorsFormRequestPass").css("display", "none");
+
+          $("#successFormRequestPass ul").html(data);
+          $("#successFormRequestPass").css("display", "block");
+          $("#email").val("");
+          $("#formRequestPass")
+            .find("button")
+            .attr("disabled", true);
+          setTimeout(function() {
+            location.reload();
+          }, 2000);
+        }
+        //$('#formRequestPass').find('button').attr('disabled',false);
+      }
+    });
+  });
+
+  //Enviar info demo (segundo popup)
+  $("#formDemoInfo").on("submit", function(e) {
+    e.preventDefault();
+    $("#errorsFormInfo").css("display", "none");
+    var nombre = $("#nombre").val();
+    var telefono = $("#telefono").val();
+    var ciudad = $("#ciudad").val();
+    var usuarios = $("#usuarios").val();
+    var company_crm = $("#company_crm").val();
+    var email_crm = $("#email_crm").val();
+    var companydemo_crm = $("#companydemo_crm").val();
+    $.ajax({
+      type: "GET",
+      url: "https://www.datacrm.com/save-demo-info",
+      data: {
+        nombre: nombre,
+        telefono: telefono,
+        ciudad: ciudad,
+        usuarios: usuarios,
+        company: company_crm,
+     
+
+  //Enviar correo de contacto
+  $("#formContact").on("submit", function(e) {
+    $("#errorsFormDemo").css("display", "none");
+    e.preventDefault();
+    $("#formContact")
+      .find("button")
+      .attr("disabled", true);
+    var nombre = $("#formContact #nombre").val();
+    var celular = $("#formContact #celular").val();
+    var correo = $("#formContact #correo").val();
+    var mensaje = $("#formContact #mensaje").val();
+    $.ajax({
+      type: "GET",
+      url: "https://www.datacrm.com/send-contact",
+      data: {
+        nombre: nombre,
+        celular: celular,
+        correo: correo,
+        mensaje: mensaje
+      },
+      beforeSend: function() {
+        // setting a timeout
+        $(".loader_contact").fadeIn();
+        $("#formContact")
+          .find("button")
+          .attr("disabled", true);
+      },
+      success: function(msg) {
+        $(".loader_contact").fadeOut();
+        $("#formContact")
+          .find("button")
+          .attr("disabled", false);
+        if (!msg.success) {
+          var data = "";
+          $.each(msg.result, function(indexInArray, valueOfElement) {
+            data += "<li>" + valueOfElement + "</li>";
+          });
+          $("#formContact ul").html(data);
+          $("#errorsFormContact").css("display", "block");
+        } else {
+          $("#formContact").html(
+            '<img class="loader_contact_img" src="https://www.datacrm.com/front/images/contactoVF.png" >'
+          );
+	  $(".loader_contact_img").css("width","400px");
+          $("#formatContact .loader_contact_img").fadeIn();
+          $("#errorsFormContact").css("display", "none");
+          $("#formContact #nombre").val("");
+          $("#formContact #celular").val("");
+          $("#formContact #correo").val("");
+          $("#formContact #mensaje").val("");
+        }
+      }
+    });
+  });
+
+  //Modal de pagos
+  $(".modalPagosView").on("click", function() {
+    $("#usuariosPayu").empty();
+    $(".usuariosPago").css("display", "none");
+    $("#modalPagos").modal("show");
+    $(".pagotitle").html(
+      "Mensualidad " +
+        $(this)
+          .prev("p")
+          .find("span")
+          .text() +
+        " por usuario"
+    );
+    var users = $(this).data("users");
+	var typePlan = $(".pagotitle").text();
+	  var country = $("#country").val();
+    var info = '<option value="" >Usuarios</option>';
+    if (users == 1) {
+      for (let index = 1; index < 4; index++) {
+        info += '<option value="' + index + '" >' + index + "</option>";
+      }
+    } else if (users == 4) {
+      for (let index = 4; index < 16; index++) {
+        info += '<option value="' + index + '" >' + index + "</option>";
+      }
+    } else if (users == 16) {
+      for (let index = 16; index < 51; index++) {
+        info += '<option value="' + index + '" >' + index + "</option>";
+      }
+    }
+    $("#usuariosPayu").append(info);
+    var total = $(this)
+      .prev("p")
+      .find("span")
+      .text()
+      .replace(/[^0-9,]/g, "");
+    $(".totalPago").html(total);
+    $(".country").val(country);
+    $(".userPlan").html(users);
+    $(".typePlan").val(typePlan);
+    $(".totalPagoBase").html(total);
+   $(".totalPagoBase").val(total);
+  });
+
+  //Cambio de precios segun usuarios
+  $("#usuariosPayu").on("change", function() {
+    var resultado = "";
+    var total = parseFloat(
+      $(".totalPagoBase")
+        .text()
+        .replace(",", ".")
+    );
+    var totalMore = total * $(this).val();
+    var totalDecimal = totalMore.toFixed(2);
+
+    for (var j, i = totalDecimal.length - 1, j = 0; i >= 0; i--, j++) {
+      resultado =
+        totalDecimal.charAt(i) + (j > 0 && j % 3 == 0 ? "." : "") + resultado;
+    }
+    var addDecimals = resultado.replace("..", ",");
+    var totalString = String(addDecimals.replace(/\,00$/, ""));
+
+    $(".totalPago").text(totalString);
+    $(".totalPagofinal").val(totalString);
+  });
+
+  //Enviar pago a PayU
+  $("#formPagos").on("submit", function(e) {
+   $("#errorsFormDemo").css("display", "none");
+    e.preventDefault();
+    //$('#formPagos').find('button').attr('disabled',true);
+    var formData = $(this).serialize();
+    $.ajax({
+      type: "GET",
+      url: "https://www.datacrm.com/send-payu",
+      data: formData,
+      beforeSend: function() {
+        // setting a timeout
+        $(".loader_contact").fadeIn();
+        $('#formPagos').find('button').attr('disabled',true);
+      },
+      success: function(msg) {
+        $(".loader_contact").fadeOut();
+        $('#formPagos').find('button').attr('disabled',false);
+        if (!msg.success) {
+          var data = "";
+          $.each(msg.result, function(indexInArray, valueOfElement) {
+            data += "<li>" + valueOfElement + "</li>";
+          });
+          $("#formPagos ul").html(data);
+          $("#errorsformPagos").css("display", "block");
+	  setTimeout(function() {
+        	$("#errorsformPagos").fadeOut(1500);
+    	  },1800);
+        } else {
+          window.location = "https://www.datacrm.com/response-payu";
+        }
+      }
+    });
+  });
+});
+
+$("#open-modalVideo").on("click", function(e) {
+  e.preventDefault();
+  $.yosemodal({
+    youtube: "-jYpjKQgwtA",
+    youtubecontrols: true,
+    width: "800px",
+    height: "500px",
+    closeonclick: true,
+    showbuttons: false
+  });
+});
+
+//Cargar por defecto los precios del país actual
+$(document).ready(function() {
+  var country = $("#country").val();
+  var myarray = ["co", "ec", "pe", "mx"];
+
+  if (jQuery.inArray(country, myarray) != -1) {
+    ctry = country;
+  } else {
+    ctry = "ec";
+  }
+  changePlan(ctry);
+});
+//FUncion para cambiar de precios segun paises
+function changePlan(c) {
+  if (!c) {
+    c = $("#country").val();
+  }
+  $("#country").val(c);
+  if ($("input[name=pago]:checked").attr("id") == "pagoAnualLabel") {
+    $(".strTypePlan").html("anual");
+    if (c == "co") {
+      $(".price1").html("$32.000");
+      $(".price2").html("$30.400");
+      $(".price3").html("$28.000");
+    } else if (c == "ec") {
+      $(".price1").html("$13,6 USD");
+      $(".price2").html("$12 USD");
+      $(".price3").html("$9,6 USD");
+    } else if (c == "mx") {
+      $(".price1").html("$295,2 MXN");
+      $(".price2").html("$260 MXN");
+      $(".price3").html("$225,6 MXN");
+    } else if (c == "pe") {
+      $(".price1").html("$43,2 PEN");
+      $(".price2").html("$36 PEN");
+      $(".price3").html("$27,2 PEN");
+    }
+  } else {
+    $(".strTypePlan").html("mensual");
+    if (c == "co") {
+      $(".price1").html("$40.000");
+      $(".price2").html("$38.000");
+      $(".price3").html("$35.000");
+    } else if (c == "ec") {
+      $(".price1").html("$17 USD");
+      $(".price2").html("$15 USD");
+      $(".price3").html("$12 USD");
+    } else if (c == "mx") {
+      $(".price1").html("$369 MXN");
+      $(".price2").html("$325 MXN");
+      $(".price3").html("$282 MXN");
+    } else if (c == "pe") {
+      $(".price1").html("$54 PEN");
+      $(".price2").html("$45 PEN");
+      $(".price3").html("$34 PEN");
+    }
+  }
+}
