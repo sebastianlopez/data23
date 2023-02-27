@@ -21,10 +21,6 @@
     </script>
 @endsection
 
-@section('styles_per')
-<link href="{{asset('front/css/modification.min.css?63214')}}" rel="stylesheet" type="text/css"/>
-@endsection
-
 @section('content')
 
 <input type="hidden" id="countryCode" value="{{$reg['location']}}">
@@ -33,7 +29,7 @@
     <div class="row section-resize section-init-index justify-content-center" >        
         <div class="col-lg-6 col-md-6 col-12  mt-5 px-5">      
 
-            <h1 class="text-uppercase myTitleBlue1 mt-5 typ-montserrat ft-h1 br-wd">
+            <h1 class="text-uppercase myTitleBlue mt-5 typ-montserrat ft-h1 br-wd">
                 <span class="span-border-b-w">
                     {!! $site['p2_home_seccion1_title'] ?? '' !!}
                 </span>
@@ -83,7 +79,7 @@
 
     <div class="row section-resize mt-4">
 
-            <div class="col-lg-6 col-md-6 col-12 text-center order-1 order-md-1">
+            <div class="col-lg-5  col-md-6 col-12 text-center order-1 order-md-1">
                 @php $img = array('','home02_icono08_62x62.png','home02_icono09_62x62.png','home02_icono10_62x62.png','home02_icono11_62x62.png'); @endphp
                 @for($i=1; $i<5; $i++)
                     <div class="row mt-3">
@@ -103,10 +99,10 @@
                 @endfor
             </div>
 
-            <div  class="col-lg-6 col-md-6 col-12 text-center m-auto align-self-center order-3" align="center">
+            <div  class="col-lg-7 col-md-6 col-12 text-center m-auto align-self-center order-3 videobackg">
 
-                <div class="embed-responsive embed-responsive-16by9" >
-                    <iframe class="embed-responsive-item" autoplay loop muted src="{{asset('front/images/index/Home video.gif')}}"></iframe>
+                <div class="embed-responsive embed-responsive-16by9  mt-5  videocenter" >
+                    <iframe class="embed-responsive-item"  autoplay loop muted src="{{asset('front/images/index/Home video.gif')}}"></iframe>
                   </div>
             </div>
 
@@ -168,7 +164,7 @@
     <div class="row section-resize mt-1">
         <div class="col-12 col-lg-8 mt-1 mr-1">
         
-            <h2>
+            <h2 class="ft-h2">
                 <span class="span-border-b-w">
                     {!! $site['p2_home_seccion4_title'] ?? '' !!}
                 </span>
@@ -265,11 +261,9 @@
                     
                     <li>
                         <div class="container mt-4">
-                            <button class="modalPruebaGratis btn2 btn-orange f-sz-m my-3 p-2 typ-montserrat effect-zoom " 
-                                data-toggle="modal" 
-                                data-target="#modalPruebaGratis">
+                            <a class=" btn2 btn-orange f-sz-m my-3 p-2 typ-montserrat effect-zoom" href="https://landing.datacrm.com/asesoria_datamkt" target="_blank">
                                 <b class="">{!! $site['p2_home_seccion5_btn'] ?? '' !!}</b>
-                            </button>  
+                        </a>  
                         </div>
                     </li>                        
                 </ul>
@@ -369,6 +363,8 @@
 @include('front.includes.plans.cards_pc2')
 
 @include('front.includes.masSobrePlanes2')    
+
+@include('front.includes.modals.modal_prices')
 
 <div class="row mb-2 section-resize">
     <div class="col-12 my-2">

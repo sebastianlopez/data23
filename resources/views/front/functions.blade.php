@@ -61,7 +61,7 @@
                 <h2 class=" mt-4 myTitleBlue typ-montserrat ft-h2">
                     {!! $site['software2_title'] ?? '' !!}
                 </h2>
-                <p class="typ-os-regular txt-black f-sz-mx pr-3 pl-3">
+                <p class="typ-os-regular txt-black f-sz-sm pr-3 pl-3">
                     {{$site['software2_text'] ?? ''}}
                 </p>
                 <div class="row mt-5">
@@ -79,16 +79,18 @@
                             <div class="col-6">
                                 <picture>
                                     <source type="image/webp" srcset="{{asset('front/images/crm/IMG_3.webp')}}">
-                                    <img src="{{asset('front/images/home/home_banner2_img1_1140x374.png')}}" alt="" class="img-fluid mt-3 img-fluid">
+                                    <img src="{{asset('front/images/home/home_banner2_img1_1140x374.png')}}" alt="IMG_3" class="img-fluid mt-3 img-fluid">
                                 </picture>       
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <picture>
-                            <source type="image/webp" srcset="{{asset('front/images/crm/IMG_2.webp')}}">
-                            <img src="{{asset('front/images/crm/IMG_2.webp')}}" alt="{{ chstr($site['software2_title']) }}" class="img-fluid mt-3 img-fluid">
-                        </picture>
+                    <div class="col-12 col-md-6 videobackg">
+                       
+
+                            <div class="embed-responsive embed-responsive-16by9  mt-3" >
+                                <iframe class="embed-responsive-item"  autoplay loop muted src="{{asset('front/images/index/Home video.gif')}}"></iframe>
+                              </div>
+                       
                     </div>
                 </div>    
 
@@ -113,7 +115,7 @@
     
                 <div class="col-lg-7 col-md-7 col-12  mt-5 px-max-5 order-2 order-lg-1">      
                 
-                    <h2 class=" text-left myTitleGreen1 mt-3 typ-montserrat ft-h2 br-wd">
+                    <h2 class="text-left txt-white mt-3  ft-h2 br-wd">
                         {!! $site['software3_title'] ?? '' !!}
                     </h2>
             

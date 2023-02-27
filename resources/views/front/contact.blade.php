@@ -92,10 +92,10 @@
                         <div class="panel">
                             <div class="panel-heading">
                             <h4 class="panel-title">
-                            <a href="#panelBodyOne" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">{{ $site['contact_faq'.$i] ?? '' }}</a>
+                            <a href="#panelBody{{ $i }}" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">{{ $site['contact_faq'.$i] ?? '' }}</a>
                             </h4>
                             </div>
-                            <div id="panelBodyOne" class="panel-collapse collapse in">
+                            <div id="panelBody{{ $i }}" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <p>{!! $site['contact_faq_aws'.$i] ?? '' !!}</p>
                             </div>

@@ -6738,39 +6738,47 @@ _ .nav {
  }
  
 .ft-h1{
-    font-size: 58pt;
+    font-size: 58px;
 }
 
 .ft-h2{
-    font-size: 36pt;
+    font-size: 36px;
 }
 
 .ft-h3{
-    font-size: 29pt;
+    font-size: 29px;
 }
 
 .ft-h4{
-    font-size: 24pt;
+    font-size: 24px;
 }
 
 .pbod1B{
-    font-size: 18pt;
+    font-size: 18px;
     font-weight: 200;
 }
 
 .pbod2B{
-    font-size: 15pt;
+    font-size: 15px;
     font-weight: 100;
 }
 
 .pbod3B{
-    font-size: 12pt;
+    font-size: 12px;
     
 }
 
 .no-border{
 
     border:0;
+}
+
+.videobackg{
+    background-color:#BFE7E0; 
+    border-radius:6px;
+}
+.videocenter{
+    left:8%; top:5%;
 }
 
 .only-one-side {
@@ -7635,31 +7643,13 @@ _ .nav {
 
 /* ***************** home seccion 1 ************************ */
 
-#myHomeSeccion1  h1 {
-    font-size: 3.9rem;
-}
-
-#myHomeSeccion2  h3 {
-    font-size: 3.9rem;
-}
-
-#myHomeSeccion3ea  h1 {
-    font-size: 1.7rem !important;
-}
-
-#myHomeSeccion4  h1 {
-    font-size: 3.9rem;
-}
 
 #myHomeSeccion4  h2{
-    font-size: 36pt;
+    font-size: 36px;
     color: $color2;
     text-align: left;
 }
 
-#myHomeSeccion5  h1 {
-    font-size: 3.9rem;
-}
 
 .navbar {
     max-width: 1440px; z-index: 2000;

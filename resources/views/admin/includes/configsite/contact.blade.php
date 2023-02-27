@@ -146,6 +146,14 @@
                                    value="{{$info['contact_faq'.$i] ?? ''}}"/>
                         </div>
                     </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label>Respuesta {{$i}}</label>
+                            <input type="text" class="form-control"
+                                   name="info[contact_faq_aws{{$i}}]"
+                                   value="{{$info['contact_faq_aws'.$i] ?? ''}}"/>
+                        </div>
+                    </div>
                 @endfor
             </div>
         </div>

@@ -2,13 +2,13 @@
     
    
         <div class="row pt-4">
-            <!-- Un CRM Reconocido -->
+            
             <div class="col-12 text-center">
-                <h2 class="myTitleBlue2 text-capitalize typ-montserrat ">
+                <h2 class="myTitleBlue text-capitalize typ-montserrat ft-h2">
                     {!! $site['p2_home_seccion9_title'] ?? '' !!}
                 </h2>
             </div>
-            <!-- Las empresas prefieren DataCRM al ser referente entre lo smejores software de CRM en Colombia -->
+            
             <div class="col-12 text-center">
                 <p class=" mt-5
                         typ-os-regular 
@@ -20,8 +20,6 @@
             <div class="container">
          
                 <div class="row justify-content-center align-items-center">
-                    <!-- <div class="myVerticalLine   d-none  d-sm-block p-4"></div>
-                    <div class="myHorizontalLine d-block d-sm-none mt-5"></div>                 -->
                     <div class="col-sm-2 text-center">
                         <picture>
                             <source type="image/webp" data-srcset="{{asset('front/images/Home09_icono1_150x61.png')}}">
