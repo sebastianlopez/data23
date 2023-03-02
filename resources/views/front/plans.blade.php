@@ -36,7 +36,7 @@
                 @include('front.includes.plans.cards_pc2')
                
                 <br>
-                <!-- Button trigger modal -->
+                
                 <button type="button" class="btn btn-orange typ-montserrat btn2 btn-orange p-2 f-sz-m  text-decoration-n br-wd effect-zoom" data-toggle="modal" data-target="#exampleModal">
                     {!! $site['plans_btn2'] ?? '' !!}
                 </button>
@@ -59,14 +59,14 @@
     <div class="container p-0 pt-3">
         <div class="col-12 text-center" >
             <picture>
-                <img data-src="{{asset('front/images/plans/ICONO 1.webp')}}" alt="Tus Negocios a donde vayas" class="img-fluid lazyload pt-4" >                    
+                <img data-src="{{asset('front/images/plans/ICONO 1.webp')}}" alt="Tienes dudas" class="img-fluid lazyload pt-4" >                    
             </picture>
             <h2 class="mt-4 txt-blackgray typ-montserrat f-sz-b">
                 <span>{{$site['plans_blue_title'] ?? ''}}</span>
                 <p class="typ-os-regular txt-black f-sz-mx">{{$site['plans_blue_middle'] ?? ''}}</p>
             </h2>
            
-            <a  href="javascript:void(0)" data-users="50" class="modalPruebaGratis typ-montserrat text-uppercase f-sz-sm btn mt-2 px-4 myBtnBlue effect-zoom mb-3" data-toggle="modal" data-target="#modalPruebaGratis" style="border-radius: 1rem">
+            <a  href="https://landing.datacrm.com/asesoria_agenda" target="_blank"  class="typ-montserrat text-uppercase f-sz-sm btn mt-2 px-4 myBtnBlue effect-zoom mb-3">
             {{$site['plans_blue_btn'] ?? ''}}
             </a>
         </div>
@@ -77,11 +77,11 @@
         
             <div class="row  section-resize section-init-index justify-content-center" >
                 <div class="col-lg-7 col-md-7 col-12  order-2 order-sm-1  ">      
-                    <h2 class="myTitleGreenh2 mt-5 typ-montserrat ">
+                    <h2 class="ft-h2 mt-5 typ-montserrat ">
                         {!! $site['plans_white_title'] ?? '' !!} 
                     </h2>
 
-                    <h3 class="subtitleGreenh3"> {!! $site['plans_white_subtitle'] ?? '' !!} </h3>
+                    <h3 class="ft-h3"> {!! $site['plans_white_subtitle'] ?? '' !!} </h3>
                     <div class="greentextp mt-5"> {!! $site['plans_white_text'] !!}  </div>                        
                 </div>
                 

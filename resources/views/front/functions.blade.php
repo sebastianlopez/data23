@@ -79,14 +79,13 @@
                             <div class="col-6">
                                 <picture>
                                     <source type="image/webp" srcset="{{asset('front/images/crm/IMG_3.webp')}}">
-                                    <img src="{{asset('front/images/home/home_banner2_img1_1140x374.png')}}" alt="IMG_3" class="img-fluid mt-3 img-fluid">
+                                    <img src="{{asset('front/images/home/home_banner2_img1_1140x374.png')}}" alt="IMG_3" class="img-fluid mt-1">
                                 </picture>       
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 videobackg">
-                       
-
+                    
                             <div class="embed-responsive embed-responsive-16by9  mt-3" >
                                 <iframe class="embed-responsive-item"  autoplay loop muted src="{{asset('front/images/index/Home video.gif')}}"></iframe>
                               </div>
@@ -115,7 +114,7 @@
     
                 <div class="col-lg-7 col-md-7 col-12  mt-5 px-max-5 order-2 order-lg-1">      
                 
-                    <h2 class="text-left txt-white mt-3  ft-h2 br-wd">
+                    <h2 class="text-left txt-white mt-3 ft-h2 br-wd">
                         {!! $site['software3_title'] ?? '' !!}
                     </h2>
             
@@ -224,8 +223,9 @@
                     <img src="{{asset('front/images/crm/IMG 7.webp')}}" alt="" class="img-fluid mt-3">
                 </picture>
                 <div class="row">
+                    <div class="col-2"></div>
                     @for($i=1;$i<4;$i++)
-                        <div class="col-4">
+                        <div class="{{ ($i==2)? 'col-4':'col-2' }}">
                             <p class="text-center typ-os-regular f-sz-sm">
                                 {!! featured_text($site['software6_text'.$i], $site['software6_featured'.$i] ?? '') !!}
                             </p>

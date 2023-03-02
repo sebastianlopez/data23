@@ -89,7 +89,7 @@
     
                 <div class="col-12 ">      
                 
-                    <h2 class=" text-left mt-3 typ-montserrat ft-h3 txt-white br-wd">
+                    <h2 class=" text-center mt-3 typ-montserrat ft-h3 txt-white br-wd">
                         {!! $site['partners3_title'] ?? '' !!}
                     </h2>
                     <div class="space"></div>
@@ -116,12 +116,9 @@
             <div class="col-12 text-center">
                 <h3 class="mt-4 txt-black typ-montserrat ft-h4">{!! $site['partners4_title'] ?? '' !!}</h3>
             </div>
-            
         </div>
     </div>    
     <div class="space hide-mobile"></div><div class="space "></div>
-
-    <!-- Seccion Usalo donde estes -->
 
 
     <div class="container p-0  mt-5 MB-5" id="myHomeSeccion5">
@@ -173,7 +170,7 @@
 
                 <div class="row left">
                     <div class="col-4 mt-2">
-                        <a href="{{route('mobile',['locale'=>get_lang()])}}" class="text-uppercase typ-montserrat btn-lg btn btn-orange-outline effect-zoom">
+                        <a href="{{route('mobile',['locale'=>get_lang()])}}" class="text-uppercase typ-montserrat btn-lg btn btn-green-outline2  effect-zoom">
                             <b>{{$site['partners5_1_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -194,9 +191,9 @@
                                 {!! $site['partners6_title'] ?? '' !!} 
                     </h2>
                     
-                    <p class="typ-os-regular typ-montserrat f-sz-m mt-5"aligh="left">
+                    <p class="typ-os-regular typ-montserrat f-sz-m mt-5" aligh="left">
                         <ul class="f-sz-m list-none-dots">
-                        {!! features_list($site['partners6_list'] ?? '','circle','txt-white') !!}
+                        {!! features_list($site['partners6_list'] ?? '','circle','txt-white','txt-orange') !!}
                         </ul>
                     </p>    
                     

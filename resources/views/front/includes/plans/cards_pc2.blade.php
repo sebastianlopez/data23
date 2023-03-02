@@ -32,8 +32,8 @@
             
           
             <div class="card col-lg-3 col-md-8 px-3 pt-0 myPlansContainerB align-items-center">
-                <div class="card-body" style="height: 100%; padding-bottom: 15px;">
-                <div class="align-items-center justify-content-center" style="height: 5%;">
+                <div class="card-body">
+                <div class="align-items-center justify-content-center">
                     <h5 class="text-uppercase card-title txt-orange typ-montserrat f-sz-b font-weight-bold">
                         {!! $site['p2_home_seccion_plangratuito_title'] ?? '' !!}
                     </h5>
@@ -43,7 +43,6 @@
                     <span class="txt-display  txt-black typ-montserrat font-sz-2 price0 price_" 
                             data-valor=0> $0
                     </span>  
-                            
                 </div>
 
                 <div style="height: 2%; margin-left: 10%;">
@@ -51,12 +50,8 @@
                 </div>
 
                 <div class="mt-1" style="height: 10%;">
-
-                    
                     <h5 class="typ-montserrat"><b>{!! $site['p2_home_seccion_plangratuito_subtitle2'] ?? '' !!}</b></h5>
-
-                   
-                    <span   class="typ-txt-light typ-montserrat"">* 
+                    <span   class="typ-txt-light typ-montserrat">* 
                         <a class="myLink" 
                             href="https://www.datacrm.com/politicas/" 
                             target="_blank" rel="noopener noreferrer">
@@ -65,9 +60,8 @@
                     </span>
                     <br>
                 </div>
-
                
-                <div class="mt-3" style="height: 9rem;  width: 20rem; overflow: hidden;">
+                <div class="mt-3" >
                     
                     <p class="txt-orange typ-montserrat">                
                         {!! $site['p2_home_seccion_plangratuito_funcionalidades'] ?? '' !!}
@@ -127,8 +121,7 @@
             </div>
             <!-- Precio -->
             <div class="mt-5" style="height: 10%">
-                <span class="txt-display  txt-black typ-montserrat font-sz-2 price1 price_" 
-                        data-valor=50000>
+                <span class="txt-display  txt-black typ-montserrat font-sz-2 price1 price_"  data-valor=50000>
                     $50.000/COP mes
                 </span>  
                 <p class="pricedes1">Factura anual</p>

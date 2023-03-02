@@ -388,8 +388,8 @@
                         saving_money = '';
                         simbolo_money = 'COP/mes';
                         document_id = 'Cédula';
-                        preciodescripcion1 = "Factura anual de 600k / 480k cop";
-                        preciodescripcion2 = "Factura anual de 960k / 768k cop";
+                        preciodescripcion1 = "Factura anual de <s>600k</s> / 480k cop";
+                        preciodescripcion2 = "Factura anual de <s>960k</s> / 768k cop";
                         break;
                     case 'mx':
                         // cambio deprecios para mx 05-09-2022
@@ -465,7 +465,7 @@
                         saving_money = '';
                         simbolo_money = 'COP/mes';
                         document_id = 'Cédula';   
-                        preciodescripcion1 = "Factura anual de 600k / 480k cop";
+                        preciodescripcion1 = "Factura anual de <s>600k</s> / 480k cop";
                         preciodescripcion2 = "Factura anual de 960k / 768k cop";                                           
                 }
             }
@@ -485,8 +485,8 @@
             $(".price1").html(miSimboloMonetario + number_format(valor1, 0, ',', '.') + "<span style='font-size: 1.3rem'>" + simbolo_money + "</span>").data('valor', valor1);
             $(".price2").html(miSimboloMonetario + number_format(valor2, 0, ',', '.') + "<span style='font-size: 1.3rem'>" + simbolo_money + "</span>").data('valor', valor2);
             
-            $(".pricedes1").text(preciodescripcion1);
-            $(".pricedes2").text(preciodescripcion2);
+            $(".pricedes1").html(preciodescripcion1);
+            $(".pricedes2").html(preciodescripcion2);
 
             $(".moneySim").html(simbolo_money);
         }
