@@ -22,7 +22,7 @@
 
 @section('content')
 
-    <div class="container p-0 pt-3">
+    <div class="container p-0 pt-3 typ-montserrat">
         <div class="row pt-5 mt-4 section-resize section-init-functions">
             <div class="col-md-6">
                 <h1 class=" mt-5 typ-montserrat myTitleBlue ht-h1">
@@ -54,7 +54,7 @@
     <div class="space"></div>
 
     <div class="myDivBlue1 myDivDiagonalLeftA">
-        <div class="container  mt-5  myDivDiagonalLeftB" id="">
+        <div class="container  mt-5  myDivDiagonalLeftB typ-montserrat" id="">
             
             <div class="row section-resize section-init-index justify-content-center" >
                 <div class="col-lg-7 col-md-7 col-12  order-2 order-sm-1  ">      
@@ -67,7 +67,7 @@
                             {!! $site['sector2_text'] ?? '' !!} 
 
                             <ul class="f-sz-m list-none-dots">
-                                {!! features_list($site['sector2_list'] ?? '','circle','txt-white') !!}
+                                {!! features_list($site['sector2_list'] ?? '','circle','txt-white','txt-orange') !!}
                             </ul>   
                     </p>        
                     <div class="row ">
@@ -97,7 +97,7 @@
     </div>
 
 
-    <div class="container p-0 pt-3">
+    <div class="container p-0 pt-3 typ-montserrat">
         <div class="row pt-5 mt-5 section-resize section-init-functions">
            
             <div class="col-md-6 text-center">
@@ -115,7 +115,7 @@
                        {!! $site['sector3_text'] ?? '' !!} 
 
                        <ul class="f-sz-m list-none-dots">
-                           {!! features_list($site['sector3_list'] ?? '','circle','txt-gray') !!}
+                           {!! features_list($site['sector3_list'] ?? '','circle','txt-gray','txt-orange') !!}
                        </ul>   
                </p>        
                <div class="row ">
@@ -145,7 +145,7 @@
             
                         <p>  {!! $site['sector4_text'] ?? '' !!} 
                             <ul class="f-sz-m list-none-dots">
-                                {!! features_list($site['sector4_list'] ?? '','circle','txt-white') !!}
+                                {!! features_list($site['sector4_list'] ?? '','circle','txt-white','txt-orange') !!}
                             </ul> 
                         </p>
                     </div>  
@@ -171,7 +171,7 @@
         </div>
     </div>
 
-    <div class="container p-0 pt-3">
+    <div class="container p-0 pt-3 typ-montserrat">
         <div class="row pt-5 mt-5 section-resize section-init-functions">
            
             <div class="col-md-6 text-center">
@@ -189,7 +189,7 @@
                        {!! $site['sector5_text'] ?? '' !!} 
 
                        <ul class="f-sz-m list-none-dots">
-                           {!! features_list($site['sector5_list'] ?? '','circle','txt-gray') !!}
+                           {!! features_list($site['sector5_list'] ?? '','circle','txt-gray','txt-orange') !!}
                        </ul>   
                </p>        
                <div class="row ">
@@ -207,7 +207,7 @@
 
     <div class="space"></div>
 
-    <div class="myDivBlue1 myDivDiagonalLeftA" style="width: 100%;">
+    <div class="myDivBlue1 myDivDiagonalLeftA">
         <div class="container  mt-5  myDivDiagonalLeftB" id="">
             
             <div class="row section-resize section-init-index justify-content-center" >
@@ -221,7 +221,7 @@
                             {!! $site['sector6_text'] ?? '' !!} 
 
                             <ul class="f-sz-m list-none-dots">
-                                {!! features_list($site['sector6_list'] ?? '','circle','txt-white') !!}
+                                {!! features_list($site['sector6_list'] ?? '','circle','txt-white','txt-orange') !!}
                             </ul>   
                     </p>        
                     <div class="row ">

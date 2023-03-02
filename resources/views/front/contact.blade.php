@@ -96,7 +96,7 @@
                             </h4>
                             </div>
                             <div id="panelBody{{ $i }}" class="panel-collapse collapse in">
-                            <div class="panel-body">
+                            <div class="panel-body text-left">
                                 <p>{!! $site['contact_faq_aws'.$i] ?? '' !!}</p>
                             </div>
                             </div>

@@ -242,12 +242,16 @@ if ( ! function_exists('get_lang')) {
 }
 
 if ( ! function_exists('features_list')) {
-    function features_list($features, $icon = 'check',$color='txt-gray')
+    function features_list($features, $icon = 'check',$color='txt-gray',$color_li='')
     {
+        $extraclass = '';
+        if($color_li!=''){
+            $extraclass="orangesmall";
+        }
         $list = explode(',', $features);
         $html = '';
         foreach ($list as $item) {
-            $html .= '<li class=" typ-os-regular mb-1 '.$color.'"> <i class="fa fa-'.$icon.' item-feature" aria-hidden="true"></i> ' . $item . '</li>';
+            $html .= '<li class=" typ-os-regular mb-1 '.$color.'"> <i class="fa fa-'.$icon.' item-feature '.$color_li.' '.$extraclass.'" aria-hidden="true"></i> ' . $item . '</li>';
         }
 
         return $html;
