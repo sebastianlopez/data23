@@ -132,9 +132,17 @@
             </div>
 
             <!-- Por usuario-->
-            <div class="mt-1" style="height: 10%;">
+            <div class="mt-1">
                 <h5 class="typ-montserrat"><b>{!! $site['p2_home_seccion_planbasico_subtitle2'] ?? '' !!}</b></h5>
             </div>
+            <div class="txt-orange typ-montserrat mt-1 mb-5" >
+                <p>
+                    {!! $site['p2_home_seccion_planbasico_descuento'] ?? '' !!}
+                </p>
+            </div>  
+
+            
+               
 
             <!-- Principales funcionalidades -->
             <div class="mt-3"  style="height: 9rem;  width: 20rem; overflow: hidden;">
@@ -149,12 +157,13 @@
                     @endfor
                 </ul>
             </div>
-            <!-- Descuento -->
-            <div class="txt-orange typ-montserrat mt-3" style="height: 9%;">
-                <p>
-                    {!! $site['p2_home_seccion_planbasico_descuento'] ?? '' !!}
-                </p>
-            </div>     
+
+
+            <!-- implementacion -->
+            <div  class="typ-txt-light typ-montserrat mt-3 mb-3">* 
+                {!! $site['implementacion_planbasico_usuarios'] ?? '' !!} <span class="implementation"></span>
+            </div>
+           
 
             <!-- 2 Usuarios sin Costo -->
             <div class="mt-1 txt-orange" style="height: 5%;">
@@ -209,10 +218,17 @@
                 <hr class="col-10 hr-card"></hr>        
             </div>
 
+            
             <!-- Por usuario -->
-            <div class="mt-1" style="height: 10%;">
+            <div class="mt-1">
                 <h5 class="typ-montserrat"><b>{!! $site['p2_home_seccion_planpro_subtitle2'] ?? '' !!}</b></h5>
             </div>
+
+            <div class="txt-orange typ-montserrat mt-1 mb-5" >
+                <p>
+                    {!! $site['p2_home_seccion_planpro_descuento'] ?? '' !!}
+                </p>
+            </div>   
 
             <!-- Principales funcionalidades -->
             <div class="mt-3"  style="height: 9rem;  width: 20rem; overflow: hidden;">
@@ -230,11 +246,11 @@
             </div>
 
             <!-- Descuento -->
-            <div class="txt-orange typ-montserrat mt-3" style="height: 9%;">
-                <p>
-                    {!! $site['p2_home_seccion_planpro_descuento'] ?? '' !!}
-                </p>
-            </div>     
+             
+            <!-- implementacion -->
+            <div  class="typ-txt-light typ-montserrat mt-3 mb-3">* 
+                {!! $site['implementacion_planbasico_usuarios'] ?? '' !!} <span class="implementation"></span>
+            </div>
 
             <!-- 2 Usuarios sin Costo -->
             <div class="mt-1" style="height: 5%;">

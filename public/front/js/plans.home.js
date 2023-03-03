@@ -307,6 +307,7 @@
                         tax = '(IVA incluido)';
                         saving_money = '';
                         simbolo_money = 'COP/mes';
+                        implementation = '$ 1\'200K COP'
                         break;
                     case 'mx':
                         valor1 = 200;
@@ -320,6 +321,7 @@
                         tax = '';
                         simbolo_money = 'MXN/mes';
                         document_id = 'CURP';
+                        implementation = '$ 6.500 MXN'
                         break;
                     case 'ec': case 'pa': case 'cr':
                         valor1 = 12;
@@ -333,6 +335,7 @@
                         saving_money = '';
                         simbolo_money = 'USD/mes';
                         document_id = 'Documento de identidad';
+                        implementation = 'USD $350'
                         break;
                     case 'ch':
                         valor1 = 10400;
@@ -346,6 +349,7 @@
                         saving_money = '';
                         simbolo_money = 'CLP/mes';
                         document_id = 'Documento de identidad';
+                        implementation = '$300.000 CLP'
                         break;       
                     case 'pe':
                         valor1 = 40;
@@ -357,8 +361,9 @@
                         accompaniment_tax = 100;
                         tax = '';
                         saving_money = '';
-                        simbolo_money = 'PEN/mes';
+                        simbolo_money = ' /mes';
                         document_id = 'Documento de identidad';
+                        implementation = '1.300 PEN'
                         break;                                              
                     default:
                         valor1 = 40000;
@@ -372,13 +377,14 @@
                         tax = '(IVA incluido)';
                         saving_money = '';
                         simbolo_money = 'COP/mes';
+                        implementation = '$ 1\'200K COP'
                 }
             } else {
                 $("#strTypePlan").val("mensual");
                 switch (c) {
                     case 'co':
-                        valor1 = 50000;
-                        valor2 = 80000;
+                        valor1 = 65000;
+                        valor2 = 95000;
                         accompaniment = 300000;
                         type_page = 'mensual';
                         document_capacity = 200000;
@@ -390,11 +396,12 @@
                         document_id = 'Cédula';
                         preciodescripcion1 = "Factura anual de <s>600k</s> / 480k cop";
                         preciodescripcion2 = "Factura anual de <s>960k</s> / 768k cop";
+                        implementation = '$ 1\'200K COP'
                         break;
                     case 'mx':
                         // cambio deprecios para mx 05-09-2022
-                        valor1 = 250;
-                        valor2 = 400;
+                        valor1 = 350;
+                        valor2 = 500;
                         accompaniment = 1600;
                         type_page = 'mensual';
                         document_capacity = 1100;
@@ -405,12 +412,13 @@
                         simbolo_money = 'MXN/mes';
                         document_id = 'CURP';
                         pais = 'México';
-                        preciodescripcion1 = "Factura anual de 600k / 480k cop";
-                        preciodescripcion2 = "Factura anual de 960k / 768k cop";                       
+                        preciodescripcion1 = "Factura anual de <s>3.360 </s> / 4.200 mxn";
+                        preciodescripcion2 = "Factura anual de <s>4.800 </s> / 6.000 mxn";    
+                        implementation = '$ 6.500 MXN'                   
                         break;
                     case 'ec': case 'pa': case 'cr':
-                        valor1 = 15;
-                        valor2 = 20;
+                        valor1 = 18;
+                        valor2 = 25;
                         accompaniment = 100;
                         type_page = 'mensual';
                         tax = '';
@@ -420,12 +428,13 @@
                         saving_money = '';
                         simbolo_money = 'USD/mes';
                         document_id = 'Documento de identidad';
-                        preciodescripcion1 = "Factura anual de 600k / 480k cop";
-                        preciodescripcion2 = "Factura anual de 960k / 768k cop";                      
+                        preciodescripcion1 = "Factura anual de <s>216</s> / 173 usd";
+                        preciodescripcion2 = "Factura anual de <s>300</s> / 240 usd";  
+                        implementation = 'USD $350'                    
                         break;
                     case 'ch':
-                        valor1 = 13000;
-                        valor2 = 19000;
+                        valor1 = 15000;
+                        valor2 = 20000;
                         accompaniment = 100;
                         type_page = 'mensual';
                         tax = '';
@@ -435,12 +444,13 @@
                         saving_money = '';
                         simbolo_money = 'CLP/mes';
                         document_id = 'Documento de identidad';
-                        preciodescripcion1 = "Factura anual de 600k / 480k cop";
-                        preciodescripcion2 = "Factura anual de 960k / 768k cop";                     
+                        preciodescripcion1 = "Factura anual de <s>180k</s> / 144K clp";
+                        preciodescripcion2 = "Factura anual de <s>240k</s> / 192k clp";  
+                        implementation = '$300.000 CLP'                   
                         break;     
                     case 'pe':
-                        valor1 = 50;
-                        valor2 = 80;
+                        valor1 = 65;
+                        valor2 = 95;
                         accompaniment = 100;
                         type_page = 'mensual';
                         tax = '';
@@ -448,14 +458,15 @@
                         db_capacity = 85;
                         accompaniment_tax = 100;
                         saving_money = '';
-                        simbolo_money = 'PEN/mes';
+                        simbolo_money = ' PEN/mes';
                         document_id = 'Documento de identidad';
-                        preciodescripcion1 = "Factura anual de 600k / 480k cop";
-                        preciodescripcion2 = "Factura anual de 960k / 768k cop";                       
+                        preciodescripcion1 = "Factura anual de <s>780</s> / 624 pen";
+                        preciodescripcion2 = "Factura anual de <s>1.140</s> / 912 pen";      
+                        implementation = '1.300 PEN'                 
                         break;                                           
                     default:
-                        valor1 = 50000;
-                        valor2 = 80000;
+                        valor1 = 65000;
+                        valor2 = 90000;
                         accompaniment = 300000;
                         type_page = 'mensual';
                         document_capacity = 200000;
@@ -466,7 +477,8 @@
                         simbolo_money = 'COP/mes';
                         document_id = 'Cédula';   
                         preciodescripcion1 = "Factura anual de <s>600k</s> / 480k cop";
-                        preciodescripcion2 = "Factura anual de 960k / 768k cop";                                           
+                        preciodescripcion2 = "Factura anual de  <s>960k</s> / 768k cop";   
+                        implementation = '$ 1\'200K COP'                                        
                 }
             }
             $(".valueAccompaniment").val(number_format(accompaniment_tax, 0, ',', '.')).data('valor', accompaniment_tax);
@@ -487,6 +499,8 @@
             
             $(".pricedes1").html(preciodescripcion1);
             $(".pricedes2").html(preciodescripcion2);
+
+            $('.implementation').text(implementation);
 
             $(".moneySim").html(simbolo_money);
         }

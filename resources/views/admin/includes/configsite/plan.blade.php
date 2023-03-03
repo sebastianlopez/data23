@@ -398,6 +398,16 @@
 
                 <div class="col-lg-12">
                     <div class="form-group">
+                        <label>Implementación</label>
+                        <input type="text" class="form-control " 
+                                name="info[implementacion_planbasico_usuarios]"
+                               
+                               value="{{$info['implementacion_planbasico_usuarios'] ?? ''}}"/>
+                    </div>
+                </div>   
+
+                <div class="col-lg-12">
+                    <div class="form-group">
                         <label>Usuarios</label>
                         <input type="text" class="form-control tagsinput" 
                                 name="info[p2_home_seccion_planbasico_usuarios]"
@@ -593,6 +603,17 @@
                                value="{{$info['p2_home_seccion_planpro_descuento'] ?? ''}}"/>
                     </div>
                 </div>
+
+
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label>Implementación</label>
+                        <input type="text" class="form-control" 
+                                name="info[implementacion__planpro_usuarios]"
+                              
+                               value="{{$info['implementacion__planpro_usuarios'] ?? ''}}"/>
+                    </div>
+                </div>   
 
                 <div class="col-lg-12">
                     <div class="form-group">

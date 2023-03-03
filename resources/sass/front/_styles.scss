@@ -3636,7 +3636,7 @@ _ .nav {
      right: 0;
      bottom: 0;
      left: 0;
-     z-index: 1050;
+     z-index: 100001 !important;
      display: none;
      overflow: hidden;
      outline: 0;
@@ -3690,6 +3690,7 @@ _ .nav {
      bottom: 0;
      left: 0;
      background-color: rgba(0,0,0,0.50) !important;;
+     z-index:1 !important;
  }
  .modal-backdrop.fade {
      opacity: 0;

@@ -357,8 +357,8 @@
                 $("#strTypePlan").val("mensual");
                 switch (c) {
                     case 'co':
-                        valor1 = 50000;
-                        valor2 = 80000;
+                        valor1 = 65000;
+                        valor2 = 90000;
                         accompaniment = 300000;
                         type_page = 'mensual';
                         document_capacity = 200000;
@@ -371,7 +371,7 @@
                         break;
                     case 'mx':
                         valor1 = 250;
-                        valor2 = 400;
+                        valor2 = 500;
                         accompaniment = 1600;
                         type_page = 'mensual';
                         document_capacity = 1100;

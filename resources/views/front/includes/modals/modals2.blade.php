@@ -4,14 +4,10 @@
 }
 </style>
 <div    
-    class="modal fade" 
-    id="modalPruebaGratis" 
-    tabindex="-1" 
-    role="dialog" 
-    aria-labelledby="exampleModalCenterTitle" 
-    aria-hidden="true">
+    class="modal fade" id="modalPruebaGratis"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content p-5" style="display: block;" id="modalcontent1">
+            <a type="button" class="btn btn-white btn-close btn-close-white" aria-label="Close" data-dismiss="modal"><i class="fa fa-close"></i></a>
             <h2 class="text-uppercase text-center m-0 txt-blackgray typ-montserrat f-sz-b">
                 {!! $site['modal_title'] ?? '' !!}
             </h2>
@@ -144,14 +140,14 @@
 
                         <!-- Politicas de privacidad -->                             
 
-                        <a href="{{route('politicas').'/'}}" class="txt-orange f-sz-s typ-os-regular">
+                        <a href="{{route('politicas').'/'}}" class="txt-orange f-sz-s typ-os-regular" target="_blank">
                             {{$site['site_policy']?? ''}}
                         </a> 
                         
                             y
                                                   
                         <!-- Terminos de servicio -->  
-                        <a href="{{route('terminos').'/'}}" class="txt-orange f-sz-s typ-os-regular">
+                        <a href="{{route('terminos').'/'}}" class="txt-orange f-sz-s typ-os-regular" target="_blank">
                             {{$site['site_terminos']?? ''}}
                         </a> 
                         </p>   

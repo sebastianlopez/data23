@@ -13,7 +13,7 @@
                 </a>
                     
             </div>
-            <button class="modalPruebaGratis btn btn-outline-light myNavbarFont d-block mr-1 d-md-none" data-toggle="modal" data-target="#modalPruebaGratis" align="right" >
+            <button class="modalPruebaGratis btn btn-outline-light myNavbarFont mr-1" data-toggle="modal" data-target="#modalPruebaGratis" align="right" >
                 <b>{{$site['site_demo']??''}}</b>
             </button>  
     </nav>
@@ -45,7 +45,7 @@
                 </li>
 
                 <li class="item">
-                    <a class="modalPruebaGratis btn btn-outline-light myNavbarFont d-block mr-1 d-lg-none btnspecial" data-toggle="modal" data-target="#modalPruebaGratis" target="_blank" class="btnspecial">
+                    <a class="modalPruebaGratis btn btn-outline-light myNavbarFont mr-1 btnspecial" data-toggle="modal" data-target="#modalPruebaGratis" target="_blank" class="btnspecial">
                         <strong>{{$site['site_demo']?? ''}}</strong></a>
                 </li>
             </ul>
@@ -74,7 +74,11 @@
                 </div>
             </div>    
         </div>
-        <div class="col-6">Iniciar Sesion</div>
+        <div class="col-6">
+            <a class="txt-black" href="{{route('login_datacrm')}}">
+            {{$site['site_login']?? ''}}
+            </a>
+        </div>
     </div>
 </div>
 

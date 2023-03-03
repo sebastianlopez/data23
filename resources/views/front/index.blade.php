@@ -79,25 +79,25 @@
 
     <div class="row section-resize mt-4">
 
-            <div class="col-lg-5  col-md-6 col-12 text-center order-1 order-md-1">
-                @php $img = array('','home02_icono08_62x62.png','home02_icono09_62x62.png','home02_icono10_62x62.png','home02_icono11_62x62.png'); @endphp
-                @for($i=1; $i<5; $i++)
-                    <div class="row mt-3">
-                        <div class="col-6 col-md-3 text-center" >
-                            <picture>
-                                <source type="image/webp" srcset="{{asset('front/images/'.$img[$i])}}">
-                                <img src="{{asset('front/images/'.$img[$i])}}" alt="{{ chstr($site['p2_home_seccion2_texto'.$i]) }}" class="img-fluid">
-                            </picture>          
-                        </div>  
-                        <div  class="col-6 col-md-5">
-                            <h5 class="pbod2B text-justify"><b>{!! $site['p2_home_seccion2_texto'.$i] ?? '' !!}</b></h5>
-                            <p class="typ-os-regular typ-montserratf-sz-s text-justify pbod3B">
-                                {!! $site['p2_home_seccion2_descripcion'.$i] ?? '' !!}
-                            </p>  
-                        </div>    
-                    </div>   
-                @endfor
-            </div>
+        <div class="col-lg-5  col-md-6 col-12 text-center order-1 order-md-1">
+            @php $img = array('','home02_icono08_62x62.png','home02_icono09_62x62.png','home02_icono10_62x62.png','home02_icono11_62x62.png'); @endphp
+            @for($i=1; $i<5; $i++)
+                <div class="row mt-3">
+                    <div class="col-6 col-md-3 text-center" >
+                        <picture>
+                            <source type="image/webp" srcset="{{asset('front/images/'.$img[$i])}}">
+                            <img src="{{asset('front/images/'.$img[$i])}}" alt="{{ chstr($site['p2_home_seccion2_texto'.$i]) }}" class="img-fluid">
+                        </picture>          
+                    </div>  
+                    <div  class="col-6 col-md-5">
+                        <h5 class="pbod2B text-justify"><b>{!! $site['p2_home_seccion2_texto'.$i] ?? '' !!}</b></h5>
+                        <p class="typ-os-regular typ-montserratf-sz-s text-justify pbod3B">
+                            {!! $site['p2_home_seccion2_descripcion'.$i] ?? '' !!}
+                        </p>  
+                    </div>    
+                </div>   
+            @endfor
+        </div>
 
             <div  class="col-lg-7 col-md-6 col-12 text-center m-auto align-self-center order-3 videobackg">
 
@@ -150,10 +150,10 @@
             </ul>
         </div> 
         <div class="col-lg-3 col-md-3 col-12 pt-5 d-none d-sm-block d-md-none d-lg-block" align="center">
-                <picture>
-                    <source type="image/webp" srcset="{{asset('front/images/Logo whatsapp_170x171.webp')}}">
-                    <img src="{{asset('front/images/Logo whatsapp_170x171.png')}}" alt="Whatsapp" class="img-fluid">
-                </picture>
+            <picture>
+                <source type="image/webp" srcset="{{asset('front/images/Logo whatsapp_170x171.webp')}}">
+                <img src="{{asset('front/images/Logo whatsapp_170x171.png')}}" alt="Whatsapp" class="img-fluid">
+            </picture>
         </div>
     </div>   
     <hr class="hr-silver mt-5 hidden-md-up d-none d-sm-block" align="center">

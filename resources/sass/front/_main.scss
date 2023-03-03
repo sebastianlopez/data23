@@ -5,7 +5,7 @@
 ul#app_info {
     list-style: none;
 }
-
+.wrapper-menu .subMenu
 ul#app_info li:before {
     font-size: 1.3rem;
     font-weight: bold;
@@ -532,7 +532,6 @@ hr{
     opacity: 1;
     /* background-color: #d8d824; */
     border-top: 24px solid transparent;
-    border-left: 11px solid #fcdc29;
     border-bottom: 24px solid transparent;
 }
 .wrapper-menu .subMenu a:after{
