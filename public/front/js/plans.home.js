@@ -394,8 +394,8 @@
                         saving_money = '';
                         simbolo_money = 'COP/mes';
                         document_id = 'Cédula';
-                        preciodescripcion1 = "Factura anual de <s>780k</s> / 624k cop";
-                        preciodescripcion2 = "Factura anual de <s>1.140k</s> / 912k cop";
+                        preciodescripcion1 = "Factura anual de <s>780K</s> / 624k COP";
+                        preciodescripcion2 = "Factura anual de <s>1.140K</s> / 912k COP";
                         implementation = '$ 1\'200K COP'
                         active = 'co-active'
                         break;
@@ -413,8 +413,8 @@
                         simbolo_money = 'MXN/mes';
                         document_id = 'CURP';
                         pais = 'México';
-                        preciodescripcion1 = "Factura anual de <s>4.200 </s> / 3.360 mxn";
-                        preciodescripcion2 = "Factura anual de <s>6.000 </s> / 4.800 mxn";    
+                        preciodescripcion1 = "Factura anual de <s>4.200 </s> / 3.360 MXN";
+                        preciodescripcion2 = "Factura anual de <s>6.000 </s> / 4.800 MXN";    
                         implementation = '$ 6.500 MXN'     
                         active = 'mxn-active'              
                         break;
@@ -430,8 +430,8 @@
                         saving_money = '';
                         simbolo_money = 'USD/mes';
                         document_id = 'Documento de identidad';
-                        preciodescripcion1 = "Factura anual de <s>216</s> / 173 usd";
-                        preciodescripcion2 = "Factura anual de <s>300</s> / 240 usd";  
+                        preciodescripcion1 = "Factura anual de <s>216</s> / 173 USD";
+                        preciodescripcion2 = "Factura anual de <s>300</s> / 240 USD";  
                         implementation = 'USD $350'   
                         active = 'usd-active'                 
                         break;
@@ -447,8 +447,8 @@
                         saving_money = '';
                         simbolo_money = 'CLP/mes';
                         document_id = 'Documento de identidad';
-                        preciodescripcion1 = "Factura anual de <s>180k</s> / 144K clp";
-                        preciodescripcion2 = "Factura anual de <s>240k</s> / 192k clp";  
+                        preciodescripcion1 = "Factura anual de <s>180K</s> / 144K CLP";
+                        preciodescripcion2 = "Factura anual de <s>240K</s> / 192K CLP";  
                         implementation = '$300.000 CLP'    
                         active = 'clp-active'               
                         break;     
@@ -464,8 +464,8 @@
                         saving_money = '';
                         simbolo_money = ' PEN/mes';
                         document_id = 'Documento de identidad';
-                        preciodescripcion1 = "Factura anual de <s>780</s> / 624 pen";
-                        preciodescripcion2 = "Factura anual de <s>1.140</s> / 912 pen";      
+                        preciodescripcion1 = "Factura anual de <s>780</s> / 624 PEN";
+                        preciodescripcion2 = "Factura anual de <s>1.140</s> / 912 PEN";      
                         implementation = '1.300 PEN'           
                         active = 'pen-active'      
                         break;                                           
@@ -481,8 +481,8 @@
                         saving_money = '';
                         simbolo_money = 'COP/mes';
                         document_id = 'Cédula';   
-                        preciodescripcion1 = "Factura anual de <s>780k</s> / 624k cop";
-                        preciodescripcion2 = "Factura anual de <s>1.140k</s> / 912k cop";
+                        preciodescripcion1 = "Factura anual de <s>780K</s> / 624K COP";
+                        preciodescripcion2 = "Factura anual de <s>1.140K</s> / 912K COP";
                         implementation = '$ 1\'200K COP' 
                         active = 'co-active'                                       
                 }
