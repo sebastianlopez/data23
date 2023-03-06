@@ -142,8 +142,8 @@
                 <hr class="hr-silver">
             </div>
         </div>
-        <div class="row section-resize">
-            <div class="col-12 text-center">
+        <div class="row section-resize  d-none d-lg-block">
+            <div class="col-md-12 col-12 text-center">
                 <h2 class="text-uppercase mt-4 txt-blue typ-montserrat f-sz-b">
                     {{$site['faq_title'] ?? ''}}
                 </h2>
@@ -176,88 +176,30 @@
                 </div>
 
 
-                <!--Preguntas Movil-->
-                <div class="row mt-2" id="questionsMovil" style="display: none;">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12 px-4 mt-3">
-                                <div class="card-question br-wd">
-                                    <p class="text-left typ-os-regular f-sz-sm px-3 pt-3 br-wd">
-                                        <span class="span-border-b">{!! featured_text2($site['faq_question1'] ?? '') !!}</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-12 px-4 mt-3">
-                                <div class="card-answer br-wd">
-                                    <p class="text-left typ-os-regular f-sz-sm px-3 pt-3 txt-gray br-wd">
-                                        {!! $site['faq_answer1'] ?? '' !!}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+             
+            </div>
+        </div>
+
+        <div class="row section-resize qaa">
+            <div class="col-md-12 col-12 text-center">
+            <div id="accordion2" class="panel-group">
+                    
+                @for($i=1;$i<5;$i++)
+                <div class="panel">
+                    <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#panelBody2{{ $i }}" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">  {!! faq_box_question($site['faq_question'.$i] ?? '') !!}</a>
+                    </h4>
                     </div>
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12 px-4 mt-3">
-                                <div class="card-question br-wd">
-                                    <p class="text-left typ-os-regular f-sz-sm px-3 pt-3 br-wd">
-                                        <span class="span-border-b">{!! featured_text2($site['faq_question2'] ?? '') !!}</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-12 px-4 mt-3">
-                                <div class="card-answer br-wd">
-                                    <p class="text-left typ-os-regular f-sz-sm px-3 pt-3 txt-gray br-wd">
-                                        {!! $site['faq_answer2'] ?? '' !!}
-                                    </p>
-                                </div>
-                            </div>
+                    <div id="panelBody2{{ $i }}" class="panel-collapse collapse in">
+                        <div class="panel-body text-left">
+                            <p>{!! $site['faq_answer'.$i] ?? '' !!}/p>
                         </div>
-                    </div>
-                    <!--Preguntas-->
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12 px-4 mt-3">
-                                <div class="card-question br-wd">
-                                    <p class="text-left typ-os-regular f-sz-sm px-3 pt-3 br-wd">
-                                        <span class="span-border-b">{!! featured_text2($site['faq_question3'] ?? '') !!}</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-12 px-4 mt-3">
-                                <div class="card-answer br-wd">
-                                    <p class="text-left typ-os-regular f-sz-sm px-3 pt-3 txt-gray br-wd">
-                                        {!! $site['faq_answer3'] ?? '' !!}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12 px-4 mt-3">
-                                <div class="card-question br-wd">
-                                    <p class="text-left typ-os-regular f-sz-sm px-3 pt-3 br-wd">
-                                        <span class="span-border-b">{!! featured_text2($site['faq_question4'] ?? '') !!}</span> Preguntas
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-12 px-4 mt-3">
-                                <div class="card-answer br-wd">
-                                    <p class="text-left typ-os-regular f-sz-sm px-3 pt-3 txt-gray br-wd">
-                                        {!! $site['faq_answer4'] ?? '' !!}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12" align="center">
-                        <button class="modalPruebaGratis btn btn-orange text-uppercase p-2 f-sz-sm mt-5 typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
-                            <b>{{$site['faq_btn'] ?? ''}}</b>
-                        </button>
                     </div>
                 </div>
+                @endfor
             </div>
+        </div>
         </div>
 
         <div class="row mb-2 section-resize">

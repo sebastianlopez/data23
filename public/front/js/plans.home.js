@@ -394,9 +394,10 @@
                         saving_money = '';
                         simbolo_money = 'COP/mes';
                         document_id = 'Cédula';
-                        preciodescripcion1 = "Factura anual de <s>600k</s> / 480k cop";
-                        preciodescripcion2 = "Factura anual de <s>960k</s> / 768k cop";
+                        preciodescripcion1 = "Factura anual de <s>780k</s> / 624k cop";
+                        preciodescripcion2 = "Factura anual de <s>1.140k</s> / 912k cop";
                         implementation = '$ 1\'200K COP'
+                        active = 'co-active'
                         break;
                     case 'mx':
                         // cambio deprecios para mx 05-09-2022
@@ -412,9 +413,10 @@
                         simbolo_money = 'MXN/mes';
                         document_id = 'CURP';
                         pais = 'México';
-                        preciodescripcion1 = "Factura anual de <s>3.360 </s> / 4.200 mxn";
-                        preciodescripcion2 = "Factura anual de <s>4.800 </s> / 6.000 mxn";    
-                        implementation = '$ 6.500 MXN'                   
+                        preciodescripcion1 = "Factura anual de <s>4.200 </s> / 3.360 mxn";
+                        preciodescripcion2 = "Factura anual de <s>6.000 </s> / 4.800 mxn";    
+                        implementation = '$ 6.500 MXN'     
+                        active = 'mxn-active'              
                         break;
                     case 'ec': case 'pa': case 'cr':
                         valor1 = 18;
@@ -430,7 +432,8 @@
                         document_id = 'Documento de identidad';
                         preciodescripcion1 = "Factura anual de <s>216</s> / 173 usd";
                         preciodescripcion2 = "Factura anual de <s>300</s> / 240 usd";  
-                        implementation = 'USD $350'                    
+                        implementation = 'USD $350'   
+                        active = 'usd-active'                 
                         break;
                     case 'ch':
                         valor1 = 15000;
@@ -446,7 +449,8 @@
                         document_id = 'Documento de identidad';
                         preciodescripcion1 = "Factura anual de <s>180k</s> / 144K clp";
                         preciodescripcion2 = "Factura anual de <s>240k</s> / 192k clp";  
-                        implementation = '$300.000 CLP'                   
+                        implementation = '$300.000 CLP'    
+                        active = 'clp-active'               
                         break;     
                     case 'pe':
                         valor1 = 65;
@@ -462,7 +466,8 @@
                         document_id = 'Documento de identidad';
                         preciodescripcion1 = "Factura anual de <s>780</s> / 624 pen";
                         preciodescripcion2 = "Factura anual de <s>1.140</s> / 912 pen";      
-                        implementation = '1.300 PEN'                 
+                        implementation = '1.300 PEN'           
+                        active = 'pen-active'      
                         break;                                           
                     default:
                         valor1 = 65000;
@@ -476,9 +481,10 @@
                         saving_money = '';
                         simbolo_money = 'COP/mes';
                         document_id = 'Cédula';   
-                        preciodescripcion1 = "Factura anual de <s>600k</s> / 480k cop";
-                        preciodescripcion2 = "Factura anual de  <s>960k</s> / 768k cop";   
-                        implementation = '$ 1\'200K COP'                                        
+                        preciodescripcion1 = "Factura anual de <s>780k</s> / 624k cop";
+                        preciodescripcion2 = "Factura anual de <s>1.140k</s> / 912k cop";
+                        implementation = '$ 1\'200K COP' 
+                        active = 'co-active'                                       
                 }
             }
             $(".valueAccompaniment").val(number_format(accompaniment_tax, 0, ',', '.')).data('valor', accompaniment_tax);
@@ -496,6 +502,8 @@
             $(".price0").html(miSimboloMonetario + number_format(valor0, 0, ',', '.')).data('valor', valor0);
             $(".price1").html(miSimboloMonetario + number_format(valor1, 0, ',', '.') + "<span style='font-size: 1.3rem'>" + simbolo_money + "</span>").data('valor', valor1);
             $(".price2").html(miSimboloMonetario + number_format(valor2, 0, ',', '.') + "<span style='font-size: 1.3rem'>" + simbolo_money + "</span>").data('valor', valor2);
+
+          $('.clas')
             
             $(".pricedes1").html(preciodescripcion1);
             $(".pricedes2").html(preciodescripcion2);

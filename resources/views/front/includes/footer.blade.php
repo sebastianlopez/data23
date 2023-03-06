@@ -198,9 +198,7 @@
                     <a href="https://www.youtube.com/channel/UClTE-HkTpHMkoCvcP-6i2Sw/" target="_blank">
                         <i class="fa-brands fa-youtube mySocialMediaIcon"></i>  
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=573014765478&data=AbvFn1vbKjaL01ZOTTkiC3OON5BDEjVEOXTaVVl0esD2yI1M65Jhupigkb5DKBTvi0JwPKf1CY8cei_XrpKruFQD3RcrHuvUvEZ3DrwGJgOREHExVL2-sKauwzkdTJGVxJQ&source=FB_Ads">
-                        <i class="fa-brands fa-twitter mySocialMediaIcon"></i>  
-                    </a>   
+ 
                 </div>                                    
             </div>            
         </div>

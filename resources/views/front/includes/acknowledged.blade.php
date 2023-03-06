@@ -1,4 +1,4 @@
-<div class="container mt-5" id="myHomeSeccion9">
+<div class="container mt-5" id="myHomeSeccion">
     
    
         <div class="row pt-4">

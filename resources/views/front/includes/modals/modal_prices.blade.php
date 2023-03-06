@@ -8,6 +8,7 @@
           </button>
         </div>
         <div class="modal-body">
+            <div class="table-responsive">
             <table class="table table-striped w-auto" >
                 <thead class="bg-light sticky-top">
                     <tr>
@@ -15,7 +16,6 @@
                         <th>Gratuito</th>
                         <th>Básico</th>
                         <th>Pro</th>
-                      
                     </tr>
                 </thead>
                 <tbody>
@@ -206,6 +206,7 @@
 
                 </tbody>
             </table>
+            </div>
 
         </div>
        

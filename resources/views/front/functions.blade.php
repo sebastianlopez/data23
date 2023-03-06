@@ -122,9 +122,9 @@
                         <p> {{$site['software3_text'] ?? ''}}</p>
                     </div>  
                     
-                    <div class="row justify-content-center">
-                        <div class="col-lg-5 col-md-5 col-12 mt-5 text-center">
-                            <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-sm p-2 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                    <div class="row ">
+                        <div class="col-lg-5 col-md-5 col-12 mt-5 ">
+                            <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-sm p-2 btn btn-blue effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                                 <b>{{$site['software3_btn'] ?? ''}}</b>
                             </a>
                             <div class="space"></div>
@@ -160,6 +160,7 @@
                 </p>
                
             </div>
+            
             <div class="col-12 text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-5 col-12 mt-5">
@@ -188,8 +189,8 @@
                 </p>
 
                 <div class="row left">
-                    <div class="col-4 mt-2">
-                        <a href="{{route('mobile',['locale'=>get_lang()])}}" class="text-uppercase typ-montserrat btn-lg btn btn-orange effect-zoom">
+                    <div class="col-4 mt-2 mb-4"> 
+                        <a href="{{route('mobile',['locale'=>get_lang()])}}" class="text-uppercase typ-montserrat btn-lg f-sz-sm btn px-5 btn-orange effect-zoom">
                             <b>{{$site['software4_btn'] ?? ''}}</b>
                         </a>
                     </div>

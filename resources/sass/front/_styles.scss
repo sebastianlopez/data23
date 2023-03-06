@@ -6100,6 +6100,61 @@ _ .nav {
     transform: rotate(-180deg);
     transition: all 0.2s ease-in;
   }
+
+
+  #accordion2 .panel {
+    border-radius: 0;
+    border: 0;
+    margin-top: 0px;
+  }
+  #accordion2 a {
+    display: block;
+    padding: 10px 15px;
+    color:black;
+    text-decoration: none;
+    border-bottom: 2px solid #3D69AA;
+    padding: 5px;
+  }
+  #accordion2 .panel-heading a.collapsed:hover,
+  #accordion2 .panel-heading a.collapsed:focus {
+    color: black;
+    transition: all 0.2s ease-in;
+    border-bottom: 2px solid #3D69AA;
+
+  }
+  #accordion2 .panel-heading a.collapsed:hover::before,
+  #accordion2 .panel-heading a.collapsed:focus::before {
+    color: black;
+  }
+  #accordion2 .panel-heading {
+    padding: 0;
+    border-radius: 0px;
+    text-align: left;
+    
+  }
+  #accordion2 .panel-heading a:not(.collapsed) {
+    color: black;
+
+    transition: all 0.2s ease-in;
+    border-bottom: 2px solid #3D69AA;
+    padding: 10px;
+  }
+  
+  /* Add Indicator fontawesome icon to the left */
+  #accordion2 .panel-heading .accordion-toggle::before {
+    font-family: 'FontAwesome';
+    content: '\f0dd';
+    float: left;
+    color: black;
+    font-weight: lighter;
+    transform: rotate(0 deg);
+    transition: all 0.2s ease-in;
+  }
+  #accordion2 .panel-heading .accordion-toggle.collapsed::before {
+    color: black;
+    transform: rotate(-180deg);
+    transition: all 0.2s ease-in;
+  }
  .table-bordered td,
  .table-bordered th {
      border: none;
@@ -6737,6 +6792,11 @@ _ .nav {
  }
  .font-fm-montserrat {
     font-family: 'Montserrat' !important;
+ }
+
+ .font-fm-montserrat-italic {
+    font-family: 'Montserrat' !important;
+    font-style: italic;
  }
  
 .ft-h1{
@@ -7562,6 +7622,15 @@ _ .nav {
     color:white;
 }
 
+.your-centered-div {
+    max-width: 560px; /* you have to have a size or this method doesn't work */
+    max-height: 315px;
+    
+  
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
+}
 
 
 

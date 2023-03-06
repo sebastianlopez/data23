@@ -6,8 +6,13 @@
 <div    
     class="modal fade" id="modalPruebaGratis"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content p-5" style="display: block;" id="modalcontent1">
-            <a type="button" class="btn btn-white btn-close btn-close-white" aria-label="Close" data-dismiss="modal"><i class="fa fa-close"></i></a>
+        <div class="modal-content p-5" id="modalcontent1">
+            <div class="modal-header" style="border: 0px solid rgba(0, 0, 0, 0.2);">
+                <a type="button" class="close btn-close btn-close-white" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </a>
+            </div>
+            
             <h2 class="text-uppercase text-center m-0 txt-blackgray typ-montserrat f-sz-b">
                 {!! $site['modal_title'] ?? '' !!}
             </h2>

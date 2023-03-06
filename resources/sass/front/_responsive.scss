@@ -4004,6 +4004,10 @@
         text-align: center;        
     }
 
+    .videocenter{
+        left:0;
+    }
+
     #leftbarprice{
         display: none;
     }
@@ -4032,6 +4036,9 @@
         background-color: $color1;
         color:white;
     }
+    .f-sz-m-home {
+        font-size: 1.4rem;
+    }
 }
 @media (min-width: 425px) and (max-width: 767px) {
     #myHomeSeccion4  h1 {
@@ -4044,9 +4051,30 @@
     }   
     #myHomeSeccion4  p {
         font-size: 1.3rem;
-    }               
+    }  
+    
+    .videocenter{
+        left:0;
+    }
+
+    
+    #myPriceSeccion .myBarLeft2 {
+        display: inline-flex;
+        background-color: $color5;
+    }
+    
+    #myPriceSeccion .myBarLeft2 .active{
+    
+        display: inline-flex;
+        background-color: $color1;
+        color:white;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    .videocenter{
+        left:0;
+    }
     #myHomeSeccion4  h1 {
         font-size: 1.8rem;
         text-align: center;

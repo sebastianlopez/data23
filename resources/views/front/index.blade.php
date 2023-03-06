@@ -99,9 +99,9 @@
             @endfor
         </div>
 
-            <div  class="col-lg-7 col-md-6 col-12 text-center m-auto align-self-center order-3 videobackg">
+            <div  class="col-lg-7 col-md-6 col-12 text-center m-auto align-self-center order-3 videobackg your-centered-div">
 
-                <div class="embed-responsive embed-responsive-16by9  mt-5  videocenter" >
+                <div class="embed-responsive embed-responsive-16by9  your-centered-div" style="margin:auto" >
                     <iframe class="embed-responsive-item"  autoplay loop muted src="{{asset('front/images/index/Home video.gif')}}"></iframe>
                   </div>
             </div>
