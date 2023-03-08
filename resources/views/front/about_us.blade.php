@@ -16,7 +16,6 @@
 @section('content')
     <div class="container-fluid pt-3">
         <div class="row mb-5 pt-5">
-       
     </div>
     <div class="container p-0 mb-4">
         <div class="row section-resize">
@@ -26,10 +25,10 @@
                 </h1>
           
                 
-                    <picture>
-                        <source type="image/webp" srcset="{{asset('front/images/about/nosotros ok.png')}}">
-                        <img class="img-fluid border-img" src="{{asset('front/images/about/nosotros ok.png')}}" alt="about us" >
-                    </picture> 
+                <picture>
+                    <source type="image/webp" srcset="{{asset('front/images/about/nosotros ok.png')}}">
+                    <img class="img-fluid border-img" src="{{asset('front/images/about/nosotros ok.png')}}" alt="about us" >
+                </picture> 
                 
                 
                 <p class="typ-os-regular txt-black f-sz-sm mt-4">
@@ -86,6 +85,7 @@
                         loop: true,
                         autoplay: true,
                         autoplayTimeout: 3000,
+                        navText : ['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
                         autoplayHoverPause: true,
                         responsiveClass: true,
                         responsive:{
@@ -125,19 +125,19 @@
     <div class="py-4 my-5 px-5  section-resize">
         <div class="container">
             <div class="row py-5">
-                <div class="col-lg-8 col-md-6 col-12">
-                    <h2 class="text-uppercase mt-5  typ-montserrat myTitleBlue ft-h2">
+                <div class="col-lg-8 col-md-6 col-12 mb-3">
+                    <h2 class="text-uppercase mt-5 typ-montserrat myTitleBlue ft-h2">
                         {{$site['about_title2']??''}}
                     </h2>
-                    <p class="typ-os-regular txt-gray f-sz-b mt-3">
+                    <p class="typ-montserrat txt-gray ft-h4">
                         {!! $site['about_text2'] ?? '' !!}
                     </p>
                     <a href="http://ayuda.datacrm.com/" class="btn btn-orange f-sz-sm txt-white p-2 text-uppercase mt-3 typ-montserrat effect-zoom">
                         <b>{{$site['about_btn']??''}}</b>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <img src="{{asset('front/images/nosotros/NOSOTROS-03.png')}}" alt="abaout" width="550" class="img-fluid">
+                <div class="col-lg-4 col-md-6 col-12 mt-3">
+                    <img src="{{asset('front/images/about/Recurso-30.webp')}}" alt="about" width="550" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -147,4 +147,5 @@
             @include('front.includes.start_now')
         </div>
     </div>
+</div>
 @endsection

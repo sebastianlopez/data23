@@ -1,11 +1,12 @@
 <section id="myPriceSeccion">
     <div class="container text-center">
+        @if(!Route::is('Colombia') && !Route::is('Mexico') && !Route::is('Chile') && !Route::is('Costarica') && !Route::is('Panama') && !Route::is('Peru') && !Route::is('Ecuador')  )
         <div class="myBarLeft" id="leftbarprice">
             <div class="row justify-content-center">
                     <div class ="col-12 mx-auto  d-none d-lg-block" >
                             <div class="myBarTop typ-montserrat">
                                 <ul class=" mt-3">
-                                    <li><a class="txt-black changePlan" href="javascript:void(0)" data-flag="co">COP $</a></li>
+                                    <li><a class="txt-black changePlan " href="javascript:void(0)" data-flag="co">COP $</a></li>
                                     <li><a class="txt-black changePlan" href="javascript:void(0)" data-flag="mx">MXN $</a></li>
                                     <li><a class="txt-black changePlan" href="javascript:void(0)" data-flag="ec">USD $</a></li>
                                     <li><a class="txt-black changePlan" href="javascript:void(0)" data-flag="ch">CLP $</a></li>
@@ -14,10 +15,12 @@
                             </div>
                     </div>        
             </div>   
-        </div>  
+        </div> 
+        @endif 
         
     
         <div class="planszone">
+            @if(!Route::is('Colombia') && !Route::is('Mexico') && !Route::is('Chile') && !Route::is('Costarica') && !Route::is('Panama') && !Route::is('Peru') && !Route::is('Ecuador')  )
             <div class="row justify-content-center text-center">
                 <div class="myBarLeft2 typ-montserrat ">
 
@@ -30,6 +33,7 @@
                     </nav>
                 </div>
             </div>
+            @endif
                 
                <div class="row justify-content-center text-center">
 
@@ -164,7 +168,7 @@
 
 
                         <!-- implementacion -->
-                        <div  class="typ-txt-light font-fm-montserrat-italic  mt-3 mb-3 br-wd px-5" >* 
+                        <div  class="typ-txt-light font-fm-montserrat-italic  mt-3 mb-3 br-wd px-5" >
                             {!! $site['implementacion_planbasico_usuarios'] ?? '' !!} <span class="implementation"></span>
                         </div>
                     

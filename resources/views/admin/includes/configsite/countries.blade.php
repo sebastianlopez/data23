@@ -304,3 +304,38 @@
         </div>
     </div>
 </div>
+
+<div class="box-card">
+    <h2>Titulos Sueltos</h2>
+    <br>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label>Titulo 1</label>
+                        <input type="text" class="form-control"
+                               name="info[countries_title_1]"
+                               value="{{$info['countries_title_1'] ?? ''}}"/>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label>Titulo 2</label>
+                        <input type="text" class="form-control"
+                               name="info[countries_title_2]"
+                               value="{{$info['countries_title_2'] ?? ''}}"/>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label>SubTitulo 2</label>
+                        <input type="text" class="form-control"
+                               name="info[countries_subtitle_2]"
+                               value="{{$info['countries_subtitle_2'] ?? ''}}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

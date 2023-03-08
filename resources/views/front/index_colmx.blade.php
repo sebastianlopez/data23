@@ -91,8 +91,8 @@
             <div class="row pt-4 section-resize">
                 
                 <div class="col-12 text-center">
-                    <h2 class=" myTitleBlue2 text-capitalize typ-montserrat ">
-                       Que nos hace un CRM Difrente?
+                    <h2 class=" myTitleBlue text-capitalize typ-montserrat ft-h2">
+                       {!! $site['countries_title_1'] ?? '' !!}
                     </h2>
                 </div>
             </div>
@@ -131,12 +131,27 @@
                
         </div>
 
-        
-        @include('front.includes.plans.cards_pc2')
-               
-        <br>
 
-        @include('front.includes.masSobrePlanes2')     
+        <div class="row pt-4 section-resize">
+                
+            <div class="col-12 text-center">
+                <h2 class="myTitleBlue text-capitalize typ-montserrat ft-h2">
+                    {!! $site['countries_title_2'] ?? '' !!}
+                </h2>
+            </div>
+            
+            <div class="col-12 text-center">
+                <p class=" mt-2 typ-os-regular  txt-black f-sz-m-home">
+                    {!! $site['countries_subtitle_2'] ?? '' !!}
+                </p>
+            </div> 
+        </div>
+        <input type="hidden" value="{{ $code }}" id="country">
+        @include('front.includes.plans.cards_pc2')
+
+        @include('front.includes.masSobrePlanes2')    
+        
+        @include('front.includes.modals.modal_prices')
 
        
         <div class="row justify-content-center section-resize mt-5 pt-3">
@@ -160,11 +175,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <img 
-                    width="100%" 
-                    height="auto"
-                    src="{{asset('front/images/cronograma-de-gestion-final100x119.webp')}}"
-                    class="img-fluid">
+                <img width="100%" height="auto"src="{{asset('front/images/cronograma-de-gestion-final100x119.webp')}}" class="img-fluid">
             </div>
             <div class="modal-footer">
             </div>

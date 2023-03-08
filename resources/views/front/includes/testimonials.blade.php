@@ -31,41 +31,6 @@
         });
     });
 </script>
-<style>
-.owl-prev {
-    position: absolute;
-    top: 38%;
-    margin-left: -20px;
-    display: block !important;
-    border:0px solid transparent;
-
-}
-
-.owl-carousel .owl-nav button.owl-prev:hover{
-    background: transparent !important;
-}
-
-.owl-carousel .owl-nav button.owl-next:hover{
-    background: transparent !important;
-}
-
-.owl-next {
-    position: absolute;
-    top: 38%;
-    right: -25px;
-    display: block !important;
-    border:0px solid black;
-}
-.owl-prev i, .owl-next i {
-    color: gray; 
-    font-size: 4rem;
-}
-
-.owl-nav {
-    margin-left: -1rem !important;
-    margin-right: 2rem !important;
-}
-</style>
 
 <?php
     $testimonial[] = array( 'empresa' => 'Informese', 
@@ -152,36 +117,30 @@
 ?>
 
 <div class="col-12 text-center">
-    <h2 class="text-uppercase mt-3 typ-montserrat f-sz-b br-wd myTitleBlue2 ">
+    <h2 class="text-uppercase mt-3 typ-montserrat  br-wd myTitleBlue ft-h2 ">
         {!! $site['p2_home_seccion10_title1'] ?? '' !!}
     </h2>
-    
-
-    
-    <div class="owl-carousel owl-theme mt-5" align="center">
-        @foreach ($testimonial as $tes) 
+        
+    <div class="owl-carousel owl-theme mt-5 center-img" align="center" >
+            @foreach ($testimonial as $tes) 
                 @php 
                     $cuenta++;
                 @endphp
-                <div class="item">
+                <div class="item owl-testimonials-item" style="height: 30rem">
 
-                    <div class="item-owl-own" style="width: 20rem; height: 30rem;">
-                        <div style="height: 15%">
+                    <div class="item-owl-own ">
+                        <div class="">
                             <picture>
-                                <source type="image/webp" data-srcset="{{asset('front/images/home/' . $tes['imagenWebp'])}}">
-                                <img data-src="{{asset('front/images/home/' . $tes['imagenPng'])}}" 
-                                alt= {{ $tes['empresa'] }}
-                                width="121"
-                                height="60" 
-                                class="my-2 lazyload img-fluid">
+                                <source type="image/webp" srcset="{{asset('front/images/home/' . $tes['imagenWebp'])}}">
+                                <img src="{{asset('front/images/home/'.$tes['imagenPng'])}}" alt="{{ $tes['empresa'] }}" width="121" height="60" class="my-2 lazyload img-fluid center-img">
                             </picture>
                         </div>
-                        <div style="height:60%" >
+                        <div class="owl-testimonials-text" style="height: 60%" >
                             <p class="txt-gray typ-os-regular mt-4 text-left ">
                                 {!! $site['p2_home_seccion10_testimonanialtext' .$cuenta] ?? '' !!}
                             </p>
                         </div>
-                        <div align="right">
+                        <div class="text-right">
                             <p>
                                 {!! $site['p2_home_seccion10_testimonanialpersona' .$cuenta] ?? '' !!}
                             </p>
@@ -194,16 +153,8 @@
 
         
 </div>
-<div class="col-lg-5 col-md-5 col-12 mt-4" align="center">
-    <a href="https://www.youtube.com/watch?v=cUdjkC3ttwc&list=PLZoqtUmy_3owJFjAsUAvyWIlwww-HsPWp&index=10" 
-        target="_blank" 
-        class="typ-montserrat txt-orange btn p-2 
-            f-sz-m 
-            myBtnOrangeOutline
-            effect-zoom 
-            br-wd"
-        style="width: 75%"
-            >
+<div class="col-lg-5 col-md-5 col-12 mt-4 text-center" >
+    <a href="https://www.youtube.com/watch?v=cUdjkC3ttwc&list=PLZoqtUmy_3owJFjAsUAvyWIlwww-HsPWp&index=10" target="_blank" class="typ-montserrat txt-orange btn p-2  f-sz-m myBtnOrangeOutline effect-zoom br-wd">
         <b>{!! $site['p2_home_seccion10_btntext1'] ?? '' !!} 
             <i class="fa-brands fa-youtube f-sz-m"></i>
         </b>

@@ -8,13 +8,11 @@
     <meta property="og:locale" content="es_ES"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Administración de ventas y gestión comercial - DataCRM"/>
-    <meta property="og:description"
-          content="Prueba gratis por 15 días nuestro CRM para administración de ventas y gestión comercial. Miles de usuarios en Colombia, México y otros países en Latam."/>
+    <meta property="og:description" content="Prueba gratis por 15 días nuestro CRM para administración de ventas y gestión comercial. Miles de usuarios en Colombia, México y otros países en Latam."/>
     <meta property="og:url" content="https://www.datacrm.com/"/>
     <meta property="og:site_name" content="Software CRM en Colombia, Fuerza de Ventas – DATACRM"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description"
-          content="Prueba gratis por 15 días nuestro CRM para administración de ventas y gestión comercial. Miles de usuarios en Colombia, México y otros países en Latam."/>
+    <meta name="twitter:description" content="Prueba gratis por 15 días nuestro CRM para administración de ventas y gestión comercial. Miles de usuarios en Colombia, México y otros países en Latam."/>
     <meta name="twitter:title" content="Administración de ventas y gestión comercial - DataCRM"/>
     <script type='application/ld+json'>
         {"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.datacrm.com\/","name":"DATACRM","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.datacrm.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}
@@ -25,21 +23,23 @@
 
 <input type="hidden" id="countryCode" value="{{$reg['location']}}">
 
-<div class="container p-1 justify-content-center" id="myHomeSeccion1">
-    <div class="row section-resize section-init-index justify-content-center" >        
+<div class="container p-1" id="myHomeSeccion1">
+    <div class="row section-resize section-init-index " >        
         <div class="col-lg-6 col-md-6 col-12  mt-5 px-5">      
 
             <h1 class="text-uppercase myTitleBlue mt-5 typ-montserrat ft-h1 br-wd">
                 <span class="span-border-b-w">
                     {!! $site['p2_home_seccion1_title'] ?? '' !!}
                 </span>
+                <div class ="text-uppercase ft-h3 txt-blackgray typ-montserrat br-wd mt-2" >
+                    {!! $site['p2_home_seccion1_subtitle'] ?? '' !!}
+                </div>
+                
             </h1>
+
             
-            <h6 class ="text-uppercase myTitleBlack1 typ-montserrat br-wd" >
-                {!! $site['p2_home_seccion1_subtitle'] ?? '' !!}
-            </h6>
+            <hr class="hr-orange2">
             
-            <hr class="hr-orange2" align="left">
             
             <p class="typ-os-regular typ-montserrat f-sz-m  mt-3">
                     {!! $site['p2_home_seccion1_paragraph'] ?? '' !!}
@@ -50,14 +50,14 @@
             </button>
         </div>
         
-        <div class="col-lg-6 col-md-6 col-12  align-self-center" align="Left">
+        <div class="col-lg-6 col-md-6 col-12  align-self-center" >
             <picture>
                 <source type="image/webp" srcset="{{asset('front/images/Home01_673x449.webp')}}">
                 <img src="{{asset('front/images/Home01_673x449.png')}}" alt="{{ chstr($site['p2_home_seccion1_title']) }}"  class="img-fluid">
             </picture>
         </div>  
     </div>
-    <hr class="hr-blue hidden-md-up d-none d-sm-block" align="center">
+    <hr class="hr-blue hidden-md-up d-none d-sm-block" >
 </div>
 
 
@@ -78,7 +78,6 @@
     </div>
 
     <div class="row section-resize mt-4">
-
         <div class="col-lg-5  col-md-6 col-12 text-center order-1 order-md-1">
             @php $img = array('','home02_icono08_62x62.png','home02_icono09_62x62.png','home02_icono10_62x62.png','home02_icono11_62x62.png'); @endphp
             @for($i=1; $i<5; $i++)
@@ -99,15 +98,13 @@
             @endfor
         </div>
 
-            <div  class="col-lg-7 col-md-6 col-12 text-center m-auto align-self-center order-3 videobackg your-centered-div">
-
-                <div class="embed-responsive embed-responsive-16by9  your-centered-div" style="margin:auto" >
-                    <iframe class="embed-responsive-item"  autoplay loop muted src="{{asset('front/images/index/Home video.gif')}}"></iframe>
-                  </div>
+        <div  class="col-lg-7 col-md-6 col-12 text-center m-auto align-self-center order-3 videobackg your-centered-div">
+            <div class="embed-responsive embed-responsive-16by9  your-centered-div" >
+                <iframe class="embed-responsive-item" autoplay loop muted src="{{asset('front/images/index/Home video.gif')}}"></iframe>
             </div>
+        </div>
 
-            <div class="col-12 mt-4 order-2 order-md-3 mb-5" align="center">
-            
+        <div class="col-12 mt-4 order-2 order-md-3 mb-5 text-center" >
                 <button class="modalPruebaGratis btn btn-orange f-sz-sm mt-3 p-2 typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                     <b>{!! $site['p2_home_seccion2_btn'] ?? '' !!}</b>
                 </button>
@@ -117,9 +114,7 @@
 </div>
 
 
-
 @include('front.includes.yourprocess')
-
 
 <div class="container p-0" id="myHomeSeccion3b">
     <div class="row section-resize justify-content-center "> 
@@ -149,14 +144,14 @@
                 </li>                        
             </ul>
         </div> 
-        <div class="col-lg-3 col-md-3 col-12 pt-5 d-none d-sm-block d-md-none d-lg-block" align="center">
+        <div class="col-lg-3 col-md-3 col-12 pt-5 d-none d-sm-block d-md-none d-lg-block" >
             <picture>
                 <source type="image/webp" srcset="{{asset('front/images/Logo whatsapp_170x171.webp')}}">
                 <img src="{{asset('front/images/Logo whatsapp_170x171.png')}}" alt="Whatsapp" class="img-fluid">
             </picture>
         </div>
     </div>   
-    <hr class="hr-silver mt-5 hidden-md-up d-none d-sm-block" align="center">
+    <hr class="hr-silver mt-5 hidden-md-up d-none d-sm-block" >
 </div>
 
 
@@ -190,13 +185,13 @@
             </div> 
 
             @if($i<3)
-            <div class="myVerticalLine card d-none d-lg-block p-4 myVerticalLinew"></div>
-            <div class="myHorizontalLine card d-block d-lg-none mt-5 mx-auto"></div>  
+                <div class="myVerticalLine card d-none d-lg-block p-4 myVerticalLinew"></div>
+                <div class="myHorizontalLine card d-block d-lg-none mt-5 mx-auto"></div>  
             @endif
         @endfor    
     </div>
         <div class="row mt-1 justify-content-center">
-            <div class="col-12 mt-4" align="center">
+            <div class="col-12 mt-4 text-center">
                 <button class="modalPruebaGratis btn2 btn-orange f-sz-m my-3 p-2 typ-montserrat effect-zoom " data-toggle="modal" data-target="#modalPruebaGratis">
                     <b>{!! $site['p2_home_seccion4_btn'] ?? '' !!}</b>
                 </button>  
@@ -209,12 +204,12 @@
 <div class="myDivGreen1 myDivDiagonalRightA" >
     <div class="container  mt-5  myDivDiagonalRightB" id="myHomeSeccion5">
         <div class="row section-resize section-init-index justify-content-center"  >
-            <div class="col-lg-5 col-md-5 col-12" align="Left">
+            <div class="col-lg-5 col-md-5 col-12" >
                 <picture>
                     <source type="image/webp" srcset="{{asset('front/images/Home05_576x546.webp')}}">
                     <img src="{{asset('front/images/Home05_576x546.png')}}" alt="{{  chstr($site['p2_home_seccion5_title']) }}" class="img-fluid">
                 </picture>
-                <br>
+        
                
             </div>
 
@@ -263,7 +258,7 @@
                         <div class="container mt-4">
                             <a class=" btn2 btn-orange f-sz-m my-3 p-2 typ-montserrat effect-zoom" href="https://landing.datacrm.com/asesoria_datamkt" target="_blank">
                                 <b class="">{!! $site['p2_home_seccion5_btn'] ?? '' !!}</b>
-                        </a>  
+                            </a>  
                         </div>
                     </li>                        
                 </ul>
@@ -291,28 +286,28 @@
                 <div class="col-12 text-lg-center text-sm-left">
                     <a href="https://play.google.com/store/apps/details?id=com.datacrm.application" target="_blank">
                         <picture>
-                            <source type="image/webp" data-srcset="{{asset('front/images/home/home_banner_app_playstore.webp')}}">
-                            <img data-src="{{asset('front/images/home/home_banner_app_playstore.webp')}}" alt="play store" width="200" height="60" class="effect-zoom ml-md-2 my-1 lazyload img-fluid" id="myImg">
+                            <source type="image/webp" srcset="{{asset('front/images/home/home_banner_app_playstore.webp')}}">
+                            <img src="{{asset('front/images/home/home_banner_app_playstore.webp')}}" alt="play store" width="200" height="60" class="effect-zoom ml-md-2 my-1 lazyload img-fluid" id="myImg">
                         </picture>
                     </a>
                     <a href="https://itunes.apple.com/us/app/datacrm/id1437186766?mt=8" target="_blank" class="ml-3">
                         <picture>
-                            <source type="image/webp" data-srcset="{{asset('front/images/home/home_banner_app_appstore.webp')}}">
-                            <img data-src="{{asset('front/images/home/home_banner_app_appstore.webp')}}" alt="istore" width="200"  height="60" class="effect-zoom mr-md-2 my-1 lazyload img-fluid" id="myImg">
+                            <source type="image/webp" srcset="{{asset('front/images/home/home_banner_app_appstore.webp')}}">
+                            <img src="{{asset('front/images/home/home_banner_app_appstore.webp')}}" alt="istore" width="200"  height="60" class="effect-zoom mr-md-2 my-1 lazyload img-fluid" id="myImg">
                         </picture>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-12 mt-3 order-1 order-lg-2" align="center">
+        <div class="col-lg-6 col-12 mt-3 order-1 order-lg-2" >
             <div class="mt-5 pt-5 section-movil-index">
                 <picture>
-                    <img data-src="{{asset('front/images/Home06_344x337.png')}}" alt="Tus Negocios a donde vayas" height="auto" class="img-fluid lazyload pt-4">                    
+                    <img src="{{asset('front/images/Home06_344x337.png')}}" alt="Tus Negocios a donde vayas" height="auto" class="img-fluid lazyload pt-4">                    
                 </picture>
             </div>
         </div>
     </div>
-    <hr class="hr-silver mt-5" align="center">    
+    <hr class="hr-silver mt-5" >    
 </div> 
 
 
@@ -332,13 +327,13 @@
         </div> 
         <div class="col-12 text-center mt-3">
             <picture>
-                <source type="image/webp" data-srcset="{{asset('front/images/Home07_704x314.webp')}}">
-                <img data-src="{{asset('front/images/Home07_704x314.png')}}" alt="Plataformas Favoritas" class="img-fluid lazyload mt-lg-5">
+                <source type="image/webp" srcset="{{asset('front/images/Home07_704x314.webp')}}">
+                <img src="{{asset('front/images/Home07_704x314.png')}}" alt="Plataformas Favoritas" class="img-fluid lazyload mt-lg-5">
             </picture>
         </div>
         
     </div>
-    <hr class="hr-silver mt-5"  align="center">    
+    <hr class="hr-silver mt-5"  >    
 </div>
 
 
@@ -368,10 +363,9 @@
 
 <div class="row mb-2 section-resize">
     <div class="col-12 my-2">
-        <hr class="hr-silver mt-5" align="center">   
+        <hr class="hr-silver mt-5" >   
     </div>
 </div>
-
 
 @include('front.includes.acknowledged')  
 <div class="row pb-4"></div>

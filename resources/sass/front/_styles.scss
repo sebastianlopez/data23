@@ -7206,7 +7206,58 @@ _ .nav {
     border-width:0;
     color:#ff884D;
     background-color:#ff884D;
+    margin-left:0px;
 }
+
+.center-img{
+    margin: auto;
+    display: block;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 38%;
+    margin-left: -20px;
+    display: block !important;
+    border:0px solid transparent;
+
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover{
+    background: transparent !important;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover{
+    background: transparent !important;
+}
+
+.owl-next {
+    position: absolute;
+    top: 38%;
+    right: -25px;
+    display: block !important;
+    border:0px solid black;
+}
+.owl-prev i, .owl-next i {
+    color: gray; 
+    font-size: 4rem;
+}
+
+.owl-nav {
+    margin-left: -1rem !important;
+    margin-right: 2rem !important;
+}
+
+.owl-testimonials-item{
+    width: 20rem; 
+    height: 30rem;
+}
+
+.owl-testimonials-text{
+    height:60%;
+}
+
+
 
 .hr-blue{
     height:2px;

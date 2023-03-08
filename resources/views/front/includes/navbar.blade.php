@@ -1,4 +1,4 @@
-<div id="mySidenav" class="sidenav" align="center" style="">
+<div id="mySidenav text-center" class="sidenav">
     <nav class="home-background  navbar navbar-expand-lg navbar-light bg-dark">    
             <div class="d-inline-block">
                 <button class="navbar-toggler d-lg-none d-inline-block txt-white" onclick="closeNav()">
@@ -13,7 +13,7 @@
                 </a>
                     
             </div>
-            <button class="modalPruebaGratis btn btn-outline-light myNavbarFont mr-1" data-toggle="modal" data-target="#modalPruebaGratis" align="right" >
+            <button class="modalPruebaGratis btn btn-outline-light myNavbarFont mr-1" data-toggle="modal" data-target="#modalPruebaGratis" >
                 <b>{{$site['site_demo']??''}}</b>
             </button>  
     </nav>
@@ -45,8 +45,9 @@
                 </li>
 
                 <li class="item">
-                    <a class="modalPruebaGratis btn btn-outline-light myNavbarFont mr-1 btnspecial" data-toggle="modal" data-target="#modalPruebaGratis" target="_blank" class="btnspecial">
-                        <strong>{{$site['site_demo']?? ''}}</strong></a>
+                    <a href="#" class="modalPruebaGratis btn btn-outline-light myNavbarFont mr-1 btnspecial" data-toggle="modal" data-target="#modalPruebaGratis" target="_blank">
+                        <strong>{{$site['site_demo']?? ''}}</strong>
+                    </a>
                 </li>
             </ul>
         </div> 
@@ -97,12 +98,7 @@
                 </picture>
             </a>
         </div>
-        <button class="modalPruebaGratis btn btn-orange myNavbarFont d-block  d-lg-none d-inline-block" 
-                    data-toggle="modal"
-                    data-target="#modalPruebaGratis"
-                    align="right"
-                    style="margin-right: 10px;"
-                    >
+        <button class="modalPruebaGratis btn btn-orange myNavbarFont d-block  d-lg-none d-inline-block mr-1" data-toggle="modal" data-target="#modalPruebaGratis">
             <b>{{$site['site_demo']??''}}</b>
         </button>  
         <ul class="navbar-nav ">   

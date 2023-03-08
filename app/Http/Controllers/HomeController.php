@@ -77,6 +77,7 @@ class HomeController extends Controller
         $moneda = 'USD';
         $code = '';
 
+
         switch($pais){
             case 'Colombia':
                 $precios['anual']['basico']  = 32000;
@@ -86,13 +87,14 @@ class HomeController extends Controller
                 $moneda = 'COP';
                 $code = 'co';
             break;
-            case 'Perú':
+            case 'Peru':
                 $precios['anual']['basico']  = 44;
                 $precios['anual']['pro']     = 52;
                 $precios['mensual']['basico']= 55;
                 $precios['mensual']['pro']   = 65;
                 $moneda = 'PEN';
                 $code = 'pe';
+                $pais = 'Perú';
             break;
             case 'Mexico':
                 $precios['anual']['basico']  = 240;
@@ -106,16 +108,20 @@ class HomeController extends Controller
             case 'Chile':
                 $code = 'ch';
             break;
-            case 'Costa Rica':
+            case 'Costarica':
                 $code = 'cr';
+                $pais = 'Costa rica';
             break;
-            case 'Panamá':
+            case 'Panama':
                 $code = 'pa';
+                $pais = 'Panamá';
             break;
             case 'Ecuador':
                 $code = 'ec';
             break;
         }
+
+    
         return view('front.index_colmx',
             compact('pais','precios','reg','btn_prueba','code','moneda'));
     }

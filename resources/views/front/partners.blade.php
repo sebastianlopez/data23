@@ -222,6 +222,35 @@
         </div>
     </div>
     <div class="space"></div><div class="space"></div>
+    <div class="container p-0 mt-5">
+        <div class="row">
+            <div class="col-12 text-center">
+              
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-2 text-left">
+                <img src="{{ asset('front/images/partners/Recurso-6-8.webp') }}" alt="be partner" class="img-fluid">
+            </div> 
+            <div class="col-8 text-center"></div>
+        </div>
+        <div class="row"> 
+            <div class="col-md-6">
+                <h2 class="myTitleBlue  typ-montserrat ft-h2">
+                    {!! $site['sector7_title'] ?? '' !!}
+                </h2>
+                <p class=" mt-5  typ-os-regular txt-gray f-sz-m-home">
+                    {!! $site['sector7_text'] ?? '' !!}
+                    <img src="{{ asset('front/images/partners/Recurso-5-8.webp') }}" alt="be partner" class="img-fluid">
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div role="main" id="form-pag-sector-5892720dec6abb38b543"></div>
+                <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script><script type="text/javascript"> new RDStationForms('form-pag-sector-5892720dec6abb38b543', 'UA-19986828-1').createForm();</script>
+            </div>
+        </div>
+    </div>
 
     <!-- Seccion Testimoniales -->
 

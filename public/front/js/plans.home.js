@@ -248,9 +248,12 @@
 
         //Funcion para cambiar de precios segun paises
         function changePlan(c = false) {
+           
             if(!c){
                 c = ($("#country").val()) ? $("#country").val() : 'co';
             }
+
+            console.log(c);
             ver_tipo_pago = "inline";
             tipo_pago = "Anual";
             var check_plan = $('input[name="pago"]:checked')[0] || "";
@@ -394,8 +397,8 @@
                         saving_money = '';
                         simbolo_money = 'COP/mes';
                         document_id = 'Cédula';
-                        preciodescripcion1 = "Factura anual de <s>780K</s> / 624k COP";
-                        preciodescripcion2 = "Factura anual de <s>1.140K</s> / 912k COP";
+                        preciodescripcion1 = "Factura anual de <s>780K</s> / 624K COP";
+                        preciodescripcion2 = "Factura anual de <s>1.140K</s> / 912K COP";
                         implementation = '$ 1\'200K COP'
                         active = 'co-active'
                         break;
@@ -503,7 +506,10 @@
             $(".price1").html(miSimboloMonetario + number_format(valor1, 0, ',', '.') + "<span style='font-size: 1.3rem'>" + simbolo_money + "</span>").data('valor', valor1);
             $(".price2").html(miSimboloMonetario + number_format(valor2, 0, ',', '.') + "<span style='font-size: 1.3rem'>" + simbolo_money + "</span>").data('valor', valor2);
 
-          $('.clas')
+            $('.clas')
+
+            $('.changePlan').removeClass( 'active' );
+            $('#'+active).addClass( 'active' );
             
             $(".pricedes1").html(preciodescripcion1);
             $(".pricedes2").html(preciodescripcion2);

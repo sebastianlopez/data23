@@ -1,7 +1,7 @@
 <div id="gdprbox" class="cookies-accept active">
     <picture>    
-        <source type="image/webp" data-srcset="{{asset('front/images/cookie35x35.webp')}}">
-        <img data-src="{{asset('front/images/cookie35x35.png')}}" 
+        <source type="image/webp" srcset="{{asset('front/images/cookie35x35.webp')}}">
+        <img src="{{asset('front/images/cookie35x35.png')}}" 
         class="lazyload img-fluid" 
         alt="Usamos Cookies"
         width="35"
@@ -20,7 +20,7 @@
 
                     <picture>
                         <source type="image/webp" data-srcset="{{asset('front/images/Logodata_Horizontalblanco180x58.webp')}}">
-                        <img data-src="{{asset('front/images/Logodata_Horizontalblanco180x58.png')}}"  alt="Logo Data CRM" class="img-fluid w-100 img-footer-logo lazyload">
+                        <img src="{{asset('front/images/Logodata_Horizontalblanco180x58.png')}}"  alt="Logo Data CRM" class="img-fluid w-100 img-footer-logo lazyload">
                     </picture>                    
                 </a>
 
@@ -132,13 +132,13 @@
             <!-- site_apps -->
 
 		    <div class="col-lg-4 col-md-12 col-sm-6 col-12 pl-5 pt-3 div-footer">
-                <h1 class="txt-white typ-montserrat" style="font-size: 1.20rem;">{{$site['site_apps']?? ''}}</h1>
+                <h2 class="txt-white f-sz-sm typ-montserrat">{{$site['site_apps']?? ''}}</h2>
                 <div class="row justify-content-start">
                 <div class="col-12 col-xl-5">
                     <a href="https://itunes.apple.com/us/app/datacrm/id1437186766?mt=8" target="_blank">
                         <picture>
                             <source type="image/webp" data-srcset="{{asset('front/images/home/app_store_125x37.webp')}}">
-                            <img data-src="{{asset('front/images/home/app_store_125x37.png')}}" 
+                            <img src="{{asset('front/images/home/app_store_125x37.png')}}" 
                                 alt="Apple Store" 
                                 width="125" 
                                 height="37"
@@ -150,7 +150,7 @@
                     <a href="https://play.google.com/store/apps/details?id=com.datacrm.application" target="_blank">
                         <picture>
                             <source type="image/webp" data-srcset="{{asset('front/images/home/play_store_125x37.webp')}}">
-                            <img data-src="{{asset('front/images/home/play_store_125x37.png')}}" 
+                            <img src="{{asset('front/images/home/play_store_125x37.png')}}" 
                                 alt="Play Store" 
                                 width="125" 
                                 height="37"
@@ -168,7 +168,7 @@
             <div class="col-2 my-4">
                 <picture>
                     <source type="image/webp" data-srcset="{{asset('front/images/Logodata_Horizontalblanco180x58.webp')}}">
-                    <img data-src="{{asset('front/images/Logodata_Horizontalblanco180x58.png')}}" alt="Logo Data CRM" width="180" height="54" class="img-fluid w-100 img-footer-logo lazyload">
+                    <img src="{{asset('front/images/Logodata_Horizontalblanco180x58.png')}}" alt="Logo Data CRM" width="180" height="54" class="img-fluid w-100 img-footer-logo lazyload">
                 </picture>    
             </div>
             <div class="col-7 my-4">               
@@ -189,7 +189,7 @@
                     <a href="https://www.facebook.com/DataCRM.Soluciones/" target="_blank">
                         <i class="fa-brands fa-facebook mySocialMediaIcon"></i>
                     </a>
-                        <a href="https://api.whatsapp.com/send?phone=573014765478&data=AbvFn1vbKjaL01ZOTTkiC3OON5BDEjVEOXTaVVl0esD2yI1M65Jhupigkb5DKBTvi0JwPKf1CY8cei_XrpKruFQD3RcrHuvUvEZ3DrwGJgOREHExVL2-sKauwzkdTJGVxJQ&source=FB_Ads">
+                        <a href="https://www.instagram.com/datacrm_/">
                         <i class="fa-brands fa-instagram mySocialMediaIcon"></i>  
                     </a>        
                     <a href="https://www.linkedin.com/company/datacrm/" target="_blank">

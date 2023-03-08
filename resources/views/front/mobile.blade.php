@@ -54,10 +54,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-12 mt-5" align="center">
+            <div class="col-lg-4 col-md-4 col-12 mt-5 " >
                 <picture>
                     <source type="image/webp" srcset="{{asset('front/images/mobile/img-1.webp')}}">
-                    <img src="{{asset('front/images/mobile/img-1.webp')}}" alt="crm-movil" width="280" class="img-fluid">
+                    <img src="{{asset('front/images/mobile/img-1.webp')}}" alt="crm-movil" width="280" class="img-fluid center-img">
                 </picture>
             </div>
         </div>
@@ -133,9 +133,10 @@
     </div>
 
     <div class="myDivGreen1 myDivDiagonalRightA" >
-        <div class="container  mt-5 MB-5 section-resize myDivDiagonalRightB" id="myHomeSeccion5">
+        <div class="container  mt-5 MB-5 section-resize myDivDiagonalRightB" id="">
 
-                <div class="container">
+                <div class="container section-resize p-0">
+                    
                     <div class="row mb-4 mx-4">
                         <div class="col-lg-8 col-md-6 col-12 mt-5 px-max-5 order-2 order-lg-1">
                             <h2 class="text-uppercase mt-5 txt-white typ-montserrat ft-h2 br-wd"><span class="">
@@ -146,9 +147,10 @@
                             {!! $site['mobile4_text1'] ?? '' !!}
                             </p>
                         
-                            <button class="modalPruebaGratis btn btn-blue typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                            <button class="modalPruebaGratis btn btn-blue f-sz-sm my-3 p-2 typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                                 <b>{{$site['mobile4_btn'] ?? ''}}</b>
                             </button>
+
 
                             <div class="space"></div> <div class="space"></div>
                         </div>
@@ -217,10 +219,10 @@
                         <b>{{$site['mobile6_btn'] ?? ''}}</b>
                     </button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 order-1 order-lg-2" align="center">
+                <div class="col-lg-4 col-md-6 col-12 order-1 order-lg-2" >
                     <picture>
                         <source type="image/webp" srcset="{{asset('front/images/mobile/img-6.webp')}}">
-                        <img src="{{asset('front/images/mobile/img-6.webp')}}" alt=" {{$site['mobile6_title'] ?? ''}}" width="" class="img-fluid">
+                        <img src="{{asset('front/images/mobile/img-6.webp')}}" alt=" {{$site['mobile6_title'] ?? ''}}" width="" class="img-fluid ">
                     </picture>
                     <div class="space hide-mobile"></div>
                 </div>
