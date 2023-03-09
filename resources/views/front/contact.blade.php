@@ -21,7 +21,7 @@
                     {{$site['contact_title'] ?? ''}}
                 </h1>
                 <hr class="hr-gold text-left">
-                <p class="typ-os-regular txt-black f-sz-sm mt-4">
+                <p class="typ-montserrat txt-black f-sz-sm mt-4">
                    {!! $site['contact_text'] ?? '' !!}
                 </p>
                 <form id="formContact" action="{{route('send-contact')}}" method="GET" class="px-2">
@@ -96,8 +96,8 @@
                             </h4>
                             </div>
                             <div id="panelBody{{ $i }}" class="panel-collapse collapse in">
-                            <div class="panel-body text-left">
-                                <p>{!! $site['contact_faq_aws'.$i] ?? '' !!}</p>
+                            <div class="panel-body text-left ">
+                                <p class="typ-montserrat" id="reset-this-root">{!! $site['contact_faq_aws'.$i] ?? '' !!}</p>
                             </div>
                             </div>
                         </div>

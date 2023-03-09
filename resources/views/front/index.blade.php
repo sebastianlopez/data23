@@ -31,9 +31,9 @@
                 <span class="span-border-b-w">
                     {!! $site['p2_home_seccion1_title'] ?? '' !!}
                 </span>
-                <div class ="text-uppercase ft-h3 txt-blackgray typ-montserrat br-wd mt-2" >
+                <span class ="text-uppercase ft-h3 txt-blackgray typ-montserrat br-wd mt-2" >
                     {!! $site['p2_home_seccion1_subtitle'] ?? '' !!}
-                </div>
+                </span>
                 
             </h1>
 
@@ -73,7 +73,7 @@
             
             <h3 class="text-lowercase typ-montserrat ft-h3 br-wd">
                  {!! $site['p2_home_seccion2_subtitle'] ?? '' !!}
-            <h3>
+            </h3>
         </div> 
     </div>
 
@@ -111,7 +111,7 @@
             </div>  
         </div>
     </div>
-</div>
+</div>`
 
 
 @include('front.includes.yourprocess')

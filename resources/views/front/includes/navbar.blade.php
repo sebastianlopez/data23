@@ -1,4 +1,4 @@
-<div id="mySidenav text-center" class="sidenav">
+<div id="mySidenav" class="sidenav text-center">
     <nav class="home-background  navbar navbar-expand-lg navbar-light bg-dark">    
             <div class="d-inline-block">
                 <button class="navbar-toggler d-lg-none d-inline-block txt-white" onclick="closeNav()">

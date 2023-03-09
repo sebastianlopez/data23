@@ -6047,11 +6047,11 @@ _ .nav {
     border: 0;
     margin-top: 0px;
   }
-  #accordion a {
+  #accordion span {
     display: block;
     padding: 10px 15px;
-   color:white;
-   background-color: #3D69AA;
+    color:white;
+    background-color: #3D69AA;
     text-decoration: none;
     border: 2px solid #3D69AA;
     border-radius: 12px;
@@ -6065,6 +6065,7 @@ _ .nav {
     border: 2px solid #3D69AA;
     border-radius: 12px;
     padding: 10px;
+    font-family: Monsserat;
   }
   #accordion .panel-heading a.collapsed:hover::before,
   #accordion .panel-heading a.collapsed:focus::before {
@@ -6100,6 +6101,11 @@ _ .nav {
     transform: rotate(-180deg);
     transition: all 0.2s ease-in;
   }
+
+  #reset-this-root {
+    all: unset;
+     all: initial;
+}
 
 
   #accordion2 .panel {
@@ -6777,6 +6783,12 @@ _ .nav {
      font-family: Montserrat-SemiBold;
      src: url(../fonts/Montserrat-SemiBold.ttf);
  }
+
+ @font-face {
+    font-display: swap;
+    font-family: Montserrat-light;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
  @font-face {
      font-display: swap;
      font-family: OpenSans-Regular;
@@ -7461,7 +7473,7 @@ _ .nav {
 }
 
 .orangeBck{
-    background-color:orange; font-size:54px;
+    background-color:$color3; font-size:54px;
 }
 
 .orangesmll{

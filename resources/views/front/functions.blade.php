@@ -219,19 +219,31 @@
                 <p class="typ-os-regular txt-black f-sz-sm mt-4 pr-5 pl-5">
                     {{$site['software6_text'] ?? ''}}
                 </p>
-                <picture>
-                    <source type="image/webp" srcset="{{asset('front/images/crm/IMG 7.webp')}}">
-                    <img src="{{asset('front/images/crm/IMG 7.webp')}}" alt="" class="img-fluid mt-3">
-                </picture>
+                <div class=" d-none d-lg-block">
+                    <picture>
+                        <source type="image/webp" srcset="{{asset('front/images/crm/IMG 7.webp')}}">
+                        <img src="{{asset('front/images/crm/IMG 7.webp')}}" alt="" class="img-fluid mt-3">
+                    </picture>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        @for($i=1;$i<4;$i++)
+                            <div class="{{ ($i==2)? 'col-4':'col-2' }}">
+                                <p class="text-center typ-os-regular f-sz-sm">
+                                    {!! featured_text($site['software6_text'.$i], $site['software6_featured'.$i] ?? '') !!}
+                                </p>
+                            </div>
+                        @endfor
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-2"></div>
                     @for($i=1;$i<4;$i++)
-                        <div class="{{ ($i==2)? 'col-4':'col-2' }}">
-                            <p class="text-center typ-os-regular f-sz-sm">
-                                {!! featured_text($site['software6_text'.$i], $site['software6_featured'.$i] ?? '') !!}
-                            </p>
-                        </div>
-                    @endfor
+                            <div class="col-12">
+                                <p class="text-center typ-os-regular f-sz-sm">
+                                    <img src="{{ asset('front/images/crm/') }}" alt="{{ $site['software6_featured'.$i] }}" class="img-fluid lazyload">
+                                    {!! featured_text($site['software6_text'.$i], $site['software6_featured'.$i] ?? '') !!}
+                                </p>
+                            </div>
+                        @endfor
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-5 col-12 mt-5">

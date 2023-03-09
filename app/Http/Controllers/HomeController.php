@@ -834,7 +834,7 @@ class HomeController extends Controller
             orderBy('date', 'desc')->
             // orderBy('info_articles.views', 'desc')->
             with('info', 'category')->
-            paginate(5);
+            paginate(5)->onEachSide(3);
 
         //\Log::info('*** HomeController -> blog -> articulos2 : ' . json_encode($articulos2[0]));
 

@@ -28,8 +28,8 @@
         </div>
     </div>
 
-<div class="container p-0 mb-4 font-fm-montserrat font-sz-2" style="background:">
-    <div class="container header-filter " style="background-image: url('{{ asset('front/images/blog/IMG-1.webp') }}')">
+<div class="container p-0 mb-4 font-fm-montserrat font-sz-2">
+    <div class="container header-filter" style="background-image: url('{{ asset('front/images/blog/IMG-1.webp') }}')">
         <div class="row">
             <div class="mt-2 col-xs-7 col-sm-7 col-md-6 header-filter-logo">
                  <a href="{{route('blog',['locale'=>get_lang()])}}">
@@ -72,13 +72,13 @@
                 </div>
             </div>
         </div>
-        <div class="space hide-mobile"></div><div class="space-half "></div>
+        <div class="space hide-mobile"></div>
         <div class="row">
-            <div class="col-xs-2 col-md-1  col-lg-2 text-center "></div>
-            <div class="col-xs-8 col-md-10  col-lg-8 text-center ">
-                <strong><h2 class="text-white f-sz-bc shadow-text">{{$site['blog_text1'] ?? ''}}</h2></strong>
+            <div class="col-xs-2 col-md-1  col-lg-1 text-center "></div>
+            <div class="col-xs-8 col-md-10  col-lg-10 text-center mb-5">
+                <strong><h2 class="text-white ft-h2 shadow-text">{{$site['blog_text1'] ?? ''}}</h2></strong>
                 <br/>
-                <span class="text-white pb-3 f-sz-b">{{$site['blog_text2'] ?? '' }}</span>
+                <span class="text-white pb-3 f-sz-m">{{$site['blog_text2'] ?? '' }}</span>
                 <br/>
             </div>
         </div>
@@ -136,8 +136,7 @@
                             <div class="item-header">
                                 <a href="{{route('article',['slug'=>$article->slug])}}/">
                                     <figure>
-                                        <img src="{{ (!empty($article->image) ? asset('upload/article/b'.$article->image) : asset('upload/article/default.jpg') )}}"    
-                                                alt="{{ chstr($article->info->title) }}" class="img-fluid" style="border-rado"></figure>
+                                        <img src="{{ (!empty($article->image) ? asset('upload/article/b'.$article->image) : asset('upload/article/default.jpg') )}}" alt="{{ chstr($article->info->title) }}" class="img-fluid" style="border-rado"></figure>
                                 </a>                                        
                             </div>
                             <div class="body articles-body">
@@ -170,7 +169,7 @@
 
             <div class="col-lg-4 col-md-12 blog-sidebar font-sz-3">
                 <div class="sidebar-module blog-start-now text-center">
-                    <span class="text-white "><b>{{$site['blog_title_aside'] ?? ''}}</b></span>
+                    <span class="text-white typ-mon typ-montserrat"><b>{{$site['blog_title_aside'] ?? ''}}</b></span>
                     <button class=" modalPruebaGratis btn btn-md btn-form-blog mt-4 w-75"
                             data-toggle="modal" data-target="#modalPruebaGratis">
                         <b>{{$site['blog_btn_aside']  ?? ''}}</b>
@@ -225,7 +224,7 @@
                                 </button>
                             </div>
                             <div class="input-group politics text-center">
-                                <p class="typ-os-regular txt-blackgray mt-4 mb-0 ">
+                                <p class=" txt-blackgray mt-4 mb-0 ">
                                     <b>{{$site['newsletter_text1'] ?? ''}} <a href="{{route('politicas')}}" target="_blank" rel="noopener noreferrer">{{$site['newsletter_text2'] ?? ''}}</a></b>
                                 </p>
                             </div>
@@ -234,11 +233,9 @@
                 </div>
             </div>
             
-            <!-- Barra de Pagineo -->
-
             <div aria-label="Page navigation" class=" mt-2 row text-xs-center pagenav">
                 <div class="col-xs-12 col-sm-12 col-md-14">
-                    {{$articles->appends(Request::except('page'))->links('vendor.pagination.bootstrap-4')}}
+                    {{$articles->appends(Request::except('page'))->onEachSide(1)->links('vendor.pagination.bootstrap-4')}}
                 </div>
             </div>
         </div>

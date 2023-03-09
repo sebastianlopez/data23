@@ -8,7 +8,7 @@
                             {!! $site['p2_home_seccion3_title'] ?? '' !!} 
                 </h2>
                 
-                <p class="typ-os-regular typ-montserrat f-sz-m mt-3"aligh="left">
+                <p class="typ-os-regular typ-montserrat f-sz-m mt-3">
                         {!! $site['p2_home_seccion3_texto1'] ?? '' !!} 
                 </p>    
                 

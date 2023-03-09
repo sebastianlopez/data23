@@ -23,7 +23,7 @@
 
 @section('content')
 
-    <div class="container p-0 pt-3">
+    <div class="container p-0 pt-3 font-fm-montserrat">
         <div class="row pt-5 mt-5 section-resize section-init-functions">
             
             <div class="col-md-6">
@@ -71,7 +71,7 @@
                                     
                                     
                                     <div class="card-text mt-4 pr-5 pl-5" >
-                                        <p class="typ-os-regular typ-montserrat f-sz-sm">{!! $site['partners2_text'.$i] ?? '' !!}</p>
+                                        <p class=" typ-montserrat f-sz-sm">{!! $site['partners2_text'.$i] ?? '' !!}</p>
                                     </div>
                                 </div>
                             </div>
@@ -121,14 +121,14 @@
     <div class="space hide-mobile"></div><div class="space "></div>
 
 
-    <div class="container p-0  mt-5 MB-5" id="myHomeSeccion5">
+    <div class="container p-0  mt-5 mb-5 font-fm-montserrat" id="myHomeSeccion5">
         <div class="row section-resize ">
 
             <div class="col-md-6 order-2 order-lg-1">
                 <h2 class="mt-5 txt-orange typ-montserrat ft-h2">
                     {!! $site['partners5_title'] ?? '' !!}
                 </h2>
-                <p class="typ-os-regular txt- f-sz-m mt-4">
+                <p class="\ txt- f-sz-m mt-4">
                     {!! $site['partners5_text'] ?? ''!!}
                 </p>
 
@@ -164,7 +164,7 @@
                 <h2 class="mt-5 myTitleGreen typ-montserrat ft-h2">
                     {!! $site['partners5_1_title'] ?? '' !!}
                 </h2>
-                <p class="typ-os-regular txt- f-sz-m mt-4">
+                <p class=" txt- f-sz-m mt-4">
                     {!! $site['partners5_1_text'] ?? ''!!}
                 </p>
 
@@ -181,8 +181,8 @@
 
 
 
-    <div class="myDivBlue1 myDivDiagonalLeftA">
-        <div class="container  mt-4  myDivDiagonalLeftB" id="">
+    <div class="myDivBlue1 myDivDiagonalLeftA ">
+        <div class="container  mt-4  myDivDiagonalLeftB font-fm-montserrat" id="">
             
             <div class="row section-resize section-init-index" >
                 <div class="col-lg-6 col-md-6 col-12  order-2 order-sm-1 mt-5 ">      
@@ -191,7 +191,7 @@
                                 {!! $site['partners6_title'] ?? '' !!} 
                     </h2>
                     
-                    <p class="typ-os-regular typ-montserrat f-sz-m mt-5" aligh="left">
+                    <p class="typ-montserrat f-sz-m mt-5" aligh="left">
                         <ul class="f-sz-m list-none-dots">
                         {!! features_list($site['partners6_list'] ?? '','circle','txt-white','txt-orange') !!}
                         </ul>
@@ -222,7 +222,7 @@
         </div>
     </div>
     <div class="space"></div><div class="space"></div>
-    <div class="container p-0 mt-5">
+    <div class="container p-0 mt-5 font-fm-montserrat">
         <div class="row">
             <div class="col-12 text-center">
               
@@ -230,7 +230,7 @@
         </div>
         <div class="row">
             
-            <div class="col-2 text-left">
+            <div class="col-2 text-center">
                 <img src="{{ asset('front/images/partners/Recurso-6-8.webp') }}" alt="be partner" class="img-fluid">
             </div> 
             <div class="col-8 text-center"></div>
@@ -240,7 +240,7 @@
                 <h2 class="myTitleBlue  typ-montserrat ft-h2">
                     {!! $site['sector7_title'] ?? '' !!}
                 </h2>
-                <p class=" mt-5  typ-os-regular txt-gray f-sz-m-home">
+                <p class=" mt-5  txt-gray f-sz-m-home">
                     {!! $site['sector7_text'] ?? '' !!}
                     <img src="{{ asset('front/images/partners/Recurso-5-8.webp') }}" alt="be partner" class="img-fluid">
                 </p>

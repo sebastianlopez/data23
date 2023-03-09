@@ -24,7 +24,7 @@
     <div class="container p-0 pt-3">
         <div class="pt-5 mt-5 section-resize section-init-planes">
             <div class="col-14 text-center">
-                <h1 class="myTitleBlue mt-5 typ-montserrat ft-h1 title-movil">
+                <h1 class="myTitleBlue mt-5 typ-montserrat ft-h2 title-movil">
                     {!! $site['plans_title'] ?? '' !!}
                 </h1>
                 
