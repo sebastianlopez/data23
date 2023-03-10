@@ -85,11 +85,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 videobackg">
-                    
-                            <div class="embed-responsive embed-responsive-16by9  mt-3" >
-                                <iframe class="embed-responsive-item"  autoplay loop muted src="{{asset('front/images/index/Home video.gif')}}"></iframe>
-                              </div>
-                       
+                        @include('front.includes.video')
                     </div>
                 </div>    
 

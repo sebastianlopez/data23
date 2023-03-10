@@ -189,7 +189,7 @@
                     <a href="https://www.facebook.com/DataCRM.Soluciones/" target="_blank">
                         <i class="fa-brands fa-facebook mySocialMediaIcon"></i>
                     </a>
-                        <a href="https://www.instagram.com/datacrm_/">
+                        <a href="https://www.instagram.com/datacrm_/" target="_blank">
                         <i class="fa-brands fa-instagram mySocialMediaIcon"></i>  
                     </a>        
                     <a href="https://www.linkedin.com/company/datacrm/" target="_blank">

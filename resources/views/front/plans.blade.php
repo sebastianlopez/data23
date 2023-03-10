@@ -174,9 +174,6 @@
                         </button>
                     </div>
                 </div>
-
-
-             
             </div>
         </div>
 
@@ -200,6 +197,8 @@
                 @endfor
             </div>
         </div>
+
+        
         </div>
 
         <div class="row mb-2 section-resize">

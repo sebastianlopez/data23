@@ -27,17 +27,13 @@
     <div class="row section-resize section-init-index " >        
         <div class="col-lg-6 col-md-6 col-12  mt-5 px-5">      
 
-            <h1 class="text-uppercase myTitleBlue mt-5 typ-montserrat ft-h1 br-wd">
+            <h1 class="text-uppercase myTitleBlue mt-5 typ-montserrat ft-h2 br-wd">
                 <span class="span-border-b-w">
                     {!! $site['p2_home_seccion1_title'] ?? '' !!}
-                </span>
-                <span class ="text-uppercase ft-h3 txt-blackgray typ-montserrat br-wd mt-2" >
-                    {!! $site['p2_home_seccion1_subtitle'] ?? '' !!}
-                </span>
-                
+                </span> 
             </h1>
 
-            
+        
             <hr class="hr-orange2">
             
             
@@ -99,9 +95,7 @@
         </div>
 
         <div  class="col-lg-7 col-md-6 col-12 text-center m-auto align-self-center order-3 videobackg your-centered-div">
-            <div class="embed-responsive embed-responsive-16by9  your-centered-div" >
-                <iframe class="embed-responsive-item" autoplay loop muted src="{{asset('front/images/index/Home video.gif')}}"></iframe>
-            </div>
+           @include('front.includes.video')
         </div>
 
         <div class="col-12 mt-4 order-2 order-md-3 mb-5 text-center" >

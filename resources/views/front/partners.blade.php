@@ -134,7 +134,7 @@
 
                 <div class="row left">
                     <div class="col-4 mt-2">
-                        <a href="{{route('mobile',['locale'=>get_lang()])}}" class="text-uppercase typ-montserrat btn-lg btn btn-orange-outline effect-zoom">
+                        <a href="#bepartner" name="bepartner" class="text-uppercase typ-montserrat btn-lg btn f-sz-m btn-orange-outline effect-zoom">
                             <b>{{$site['partners5_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -170,7 +170,7 @@
 
                 <div class="row left">
                     <div class="col-4 mt-2">
-                        <a href="{{route('mobile',['locale'=>get_lang()])}}" class="text-uppercase typ-montserrat btn-lg btn btn-green-outline2  effect-zoom">
+                        <a href="#bepartner" name="bepartner" class="text-uppercase typ-montserrat btn-lg btn btn-green-outline2 f-sz-m effect-zoom">
                             <b>{{$site['partners5_1_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -231,13 +231,13 @@
         <div class="row">
             
             <div class="col-2 text-center">
-                <img src="{{ asset('front/images/partners/Recurso-6-8.webp') }}" alt="be partner" class="img-fluid">
+                <img src="{{ asset('front/images/partners/Recurso-6-8.webp') }}" alt="be partner" class="img-fluid" id="bepartner">
             </div> 
             <div class="col-8 text-center"></div>
         </div>
         <div class="row"> 
             <div class="col-md-6">
-                <h2 class="myTitleBlue  typ-montserrat ft-h2">
+                <h2 class="myTitleBlue  typ-montserrat ft-h2" >
                     {!! $site['sector7_title'] ?? '' !!}
                 </h2>
                 <p class=" mt-5  txt-gray f-sz-m-home">

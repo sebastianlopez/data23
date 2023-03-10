@@ -33,8 +33,8 @@
                 </p>
                 <div class="row ">
                     <div class="col-lg-5 col-md-5 col-12 mt-3">
-                        <a data-toggle="modal"  href="#modalVideo" id="open-modalVideo" href="" 
-                            class=" typ-montserrat p-2 f-sz-sm btn btn-orange btn-lg effect-zoom">
+                        <a data-toggle="modal" data-target="#modalPruebaGratis" href="#"
+                            class="modalPruebaGratis typ-montserrat p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
                             <b> {{$site['sector_btn'] ?? ''}}</b>
                         </a>
                         <div class="space"></div> 
@@ -72,8 +72,8 @@
                     </p>        
                     <div class="row ">
                         <div class="col-lg-5 col-md-5 col-12 mt-3">
-                            <a data-toggle="modal"  href="#modalVideo" id="open-modalVideo" href="" 
-                                class=" typ-montserrat p-2 f-sz-sm btn btn-orange btn-lg effect-zoom">
+                            <a data-toggle="modal" data-target="#modalPruebaGratis" href="#"
+                            class="modalPruebaGratis typ-montserrat p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
                                 <b> {{$site['sector2_btn'] ?? ''}}</b>
                             </a>
                             <div class="space"></div> 
@@ -120,8 +120,8 @@
                </p>        
                <div class="row ">
                    <div class="col-lg-5 col-md-5 col-12 mt-3">
-                       <a data-toggle="modal"  href="#modalVideo" id="open-modalVideo" href="" 
-                           class=" typ-montserrat p-2 f-sz-sm btn btn-orange btn-lg effect-zoom">
+                       <a data-toggle="modal" data-target="#modalPruebaGratis" href="#"
+                           class="modalPruebaGratis typ-montserrat p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
                            <b> {{$site['sector3_btn'] ?? ''}}</b>
                        </a>
                    </div>
@@ -152,8 +152,8 @@
                     
                     <div class="row">
                         <div class="col-lg-5 col-md-5 col-12 mt-3">
-                            <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-sm p-2 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
-                                <b>{{$site['software3_btn'] ?? ''}}</b>
+                            <a href="#" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-m p-2 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                                <b>{{$site['sector4_btn'] ?? ''}}</b>
                             </a>
                             <div class="space"></div> 
                         </div>
@@ -194,8 +194,8 @@
                </p>        
                <div class="row ">
                    <div class="col-lg-5 col-md-5 col-12 mt-3">
-                       <a data-toggle="modal"  href="#modalVideo" id="open-modalVideo" href="" 
-                           class=" typ-montserrat p-2 f-sz-sm btn btn-orange btn-lg effect-zoom">
+                    <a data-toggle="modal" data-target="#modalPruebaGratis" href="#"
+                        class="modalPruebaGratis typ-montserrat p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
                            <b> {{ $site['sector5_btn'] ?? ''}}</b>
                        </a>
                    </div>
@@ -226,8 +226,8 @@
                     </p>        
                     <div class="row ">
                         <div class="col-lg-5 col-md-5 col-12 mt-3">
-                            <a data-toggle="modal"  href="#modalVideo" id="open-modalVideo" href="" 
-                                class=" typ-montserrat p-2 f-sz-sm btn btn-orange btn-lg effect-zoom">
+                            <a data-toggle="modal" data-target="#modalPruebaGratis" href="#"
+                            class="modalPruebaGratis typ-montserrat p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
                                 <b> {{$site['sector6_btn'] ?? ''}}</b>
                             </a>
                             <div class="space"></div>
@@ -235,7 +235,7 @@
                     </div>   
                 </div>
                
-                <div class="col-lg-5 col-md-5 col-12 order-1 order-sm-2" align="center">
+                <div class="col-lg-5 col-md-5 col-12 order-1 order-sm-2 text-center">
                     <picture>
                         <source type="image/webp" srcset="{{asset('front/images/sector/recurso-6-8.webp')}}">
                         <img src="{{asset('front/images/sector/recurso-6-8.webp')}}" alt="{{ 'sector' }}"  class="img-fluid">

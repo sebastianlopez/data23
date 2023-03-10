@@ -160,7 +160,7 @@
  body {
      margin: 0;
      font-display: swap;
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+     font-family: 'Montserrat-light';
      font-weight: 400;
      line-height: 1.5;
      color: #212529;
@@ -1872,10 +1872,10 @@
      border-color: transparent;
  }
  .btn-link {
-     color: #007bff;
+     color: transparent;
  }
  .btn-link:hover {
-     color: #0056b3;
+     color: transparent;
  }
  .btn-link.focus,
  .btn-link:focus {
@@ -3722,6 +3722,10 @@ _ .nav {
      -ms-flex: 1 1 auto;
      flex: 1 1 auto;
      padding: 1rem;
+    
+    max-height: calc(100vh - 210px);
+        overflow-y: auto;
+    
  }
  .modal-footer {
      display: -ms-flexbox;
@@ -6042,66 +6046,15 @@ _ .nav {
      border-right: 0 !important;
      border-bottom: 0 !important;
  }
- #accordion .panel {
-    border-radius: 0;
-    border: 0;
-    margin-top: 0px;
-  }
-  #accordion span {
-    display: block;
-    padding: 10px 15px;
-    color:white;
-    background-color: #3D69AA;
-    text-decoration: none;
-    border: 2px solid #3D69AA;
-    border-radius: 12px;
-    padding: 5px;
-  }
-  #accordion .panel-heading a.collapsed:hover,
-  #accordion .panel-heading a.collapsed:focus {
-    background-color: #3D69AA;
-    color: white;
-    transition: all 0.2s ease-in;
-    border: 2px solid #3D69AA;
-    border-radius: 12px;
-    padding: 10px;
-    font-family: Monsserat;
-  }
-  #accordion .panel-heading a.collapsed:hover::before,
-  #accordion .panel-heading a.collapsed:focus::before {
-    color: white;
-  }
-  #accordion .panel-heading {
-    padding: 0;
-    border-radius: 0px;
-    text-align: left;
-    
-  }
-  #accordion .panel-heading a:not(.collapsed) {
-    color: white;
-    background-color: #3D69AA;
-    transition: all 0.2s ease-in;
-    border: 2px solid #3D69AA;
-    border-radius: 12px;
-    padding: 10px;
-  }
-  
-  /* Add Indicator fontawesome icon to the left */
-  #accordion .panel-heading .accordion-toggle::before {
-    font-family: 'FontAwesome';
-    content: '\f0dd';
-    float: left;
-    color: white;
-    font-weight: lighter;
-    transform: rotate(0 deg);
-    transition: all 0.2s ease-in;
-  }
-  #accordion .panel-heading .accordion-toggle.collapsed::before {
-    color: white;
-    transform: rotate(-180deg);
-    transition: all 0.2s ease-in;
-  }
 
+
+  .contact-fqa .card-header{
+
+    background-color: $color2;
+    color: white;
+    font-family: Montserrat-SemiBold !important;
+    border-radius: 12px;
+  }
   #reset-this-root {
     all: unset;
      all: initial;
@@ -6775,9 +6728,7 @@ _ .nav {
     border: 1px solid #41c3ac; 
     background-color: #41c3ac !important
 }
- body .wrapperc {
-     overflow-x: hidden;
- }
+
  @font-face {
      font-display: swap;
      font-family: Montserrat-SemiBold;
@@ -6789,21 +6740,18 @@ _ .nav {
     font-family: Montserrat-light;
     src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
- @font-face {
-     font-display: swap;
-     font-family: OpenSans-Regular;
-     src: url(../fonts/OpenSans-Regular.ttf);
- }
- @font-face {
-     font-display: swap;
-     font-family: OpenSans-Light;
-     src: url(../fonts/OpenSans-Light.ttf);
- }
+
+
+ body .wrapperc {
+    overflow-x: hidden;
+    font-family: Montserrat-light !important;
+}
+
  .typ-montserrat {
      font-family: Montserrat-SemiBold !important;
  }
  .font-fm-montserrat {
-    font-family: 'Montserrat' !important;
+    font-family: 'Montserrat-light' !important;
  }
 
  .font-fm-montserrat-italic {
@@ -6872,11 +6820,11 @@ _ .nav {
 
  .typ-os-regular {
      font-display: swap;
-     font-family: OpenSans-Regular !important;
+     font-family: Montserrat-light !important;
  }
  .typ-os-light {
      font-display: swap;
-     font-family: OpenSans-Light !important;
+     font-family: Montserrat-light !important;
  }
  .font-sz-2 {
      font-size: 20px;
@@ -7296,7 +7244,6 @@ _ .nav {
     padding-bottom:15px; 
     padding-top:5px;
     line-height:1.2;
-    font-family: OpenSans-Regular !important; 
     width: 50%;
     margin: auto;
 }

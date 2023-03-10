@@ -6,11 +6,7 @@
 
 @yield('meta_og')
 
-<link href="{{asset('/js/plugins/jquery-ui/jquery-ui.min.css')}}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-<noscript><link rel="stylesheet" href="{{asset('admin/js/plugins/jquery-ui/jquery-ui.min.css')}}"></noscript>
-
 <link href="{{asset('css/front-style.min.css')}}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/> 
 <noscript><link rel="stylesheet" href="{{asset('css/front-style.min.css')}}"></noscript>
-
 
 @yield('styles_per')

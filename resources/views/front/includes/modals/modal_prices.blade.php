@@ -8,7 +8,8 @@
           </button>
         </div>
         <div class="modal-body">
-            <div class="table-responsive">
+            
+            <div class="">
             <table class="table table-striped w-auto" >
                 <thead class="bg-light sticky-top">
                     <tr>
@@ -165,45 +166,7 @@
                         <td>Llamadas</td>
                         @include('front.includes.plans.div_check_plans_xxy')
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td><p style="display: none;">
-                            <span 
-                                class="txt-blackgray typ-montserrat f-sz-b price1 price_" 
-                                data-valor=0>$0</span>                     
-                        </p>
-                        <a href="#" 
-                            data-users="50" 
-                            data-toggle="modal" 
-                            data-target="#modalPruebaGratis" 
-                            class="modalPruebaGratis modalPagos-compare typ-montserrat text-uppercase f-sz-s btn mt-2 py-1 px-4 btn-orange effect-zoom">
-                            ¡LO QUIERO!
-                        </a></td>
-                        <td> <p style="display: none;">
-                            <span class="txt-blackgray typ-montserrat f-sz-b price1 price_" data-valor=32000>$32.000</span>                     
-                        </p>
-                        <a href="#" 
-                            data-users="50" 
-                            data-toggle="modal" 
-                            data-target="#modalPruebaGratis"                     
-                            class="modalPruebaGratis modalPagos-compare typ-montserrat text-uppercase f-sz-s btn mt-2 py-1 px-4 btn-greenblue effect-zoom">
-                            ¡LO QUIERO!
-                        </a></td>
-                        <td><p style="display: none;">
-                            <span class="txt-blackgray typ-montserrat f-sz-b price2 price_" 
-                                data-valor=56000>
-                                $56.000
-                            </span>
-                        </p>
-                        <a href="#" 
-                            data-users="50" 
-                            data-toggle="modal" 
-                            data-target="#modalPruebaGratis"                     
-                            class="modalPruebaGratis modalPagos-compare typ-montserrat text-uppercase f-sz-s btn mt-2 py-1 px-4 btn-bluedark effect-zoom">
-                            ¡LO QUIERO!
-                        </a></td>
-                    </tr>
-
+            
                 </tbody>
             </table>
             </div>

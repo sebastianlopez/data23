@@ -57,7 +57,7 @@
                                                                             target="_blank"> {{$site['contact_form_captcha4'] ?? ''}}
                                     . </a>
                             </span>
-                            <br>
+                            <br>1
                             <button type="submit" class="col-md-12 btn btn-greenblue text-uppercase p-2 typ-montserrat f-sz-sm mt-3 effect-zoom px-3 typ-os-regular form-radius">
                                 <b>{{$site['contact_form_btn'] ?? ''}}</b>
                             </button>
@@ -86,23 +86,26 @@
                     <h2 class="text-uppercase txt-blackgray typ-montserrat f-sz-b">
                         {{$site['contact_faq_title'] ?? ''}}
                     </h2>
-                    <div id="accordion" class="panel-group">
-                    
+                    <div id="accordion" class="contact-fqa">
                         @for($i=1;$i<7;$i++)
-                        <div class="panel">
-                            <div class="panel-heading">
-                            <h4 class="panel-title">
-                            <a href="#panelBody{{ $i }}" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">{{ $site['contact_faq'.$i] ?? '' }}</a>
-                            </h4>
+                        <div class="card mb-1">
+                          <div class="card-header" id="heading{{ $i }}" >
+                            <h5 class="mb-0 text-left ft-h4">
+                              <button class="btn btn-link txt-white ft-h4" data-toggle="collapse" data-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapseOne" >
+                                {{ $site['contact_faq'.$i] ?? '' }}
+                              </button>
+                            </h5>
+                          </div>
+                      
+                          <div id="collapse{{ $i }}" class="collapse " aria-labelledby="heading{{ $i }}" data-parent="#accordion">
+                            <div class="card-body text-left typ-os">
+                                {!! $site['contact_faq_aws'.$i] !!}
                             </div>
-                            <div id="panelBody{{ $i }}" class="panel-collapse collapse in">
-                            <div class="panel-body text-left ">
-                                <p class="typ-montserrat" id="reset-this-root">{!! $site['contact_faq_aws'.$i] ?? '' !!}</p>
-                            </div>
-                            </div>
+                          </div>
                         </div>
-                        @endfor
-                    </div>
+                        @endfor                
+                      </div>
+
                 </div>
             </div>
         </div> 
