@@ -132,7 +132,7 @@
                     <p class="typ-montserrat txt-gray ft-h4">
                         {!! $site['about_text2'] ?? '' !!}
                     </p>
-                    <a href="http://ayuda.datacrm.com/" class="btn btn-orange f-sz-sm txt-white p-2 text-uppercase mt-3 typ-montserrat effect-zoom">
+                    <a href="http://ayuda.datacrm.com/" class="btn btn-orange f-sz-m txt-white p-2 text-uppercase mt-3 typ-montserrat effect-zoom">
                         <b>{{$site['about_btn']??''}}</b>
                     </a>
                 </div>

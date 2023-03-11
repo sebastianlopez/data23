@@ -4,12 +4,14 @@ namespace App\Models;
 
 use App\Traits\Translatable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class InfoArticle extends Model
 {
     use Translatable;
 
-    protected $guarded = ['id'];
+    use SoftDeletes;
+    protected $fillable = ['article_id', 'title', 'description', 'content', 'lang', 'title_meta', 'description_meta','keywords_meta','alt','recommended','views'];
     protected $foregeinKey = 'article_id';
 
     /**

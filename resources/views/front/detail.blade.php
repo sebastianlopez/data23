@@ -17,15 +17,9 @@
     <meta property="og:title" content="{{$title_meta}}"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:title" content="{{$title_meta}}"/>
-    <link href="{{asset('front/css/blog/dateStyle.css')}}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles.css"></noscript>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat&display=swap' rel='stylesheet'>
 @endsection
 
 @section('content')
-    
-    <script src="{{asset('admin/js/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
-
     <div class="container-fluid">
         <div class="row mb-5 pt-3">
             <div class="col-12 px-0">
@@ -179,32 +173,8 @@
                 <!-- Entradas o Articulos Relacionados -->
 
                 <div class="container related area-recommended">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                            <h2>{{$site['blog_related'] ?? ''}}</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        @foreach($related as $article)
-                        <div class="col-xs-4 col-sm-4 col-md-4">
-                            <div class="img-content-recommended">
-                                <a href="{{route('article',['slug'=>$article->slug,'locale'=>get_lang()])}}/">
-                                    <picture>
-                                        <img src="{{ (!empty($article->image) ? asset('upload/article/s'.$article->image) : asset('upload/article/default.jpg') )}}" alt="" class="img-fluid img-topic">
-                                    </picture>
-                                </a>
-                            </div>
-                            <h5 class="area-content-recommended">
-                                <!-- <a href="{{route('article',['slug'=>$article->slug,'locale'=>get_lang()])}}/">
-                                    {{$article->info->title}}
-                                </a> -->
-                                <a href="{{route('article',['slug'=>$article->slug])}}/">
-                                    {{$article->info->title}}
-                                </a>                                    
-                            </h5>
-                        </div>
-                        @endforeach
-                    </div>
+                    
+                    @include('front.includes.topics')
                 </div>
 
             </div>

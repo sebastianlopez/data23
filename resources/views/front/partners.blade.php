@@ -23,7 +23,7 @@
 
 @section('content')
 
-    <div class="container p-0 pt-3 font-fm-montserrat">
+    <div class="container p-0 pt-3 ">
         <div class="row pt-5 mt-5 section-resize section-init-functions">
             
             <div class="col-md-6">
@@ -35,8 +35,8 @@
                 </p>
                 <div class="row ">
                     <div class="col-lg-5 col-md-5 col-12 mt-3">
-                        <a data-toggle="modal"  href="#modalVideo" id="open-modalVideo" href="" 
-                            class=" typ-montserrat p-2 f-sz-sm btn btn-orange btn-lg effect-zoom">
+                        <a href="#bepartner" name="bepartner"
+                            class=" typ-montserrat p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
                             <b> {{$site['partners_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -68,7 +68,6 @@
                                         <source type="image/webp" srcset="{{asset('front/images/partners/Recurso 7-8.webp')}}">
                                         <img src="{{asset('front/images/partners/Recurso '.($i+6).'-8.webp')}}" alt="icon.{{ $i }}"  >
                                     </picture>             
-                                    
                                     
                                     <div class="card-text mt-4 pr-5 pl-5" >
                                         <p class=" typ-montserrat f-sz-sm">{!! $site['partners2_text'.$i] ?? '' !!}</p>
@@ -199,8 +198,8 @@
                     
                     <div class="row ">
                         <div class="col-lg-5 col-md-5 col-12 mt-3">
-                            <a data-toggle="modal"  href="#modalVideo" id="open-modalVideo" href="" 
-                                class=" typ-montserrat p-2 f-sz-sm btn btn-orange btn-lg pr-5 pl-5 effect-zoom">
+                            <a href="https://landing.datacrm.com/plan_referidos_datacrm" target="_blank"
+                                class=" typ-montserrat p-2 f-sz-m btn btn-orange btn-lg pr-5 pl-5 effect-zoom">
                                 <b> {{$site['partners6_btn'] ?? ''}}</b>
                             </a>
                         </div>
@@ -208,7 +207,7 @@
     
                 </div>
               
-                <div class="col-lg-6 col-md-6 col-12 order-1 order-sm-2 " align="center">
+                <div class="col-lg-6 col-md-6 col-12 order-1 order-sm-2 text-center" >
                     <picture>
                         <source type="image/webp" srcset="{{asset('front/images/partners/Recurso 4-8.webp')}}">
                         <img src="{{asset('front/images/partners/Recurso 4-8.webp')}}" alt="{{ chstr($site['p2_home_seccion3_title']) }}"  class="img-fluid">
@@ -222,28 +221,27 @@
         </div>
     </div>
     <div class="space"></div><div class="space"></div>
-    <div class="container p-0 mt-5 font-fm-montserrat">
-        <div class="row">
-            <div class="col-12 text-center">
-              
-            </div>
-        </div>
+    <div class="container p-0 mt-5 section-resize">
+        
         <div class="row">
             
-            <div class="col-2 text-center">
+            <div class="col-12 text-left">
                 <img src="{{ asset('front/images/partners/Recurso-6-8.webp') }}" alt="be partner" class="img-fluid" id="bepartner">
             </div> 
-            <div class="col-8 text-center"></div>
+            
         </div>
         <div class="row"> 
             <div class="col-md-6">
-                <h2 class="myTitleBlue  typ-montserrat ft-h2" >
+                <h2 class="myTitleBlue typ-montserrat ft-h2" >
                     {!! $site['sector7_title'] ?? '' !!}
                 </h2>
                 <p class=" mt-5  txt-gray f-sz-m-home">
                     {!! $site['sector7_text'] ?? '' !!}
-                    <img src="{{ asset('front/images/partners/Recurso-5-8.webp') }}" alt="be partner" class="img-fluid">
+                    
                 </p>
+                <div class="text-center">
+                    <img src="{{ asset('front/images/partners/Recurso-5-8.webp') }}" alt="be partner" class="img-fluid">
+                </div>
             </div>
             <div class="col-md-6">
                 <div role="main" id="form-pag-sector-5892720dec6abb38b543"></div>

@@ -9,4 +9,12 @@
 <link href="{{asset('css/front-style.min.css')}}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/> 
 <noscript><link rel="stylesheet" href="{{asset('css/front-style.min.css')}}"></noscript>
 
+<script src="{{asset('front/js/jquery.min.js')}}"></script>  
+<script src="{{asset('front/js/popper.min.1.11.0.js')}}"></script>     
+<script src="{{asset('front/plugins/vendors/bootstrap.min.js')}}"></script>  
+<script src="{{asset('front/plugins/all-functions.js')}}"></script>
+<script src="{{asset('front/js/owl.carousel.js?v=6326')}}" defer></script>
+<script src="{{asset('front/js/cookies.js?v=6326')}}" defer></script>
+<script src="{{asset('front/js/lazyload.min.js?v=6326')}}" defer></script>
+
 @yield('styles_per')

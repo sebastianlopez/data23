@@ -41,7 +41,7 @@
                     {!! $site['p2_home_seccion1_paragraph'] ?? '' !!}
             </p>    
             
-            <button class="modalPruebaGratis btn btn-orange f-sz-sm my-3 p-2 typ-montserrat effect-zoom" data-toggle="modal"  data-target="#modalPruebaGratis">
+            <button class="modalPruebaGratis btn btn-orange f-sz-m my-3 p-2 typ-montserrat effect-zoom" data-toggle="modal"  data-target="#modalPruebaGratis">
                 <b>{!! $site['p2_home_seccion1_btn'] ?? '' !!}</b>
             </button>
         </div>
@@ -99,7 +99,7 @@
         </div>
 
         <div class="col-12 mt-4 order-2 order-md-3 mb-5 text-center" >
-                <button class="modalPruebaGratis btn btn-orange f-sz-sm mt-3 p-2 typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                <button class="modalPruebaGratis btn btn-orange f-sz-m mt-3 p-2 typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                     <b>{!! $site['p2_home_seccion2_btn'] ?? '' !!}</b>
                 </button>
             </div>  
@@ -208,11 +208,11 @@
             </div>
 
             <div class="col-lg-7 col-md-7 col-12  mt-5 px-max-5">      
-                <h2 class="mt-5 typ-montserrat f-sz-b br-wd">
+                <h2 class="mt-5 typ-montserrat ft-h2 br-wd">
                     {!! $site['p2_home_seccion5_title'] ?? '' !!}
                 </h2>
                 
-                <h2 class="typ-os-regular typ-montserrat" aligh="left">
+                <h2 class="typ-os-regular typ-montserrat" >
                         {!! $site['p2_home_seccion5_subtitle'] ?? '' !!}
                 </h2>    
 
@@ -265,9 +265,9 @@
     <div class="row mt-1 justify-content-center">
         <div class="col-lg-6 col-12 order-2 order-lg-1">
             <div class="mt-5 pt-5">
-                <h4 class="mt-5 myTitleBlue  typ-montserrat f-sz-b">
+                <h2 class="mt-5 myTitleBlue typ-montserrat ft-h3">
                     {!! $site['p2_home_seccion6_title'] ?? '' !!}
-                </h4>
+                </h2>
                 <p class="typ-os-regular f-sz-m mt-4">
                     {!! $site['p2_home_seccion6_texto1'] ?? '' !!}
                 </p>
@@ -305,37 +305,14 @@
 </div> 
 
 
-<div class="container mt-5" id="myHomeSeccion7">
-    <div class="row pt-4 section-resize">
-
-        <div class="col-12 text-center">
-            <h2 class="myTitleBlue2 text-capitalize typ-montserrat ft-h2">
-                {!! $site['p2_home_seccion7_title'] ?? '' !!}
-            </h2>
-        </div>
-     
-        <div class="col-12 text-center">
-            <p class=" mt-lg-2 typ-os-regular txt-black f-sz-m-home">
-                    {!! $site['p2_home_seccion7_texto1'] ?? '' !!}
-            </p>
-        </div> 
-        <div class="col-12 text-center mt-3">
-            <picture>
-                <source type="image/webp" srcset="{{asset('front/images/Home07_704x314.webp')}}">
-                <img src="{{asset('front/images/Home07_704x314.png')}}" alt="Plataformas Favoritas" class="img-fluid lazyload mt-lg-5">
-            </picture>
-        </div>
-        
-    </div>
-    <hr class="hr-silver mt-5"  >    
-</div>
+@include('front.includes.integrations')
 
 
 <div class="container p-0 pt-3" id="myHomeSeccion8">
     <div class="pt-5 mt-2">
 
         <div class="col-12 text-center">
-            <h2 class="myTitleBlue2 text-capitalize typ-montserrat  ">
+            <h2 class="myTitleBlue text-capitalize typ-montserrat ft-h2 ">
                 {!! $site['p2_home_seccion_crmmonedalocal_titulo'] ?? '' !!}
             </h2>
         </div>

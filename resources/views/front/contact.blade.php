@@ -57,7 +57,7 @@
                                                                             target="_blank"> {{$site['contact_form_captcha4'] ?? ''}}
                                     . </a>
                             </span>
-                            <br>1
+                            <br>
                             <button type="submit" class="col-md-12 btn btn-greenblue text-uppercase p-2 typ-montserrat f-sz-sm mt-3 effect-zoom px-3 typ-os-regular form-radius">
                                 <b>{{$site['contact_form_btn'] ?? ''}}</b>
                             </button>
@@ -90,10 +90,10 @@
                         @for($i=1;$i<7;$i++)
                         <div class="card mb-1">
                           <div class="card-header" id="heading{{ $i }}" >
-                            <h5 class="mb-0 text-left ft-h4">
-                              <button class="btn btn-link txt-white ft-h4" data-toggle="collapse" data-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapseOne" >
-                                {{ $site['contact_faq'.$i] ?? '' }}
-                              </button>
+                            <h5 class="mb-0 text-left f-sz-sm">
+                              <a class="txt-white f-sz-sm" data-toggle="collapse" data-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapseOne" >
+                               {{ $site['contact_faq'.$i] ?? '' }}
+                              </a>
                             </h5>
                           </div>
                       

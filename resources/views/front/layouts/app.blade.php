@@ -14,14 +14,7 @@
 
     @include('front.includes.tags')
 
-        
-    <script src="{{asset('front/js/jquery.min.js')}}"></script>  
-    <script src="{{asset('front/js/popper.min.1.11.0.js')}}"></script>     
-    <script src="{{asset('front/plugins/vendors/bootstrap.min.js')}}"></script>  
-    <script src="{{asset('front/plugins/all-functions.js')}}"></script>
-    <script src="{{asset('front/js/owl.carousel.js?v=6326')}}" defer></script>
-    <script src="{{asset('front/js/cookies.js?v=6326')}}" defer></script>
-    <script src="{{asset('front/js/lazyload.min.js?v=6326')}}" defer></script>
+
 </head>
 <body>
 

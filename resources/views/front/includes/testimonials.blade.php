@@ -153,12 +153,11 @@
 
         
 </div>
-<div class="col-lg-5 col-md-5 col-12 mt-4 text-center" >
-    <a href="https://www.youtube.com/watch?v=cUdjkC3ttwc&list=PLZoqtUmy_3owJFjAsUAvyWIlwww-HsPWp&index=10" target="_blank" class="typ-montserrat txt-orange btn p-2  f-sz-m myBtnOrangeOutline effect-zoom br-wd">
-        <b>{!! $site['p2_home_seccion10_btntext1'] ?? '' !!} 
-            <i class="fa-brands fa-youtube f-sz-m"></i>
-        </b>
-    </a>
+<div class="col-md-5 col-12 mt-4 text-center" >
+    
+    <button onclick="window.open('https://www.youtube.com/watch?v=cUdjkC3ttwc&list=PLZoqtUmy_3owJFjAsUAvyWIlwww-HsPWp&index=10', '_blank')"  class="typ-montserrat txt-orange btn p-2 px-5 f-sz-m myBtnOrangeOutline effect-zoom br-wd">
+        <b> {!! $site['p2_home_seccion10_btntext1'] ?? '' !!} <i class="fa-brands fa-youtube f-sz-m"></i></b>
+    </button>
 </div>
 </div>
 </div>

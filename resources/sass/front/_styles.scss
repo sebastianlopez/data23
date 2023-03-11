@@ -3125,6 +3125,23 @@ _ .nav {
      border-top-right-radius: 0.2rem;
      border-bottom-right-radius: 0.2rem;
  }
+
+ .pagination .page-item .page-link {
+    border-radius: 0 !important;
+    color:black;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+.pagination .page-link {
+    border-top-style: none !important;
+    border-bottom-style: none !important;
+    border-left-style: none !important;
+    border-right-style: none !important;
+}
+.pagination {
+    justify-content: center;
+    font-weight: 500;
+}
  .badge {
      display: inline-block;
      padding: 0.25em 0.4em;
@@ -4633,6 +4650,7 @@ _ .nav {
          position: sticky;
          top: 0;
          z-index: 1020;
+
      }
  }
  .sr-only {
@@ -6047,6 +6065,25 @@ _ .nav {
      border-bottom: 0 !important;
  }
 
+ .plans-head .card-header{
+
+    background-color: white;
+    color: black;
+    font-family: Montserrat-SemiBold !important;
+    border-bottom: 1px solid gray;
+
+  }
+  .plans-head .card{
+    border: white;
+  }
+
+  [data-toggle="collapse"] .fa:before {   
+    content: "\f139";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f13a";
+}
 
   .contact-fqa .card-header{
 
@@ -6395,11 +6432,13 @@ _ .nav {
      color: #fff;
  }
  .area-list-blog .page-link {
-     color: #51b8a7;
+     color: $color2;
+     font-size: 16px;
  }
  .area-list-blog .page-item.active .page-link {
-     background-color: #51b8a7;
-     border-color: #51b8a7;
+     background-color: $color2;
+     border-color: white;
+     color:white
  }
  .header-blog {
      padding-top: 30px;
@@ -6454,20 +6493,7 @@ _ .nav {
     margin-top: -17px;
     right: -28px;
 }
-.pagination .page-item .page-link {
-    border-radius: 0 !important;
-    color:black;
-  }
-.pagination .page-link {
-    border-top-style: none !important;
-    border-bottom-style: none !important;
-    border-left-style: none !important;
-    border-right-style: none !important;
-}
-.pagination {
-    justify-content: center;
-    font-weight: 500;
-}
+
  .blog-recommended,
  .blog-last {
      /* border: 1px solid #ccc; */
@@ -6868,9 +6894,7 @@ _ .nav {
 .f-sz-b-home {
     font-size: 2.3rem;
 }
-.car-bog{
-    width:280px;
-}
+
 .style-card-process{
     background: #EDEDED;
     margin: 0.9rem; 
@@ -6972,6 +6996,8 @@ _ .nav {
 .body-topics-marketing{
     background-color: #004085;
     color: white;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
 .body-topics-marketing{
@@ -7122,13 +7148,16 @@ _ .nav {
 .myBtnOrangeOutline{
     background-color: white;
     border-radius: 20px;
-    Border: 1px solid #ff884d;
+    border: 1px solid #ff884d;
     color: #ff884d !important;
     font-weight: bold;
 }
 .myBtnOrangeOutline:hover{
-    color: #ff884d;
+    background-color: white;
+    border-radius: 20px;
     border: 1px solid #ff884d;
+    color: #ff884d !important;
+    font-weight: bold;
 }
 
 .myPlansContainer{
@@ -7752,4 +7781,17 @@ _ .nav {
 }
 .myNavbarFont {
     font-size: 1.1rem;
+}
+
+.modalbodytopmargin{
+    top:-1rem;
+}
+.modalheaderchange{
+    z-index:99999;
+    background:white;
+}
+
+.background-blog2{
+    background-repeat: no-repeat; background: rgb(65,195,172);
+    background: linear-gradient(0deg, rgba(65,195,172,1) 0%, rgba(61,105,170,1) 100%);
 }

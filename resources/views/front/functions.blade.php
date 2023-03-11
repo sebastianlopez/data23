@@ -41,7 +41,7 @@
                 <div class="row ">
                     <div class="col-lg-5 col-md-5 col-12 mt-3">
                         <a data-toggle="modal"  href="#modalVideo" id="open-modalVideo" href="" 
-                            class=" typ-montserrat p-2 f-sz-sm btn btn-orange btn-lg effect-zoom">
+                            class=" typ-montserrat p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
                             <b> {{$site['software1_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -91,7 +91,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-5 col-12 mt-5">
-                        <a href="" class="modalPruebaGratis text-uppercase typ-montserrat p-2 f-sz-sm btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                        <a href="#" class="modalPruebaGratis text-uppercase typ-montserrat p-2 f-sz-sm btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                             <b>{{$site['software2_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -114,20 +114,20 @@
                         {!! $site['software3_title'] ?? '' !!}
                     </h2>
             
-                    <div class="row section-resize ">
+                    <div class=" ">
                         <p> {{$site['software3_text'] ?? ''}}</p>
                     </div>  
                     
                     <div class="row ">
                         <div class="col-lg-5 col-md-5 col-12 mt-5 ">
-                            <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-sm p-2 btn btn-blue effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                            <a href="#" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-m p-2 btn btn-blue effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                                 <b>{{$site['software3_btn'] ?? ''}}</b>
                             </a>
                             <div class="space"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-5 col-12 order-1 order-lg-2" align="Left">
+                <div class="col-lg-5 col-md-5 col-12 order-1 order-lg-2 text-left">
                     <picture>
                         <source type="image/webp" srcset="{{asset('front/images/crm/IMG_4.webp')}}">
                         <img src="{{asset('front/images/crm/IMG_4.webp')}}" alt="{{ chstr($site['software3_title']) }}" alt="{{ chstr($site['software3_text']) }}" class="img-fluid">
@@ -143,8 +143,8 @@
         <div class="row section-resize mt-5">
             <div class="col-md-6 text-center">
                 <picture>
-                    <source type="image/webp" srcset="{{asset('front/images/crm/IMG 5.webp')}}">
-                    <img src="{{asset('front/images/crm/IMG 5.webp')}}" alt="{{ chstr($site['software5_title']) }}" class="img-fluid mt-3 img-fluid">
+                    <source type="image/webp" srcset="{{asset('front/images/crm/IMG_5.webp')}}">
+                    <img src="{{asset('front/images/crm/IMG_5.webp')}}" alt="{{ chstr($site['software5_title']) }}" class="img-fluid mt-3 img-fluid">
                 </picture>
             </div>
             <div class="col-md-4">
@@ -160,7 +160,7 @@
             <div class="col-12 text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-5 col-12 mt-5">
-                        <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-sm p-2 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                        <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-m p-2 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                             <b>{{$site['software5_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -169,8 +169,6 @@
         </div>
     </div>    
     <div class="space hide-mobile"></div><div class="space "></div>
-
-    <!-- Seccion Usalo donde estes -->
 
     <div class="myDivGraylight">
         <div class="container  mt-5 MB-5" id="myHomeSeccion5">
@@ -186,7 +184,7 @@
 
                 <div class="row left">
                     <div class="col-4 mt-2 mb-4"> 
-                        <a href="{{route('mobile',['locale'=>get_lang()])}}" class="text-uppercase typ-montserrat btn-lg f-sz-sm btn px-5 btn-orange effect-zoom">
+                        <a href="{{route('mobile')}}" class="text-uppercase typ-montserrat btn-lg f-sz-m btn px-5 btn-orange effect-zoom">
                             <b>{{$site['software4_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -195,8 +193,8 @@
 
             <div class="col-12 col-md-6 text-center order-1 order-lg-2">
                 <picture>
-                    <source type="image/webp" srcset="{{asset('front/images/crm/IMG 6.webp')}}">
-                    <img src="{{asset('front/images/crm/IMG 6.webp')}}" 
+                    <source type="image/webp" srcset="{{asset('front/images/crm/IMG_6.webp')}}">
+                    <img src="{{asset('front/images/crm/IMG_6.webp')}}" 
                     alt="{{ chstr($site['software4_title']) }}"  class="img-fluid myDivGrayLight-img">
                 </picture>
                 
@@ -217,8 +215,8 @@
                 </p>
                 <div class=" d-none d-lg-block">
                     <picture>
-                        <source type="image/webp" srcset="{{asset('front/images/crm/IMG 7.webp')}}">
-                        <img src="{{asset('front/images/crm/IMG 7.webp')}}" alt="" class="img-fluid mt-3">
+                        <source type="image/webp" srcset="{{asset('front/images/crm/IMG_7.webp')}}">
+                        <img src="{{asset('front/images/crm/IMG_7.webp')}}" alt="Integra" class="img-fluid mt-3">
                     </picture>
                     <div class="row">
                         <div class="col-2"></div>
@@ -231,19 +229,20 @@
                         @endfor
                     </div>
                 </div>
-                <div class="row">
+                <div class="row d-block d-sm-none">
+                    @php $images = array('','PROSPECTOS.png','INTEGRA.png','API.png'); @endphp
                     @for($i=1;$i<4;$i++)
-                            <div class="col-12">
-                                <p class="text-center typ-os-regular f-sz-sm">
-                                    <img src="{{ asset('front/images/crm/') }}" alt="{{ $site['software6_featured'.$i] }}" class="img-fluid lazyload">
+                            <div class="col-12 mt-2">
+                                <img src="{{ asset('front/images/crm/'.$images[$i]) }}" alt="{{ $site['software6_featured'.$i] }}" alt="{{ chstr($site['software6_text'.$i]) }}" width="150" class="img-fluid lazyload">
+                                <p class="text-center typ-os-regular ft-h4">
                                     {!! featured_text($site['software6_text'.$i], $site['software6_featured'.$i] ?? '') !!}
                                 </p>
                             </div>
-                        @endfor
+                    @endfor
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-5 col-12 mt-5">
-                        <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-sm pr-4 pl-4 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                        <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-m pr-4 pl-4 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                             <b>{{$site['software6_btn'] ?? ''}}</b>
                         </a>
                     </div>

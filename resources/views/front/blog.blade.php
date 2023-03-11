@@ -18,18 +18,24 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat&display=swap' rel='stylesheet'>
 @endsection
 
+@section('styles_per')
+
+<link href="{{asset('css/jquery-ui/jquery.ui.min.css')}}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/> 
+<script src="{{asset('js/jquery-ui/jquery-ui.min.js')}}"></script>
+@endsection
 
 @section('content')
 
-    <div class="container-fluid">
-        <div class="row mb-5 pt-4">
-            <div class="col-12 px-0">
-            </div>
+
+<div class="container-fluid">
+    <div class="row mb-5 pt-4">
+        <div class="col-12 px-0">
         </div>
     </div>
+</div>
 
 <div class="container p-0 mb-4 font-fm-montserrat font-sz-2">
-    <div class="container header-filter" style="background-image: url('{{ asset('front/images/blog/IMG-1.webp') }}')">
+    <div class="container header-filter background-blog2" >
         <div class="row">
             <div class="mt-2 col-xs-7 col-sm-7 col-md-6 header-filter-logo">
                  <a href="{{route('blog',['locale'=>get_lang()])}}">
@@ -71,6 +77,7 @@
                     <input type="text" class="form-control" id="search" placeholder="{{$site['blog_search'] ?? ''}}">
                 </div>
             </div>
+            
         </div>
         <div class="space hide-mobile"></div>
         <div class="row">
@@ -233,39 +240,14 @@
                 </div>
             </div>
             
-            <div aria-label="Page navigation" class=" mt-2 row text-xs-center pagenav">
+            <div aria-label="Page navigation" class=" mt-5 row text-xs-center pagenav">
                 <div class="col-xs-12 col-sm-12 col-md-14">
                     {{$articles->appends(Request::except('page'))->onEachSide(1)->links('vendor.pagination.bootstrap-4')}}
                 </div>
             </div>
         </div>
         <hr>
-        <div class="container topics">
-            <div class="row">
-                <div class="col-12 header-blog text-center myt">
-                    <h2>{{$site['blog_bottom_title'] ?? ''}}</h2>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="row mr-5 ml-5">
-                @php $slugs = array('','marketing','ventas','servicio-al-cliente') @endphp
-                @for($i=1;$i<4;$i++)
-                <div class="col-xs-12 col-sm-12 col-md-4 ">
-                    <div class="card car-bog" >
-                        <a href="{{route('blog_category',['slug'=>$slugs[$i]])}}/">
-                        <img class="card-img-top" src="{{asset('front/images/blog/IMG-'.(6+$i).'.webp')}}" alt="Card image">
-                        </a>
-                        <div class="card-body body-topics-marketing text-center">
-                          <h4 class="card-title p-3">{{$site['blog_bottom_title'.$i] ?? ''}}</h4>
-                          <p class="card-text">{{$site['blog_bottom_desc'.$i] ?? ''}}</p>
-                        </div>
-                      </div>
-                </div>
-                @endfor
-
-            </div>
-           
-        </div>
+        @include('front.includes.topics')
         <div class="space"></div>
     </div>
 </div>

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Validator;
 use Session;
 use App\Models\Event;
-use App\Modeld\InfoArticle;
 use App\Modeld\Article;
 use App\Models\Category;
 use App\Models\GalleryImage;
@@ -15,8 +14,10 @@ use App\Models\Configsite;
 
 use Carbon\Carbon;
 use App\Mail\verificationEmail;
+use App\Models\InfoArticle as ModelInfoArticle;
 use App\Models\Article as ModelsArticle;
 use App\Models\Configsite as ModelsConfigsite;
+use App\Models\InfoArticle;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
@@ -1027,7 +1028,9 @@ class HomeController extends Controller
         $info = $article->info;
         $info->views = $info->views + 1;
         $info = $info->attributesToArray();
-        InfoModelsArticle::where(['article_id' => $article->id, 'lang' => \Lang::locale()])->update($info);
+
+        //dd($article->id);
+        //InfoArticle::where(['article_id' => $article->id, 'lang' => \Lang::locale()])->update($info);
 
         return view('front.detail', $reg);
     }

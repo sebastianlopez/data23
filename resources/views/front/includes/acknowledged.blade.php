@@ -10,11 +10,8 @@
             </div>
             
             <div class="col-12 text-center">
-                <p class=" mt-5
-                        typ-os-regular 
-                        txt-black 
-                        f-sz-m-home">
-                        {!! $site['p2_home_seccion9_texto1'] ?? '' !!}
+                <p class=" mt-5 typ-os-regular  txt-black  f-sz-m-home">
+                    {!! $site['p2_home_seccion9_texto1'] ?? '' !!}
                 </p>
             </div> 
             <div class="container">

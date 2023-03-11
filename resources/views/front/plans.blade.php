@@ -50,7 +50,6 @@
         <div class="row mb-2 section-resize">
             <div class="col-12 my-2">
                 <hr class="hr-silver">
-                
             </div>
         </div>
     </div>
@@ -61,12 +60,12 @@
             <picture>
                 <img data-src="{{asset('front/images/plans/ICONO 1.webp')}}" alt="Tienes dudas" class="img-fluid lazyload pt-4" >                    
             </picture>
-            <h2 class="mt-4 txt-blackgray typ-montserrat f-sz-b">
+            <h2 class="mt-4 txt-blackgray typ-montserrat ft-h2">
                 <span>{{$site['plans_blue_title'] ?? ''}}</span>
                 <p class="typ-os-regular txt-black f-sz-mx">{{$site['plans_blue_middle'] ?? ''}}</p>
             </h2>
            
-            <a  href="https://landing.datacrm.com/asesoria_agenda" target="_blank"  class="typ-montserrat text-uppercase f-sz-sm btn mt-2 px-4 myBtnBlue effect-zoom mb-3">
+            <a  href="https://landing.datacrm.com/asesoria_agenda" target="_blank"  class="typ-montserrat text-uppercase f-sz-m btn mt-2 px-4 myBtnBlue effect-zoom mb-3">
             {{$site['plans_blue_btn'] ?? ''}}
             </a>
         </div>
@@ -92,7 +91,7 @@
                             alt="{{ chstr($site['plans_white_title']) }}" class="img-fluid">
                     </picture>
                     <br>
-                    <br>
+            
                 </div>
                 
             </div>
@@ -127,7 +126,7 @@
                         <input type="hidden" class="valueAccompaniment" value="">
                     </div>
                     <br>
-                    <a href="https://landing.datacrm.com/asesoria_datamkt" class="typ-montserrat text-uppercase f-sz-sm btn mt-2 px-4 btn-orange effect-zoom" target="_blank">{{$site['plans_gray_btn'] ?? ''}}</a><br><br>
+                    <a href="https://landing.datacrm.com/asesoria_datamkt" class="typ-montserrat text-uppercase f-sz-m btn mt-2 px-4 btn-orange effect-zoom" target="_blank">{{$site['plans_gray_btn'] ?? ''}}</a>
                 </div>
                 <div class="space"><br></div>
                 <div class="space"><br></div>
@@ -142,14 +141,14 @@
                 <hr class="hr-silver">
             </div>
         </div>
-        <div class="row section-resize  d-none d-lg-block">
+        <div class="row section-resize ">
             <div class="col-md-12 col-12 text-center">
-                <h2 class="text-uppercase mt-4 txt-blue typ-montserrat f-sz-b">
+                <h2 class="text-uppercase mt-4 txt-blue typ-montserrat ft-h2">
                     {{$site['faq_title'] ?? ''}}
                 </h2>
                 <div class="space"></div>
                
-                <div class="row mt-2" id="">
+                <div class="row mt-2  d-none d-lg-block" id="">
                     <div class="col-12">
                         <div class="row">
                             @for($i=1;$i<5;$i++)
@@ -167,38 +166,35 @@
 
                         </div>
                     </div>
-
-                    <div class="col-12" align="center">
-                        <button class="modalPruebaGratis btn btn-orange text-uppercase p-2 f-sz-sm mt-5 typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
-                            <b>{{$site['faq_btn'] ?? ''}}</b>
-                        </button>
-                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row section-resize qaa">
-            <div class="col-md-12 col-12 text-center">
-            <div id="accordion2" class="panel-group">
-                    
-                @for($i=1;$i<5;$i++)
-                <div class="panel">
-                    <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a href="#panelBody2{{ $i }}" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">  {!! faq_box_question($site['faq_question'.$i] ?? '') !!}</a>
-                    </h4>
-                    </div>
-                    <div id="panelBody2{{ $i }}" class="panel-collapse collapse in">
-                        <div class="panel-body text-left">
-                            <p>{!! $site['faq_answer'.$i] ?? '' !!}/p>
+                <div class="col-md-12 col-12 d-none d-block d-sm-none d-sm-block d-md-none">
+                    <div id="accordion" class="plans-head">
+                        @for($i=1;$i<5;$i++)
+                        <div class="card">
+                          <div class="card-header text-left" id="">
+                            <h5 class="mb-0 text-left">
+                              <a class="f-sx-sm" data-toggle="collapse" data-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapse{{ $i }}">
+                                <i class="fa fa-circle txt-orange"></i>  {!! $site['faq_question'.$i] !!}
+                              </a>
+                            </h5>
+                          </div>
+                      
+                          <div id="collapse{{ $i }}" class="collapse " aria-labelledby="heading{{ $i }}" data-parent="#accordion">
+                            <div class="card-body text-left f-sx-sm">
+                                <p>{!! $site['faq_answer'.$i] ?? '' !!}</p>
+                            </div>
+                          </div>
                         </div>
-                    </div>
+                        @endfor
+                      </div>
                 </div>
-                @endfor
-            </div>
-        </div>
 
-        
+                <div class="col-12 text-center">
+                    <button class="modalPruebaGratis btn btn-orange text-uppercase p-2 f-sz-m mt-5  effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                        <b>{{$site['faq_btn'] ?? ''}}</b>
+                    </button>
+                </div>
+            </div>
         </div>
 
         <div class="row mb-2 section-resize">
