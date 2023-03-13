@@ -253,7 +253,91 @@
     <!-- Seccion Testimoniales -->
 
     <div class="row justify-content-center section-resize">
-        @include('front.includes.testimonials')
+        <div class="container pt-5"  id="myTestimonialsSeccion">
+            <div class="row justify-content-center section-resize">
+                <style>
+
+
+                </style>
+            <script>
+                $(document).ready(function(){
+                    $("#testimonial-slider").owlCarousel({
+                        items: 3,
+                        autoplay: 2500,
+                        autoplayHoverPause: true,
+                        nav: true,
+                        navText : ['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
+                        loop: true,
+                        margin: 30,
+                        responsive: {
+                            1280: {
+                                items: 3,
+                            },
+                            600: {
+                                items: 2,
+                            },
+                            320: {
+                                items: 1,
+                            },
+                        }
+                    });
+ 
+                });
+            </script>
+        
+        
+            <div class="col-12 text-center">
+                <h2 class="text-uppercase mt-3 typ-montserrat  br-wd myTitleBlue ft-h2 ">
+                    {!! $site['p2_home_seccion10_title1'] ?? '' !!}
+                </h2>
+                    
+                <section id="our-testimonial" class="padding">
+                    <div class="container">
+                      
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                          <div id="testimonial-slider" class="owl-carousel">
+
+
+                            <div class="item">
+                              <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                                <div class="testimonial-text">
+                                  <p class="bottom40">Mi experiencia ha sido excelente, consideramos que DataCRM es un gran aliado porque no solo nos ayuda a fortalecer nuestras relaciones con los clientes, sino que también impulsa el crecimiento propio como compañía. Trabajamos muy de la mano para poder generar el valor que queremos darle a nuestros clientes finales.
+                                        Como aliado, DataCRM es una empresa que quiere crecer con sus clientes, indiscutiblemente tenemos muy buen apoyo. Constantemente escuchan cómo queremos que ese plan de partner crezca o se desarrolle y cuáles son los beneficios que más nos generan a nosotros.
+                                    </p>
+                                </div>
+                                <div class="testimonial-base">
+                                <h4 class="darkcolor">Alejandro Azula</h4>
+                                <small class="defaultcolor ">Director de analítica y tecnología e MT Agencia</small> </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                              <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                                <div class="testimonial-text">
+                                  <p class="bottom40">Estoy muy complacido con esta alianza.
+                                    DataCRM da la posibilidad de tener cómo hacer que las empresas, empresarios o emprendedores, entiendan del proceso comercial porque es muy versátil, ya que tiene la posibilidad de que el vendedor, jefe de ventas o gerente, puedan integrarse fácilmente; esto la hace una herramienta fácil de comercializar si uno la sabe explicar y si hace un buen acompañamiento.
+                                    Todo esto complementado con el apoyo que hace DataCRM con su soporte y su equipo en general, hace que la alianza sea simple al ejercicio mismo de poder vender el producto.
+                                    </p>
+                                </div>
+                                <div class="testimonial-base">
+                                
+                                    <h4 class="darkcolor ">Edgar García </h4>
+                                    <small class="defaultcolor ">Fundador Rebase</small> </div>
+                               </div>
+                            </div> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            
+                    
+            </div>
+
+            </div>
+            </div>
     </div>
     <div class="space"></div>
 
