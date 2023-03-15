@@ -1,4 +1,4 @@
-<div class="container mt-5" id="myHomeSeccion7">
+<div class="container mt-5" id="">
     <div class="row pt-4 section-resize">
         <!-- Integraciones que te Hacen Crecer -->
         <div class="col-12 text-center">

@@ -23,7 +23,7 @@
 
 <input type="hidden" id="countryCode" value="{{$reg['location']}}">
 
-<div class="container p-1" id="myHomeSeccion1">
+<div class="container p-1" id="1">
     <div class="row section-resize section-init-index " >        
         <div class="col-lg-6 col-md-6 col-12  mt-5 px-5">      
 
@@ -32,7 +32,6 @@
                     {!! $site['p2_home_seccion1_title'] ?? '' !!}
                 </span> 
             </h1>
-
         
             <hr class="hr-orange2">
             
@@ -41,7 +40,7 @@
                     {!! $site['p2_home_seccion1_paragraph'] ?? '' !!}
             </p>    
             
-            <button class="modalPruebaGratis btn btn-orange f-sz-m my-3 p-2 typ-montserrat effect-zoom" data-toggle="modal"  data-target="#modalPruebaGratis">
+            <button class="modalPruebaGratis btn btn-orange f-sz-m my-3 p-2 px-4 typ-montserrat effect-zoom" data-toggle="modal"  data-target="#modalPruebaGratis">
                 <b>{!! $site['p2_home_seccion1_btn'] ?? '' !!}</b>
             </button>
         </div>
@@ -57,7 +56,7 @@
 </div>
 
 
-<div class="container p-1" id="myHomeSeccion2">
+<div class="container p-1" id="2">
     <div class="row section-resize mt-5 justify-content-center">
         <div class="col-12 px-max-5 text-center mt-1">
             
@@ -99,7 +98,7 @@
         </div>
 
         <div class="col-12 mt-4 order-2 order-md-3 mb-5 text-center" >
-                <button class="modalPruebaGratis btn btn-orange f-sz-m mt-3 p-2 typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                <button class="modalPruebaGratis btn btn-orange f-sz-m mt-3 p-2 px-4 typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                     <b>{!! $site['p2_home_seccion2_btn'] ?? '' !!}</b>
                 </button>
             </div>  
@@ -110,7 +109,7 @@
 
 @include('front.includes.yourprocess')
 
-<div class="container p-0" id="myHomeSeccion3b">
+<div class="container p-0" id="3b">
     <div class="row section-resize justify-content-center "> 
 
         <div class="col-lg-9 col-md-9 col-12  pt-5">
@@ -130,7 +129,7 @@
                               
                 <li>
                     <div class="container mt-4">
-                        <button class="modalPruebaGratis btn2 btn-orange mt-5 f-sz-m my-3 p-2 typ-montserrat effect-zoom" data-toggle="modal" 
+                        <button class="modalPruebaGratis btn2 btn-orange mt-5 f-sz-m my-3 p-2 px-4 typ-montserrat effect-zoom" data-toggle="modal" 
                             data-target="#modalPruebaGratis">
                             <b class="">{!! $site['p2_home_seccion3_btn2'] ?? '' !!}</b>
                         </button>  
@@ -149,12 +148,12 @@
 </div>
 
 
-<div class="container mt-5 p-0" id="myHomeSeccion4">
-    <div class="row section-resize mt-1">
+<div class="container mt-5 p-0 section-resize" id="4">
+    <div class="row  mt-1">
         <div class="col-12 col-lg-8 mt-1 mr-1">
         
             <h2 class="ft-h2">
-                <span class="span-border-b-w">
+                <span class="span-border-b-w myTitleBlue">
                     {!! $site['p2_home_seccion4_title'] ?? '' !!}
                 </span>
             </h2>
@@ -172,7 +171,7 @@
                     </picture>             
                     
                     <div class="card-text mt-5">
-                        <p class="typ-os-regular typ-montserrat f-sz-m">{!! $site['p2_home_seccion4_texto'.$i] ?? '' !!}</p>
+                        <p class=" f-sz-m">{!! $site['p2_home_seccion4_texto'.$i] ?? '' !!}</p>
                     </div>
 
                 </div>
@@ -186,7 +185,7 @@
     </div>
         <div class="row mt-1 justify-content-center">
             <div class="col-12 mt-4 text-center">
-                <button class="modalPruebaGratis btn2 btn-orange f-sz-m my-3 p-2 typ-montserrat effect-zoom " data-toggle="modal" data-target="#modalPruebaGratis">
+                <button class="modalPruebaGratis btn2 btn-orange f-sz-m my-3 p-2 px-4 typ-montserrat effect-zoom " data-toggle="modal" data-target="#modalPruebaGratis">
                     <b>{!! $site['p2_home_seccion4_btn'] ?? '' !!}</b>
                 </button>  
             </div>   
@@ -196,15 +195,13 @@
 
 
 <div class="myDivGreen1 myDivDiagonalRightA" >
-    <div class="container  mt-5  myDivDiagonalRightB" id="myHomeSeccion5">
+    <div class="container  mt-5  myDivDiagonalRightB" id="5">
         <div class="row section-resize section-init-index justify-content-center"  >
             <div class="col-lg-5 col-md-5 col-12" >
                 <picture>
                     <source type="image/webp" srcset="{{asset('front/images/Home05_576x546.webp')}}">
                     <img src="{{asset('front/images/Home05_576x546.png')}}" alt="{{  chstr($site['p2_home_seccion5_title']) }}" class="img-fluid">
-                </picture>
-        
-               
+                </picture>       
             </div>
 
             <div class="col-lg-7 col-md-7 col-12  mt-5 px-max-5">      
@@ -212,9 +209,9 @@
                     {!! $site['p2_home_seccion5_title'] ?? '' !!}
                 </h2>
                 
-                <h2 class="typ-os-regular typ-montserrat" >
-                        {!! $site['p2_home_seccion5_subtitle'] ?? '' !!}
-                </h2>    
+                <h3 class="ft-h3" >
+                    {!! $site['p2_home_seccion5_subtitle'] ?? '' !!}
+                </h3>    
 
                 <ul class="typ-os-regular f-sz-m mt-4 myBullet">
                     
@@ -223,7 +220,7 @@
                             <div>
                                 <span class="myBulletBlue"></span>
                             </div>
-                            <div class="col" style="padding: 0;">
+                            <div class="col" >
                                 <p>{!! $site['p2_home_seccion5_texto1'] ?? '' !!}</p>
                             </div>
                         </div>
@@ -233,7 +230,7 @@
                             <div>
                                 <span class="myBulletBlue"></span>
                             </div>
-                            <div class="col" style="padding: 0;">
+                            <div class="col" >
                                 <p>{!! $site['p2_home_seccion5_texto2'] ?? '' !!}</p>
                             </div>
                         </div>
@@ -250,7 +247,7 @@
                     
                     <li>
                         <div class="container mt-4">
-                            <a class=" btn2 btn-orange f-sz-m my-3 p-2 typ-montserrat effect-zoom" href="https://landing.datacrm.com/asesoria_datamkt" target="_blank">
+                            <a class=" btn2 btn-orange f-sz-m my-3 p-2 px-4 typ-montserrat px-4 effect-zoom" href="https://landing.datacrm.com/asesoria_datamkt" target="_blank">
                                 <b class="">{!! $site['p2_home_seccion5_btn'] ?? '' !!}</b>
                             </a>  
                         </div>
@@ -261,11 +258,11 @@
     </div>
 </div>
 
-<div class="container" id="myHomeSeccion6">
+<div class="container" id="6">
     <div class="row mt-1 justify-content-center">
         <div class="col-lg-6 col-12 order-2 order-lg-1">
             <div class="mt-5 pt-5">
-                <h2 class="mt-5 myTitleBlue typ-montserrat ft-h3">
+                <h2 class="mt-5 myTitleBlue ft-h2">
                     {!! $site['p2_home_seccion6_title'] ?? '' !!}
                 </h2>
                 <p class="typ-os-regular f-sz-m mt-4">
@@ -308,7 +305,7 @@
 @include('front.includes.integrations')
 
 
-<div class="container p-0 pt-3" id="myHomeSeccion8">
+<div class="container p-0 pt-3" id="8">
     <div class="pt-5 mt-2">
 
         <div class="col-12 text-center">

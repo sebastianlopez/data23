@@ -70,14 +70,14 @@
 
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-12 mt-5 px-max-5 order-2 order-lg-1">
-                    <h2 class="mt-5 txt-white typ-montserrat ft-h2 br-wd"><span class="span-border-b-w">
+                    <h2 class="mt-5 txt-white  ft-h2 br-wd"><span class="span-border-b-w">
                         {{$site['mobile2_title'] ?? ''}}
                     </span>
                     </h2>
                     <p class="typ-os-regular txt-white f-sz-m mt-3">
                         {!! $site['mobile2_text1'] ?? '' !!}
                     </p>               
-                    <button class="modalPruebaGratis btn btn-orange text-uppercase f-sz-sm my-3 p-2 typ-montserrat effect-zoom" 
+                    <button class="modalPruebaGratis btn btn-orange text-uppercase f-sz-m my-3 p-2 px-4 effect-zoom" 
                             data-toggle="modal" 
                             data-target="#modalPruebaGratis">
                         <b>{{$site['mobile2_btn'] ?? ''}}</b>
@@ -107,7 +107,7 @@
                 </picture>
             </div>
             <div class="col-lg-8 col-md-6 col-12 px-5 text-right">
-                <h2 class="text-uppercase mt-5 txt-orange typ-montserrat ft-h2 br-wd text-right">
+                <h2 class="text-uppercase mt-5 txt-orange  ft-h2 br-wd text-right">
                     <span class="">{{$site['mobile3_title'] ?? ''}}</span>
                 </h2>
                 <p class="typ-os-regular txt-black f-sz-sm my-4">
@@ -147,14 +147,14 @@
                             {!! $site['mobile4_text1'] ?? '' !!}
                             </p>
                         
-                            <button class="modalPruebaGratis btn btn-blue f-sz-sm my-3 p-2 typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                            <button class="modalPruebaGratis btn btn-blue f-sz-m my-3 p-2 px-4 effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                                 <b>{{$site['mobile4_btn'] ?? ''}}</b>
                             </button>
 
 
                             <div class="space"></div> <div class="space"></div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 order-1 order-lg-2" align="center">
+                        <div class="col-lg-4 col-md-6 col-12 order-1 order-lg-2 text-center" >
                             
                             <picture>
                                 <source type="image/webp" srcset="{{asset('front/images/mobile/img-4.webp')}}">
@@ -208,14 +208,14 @@
             <div class="row mb-4 mx-4">
                 <div class="col-lg-8 col-md-6 col-12 mt-5 px-max-5 order-2 order-lg-1">
                     
-                    <h2 class=" mt-5 txt-white typ-montserrat ft-h2 br-wd"><span class="">
+                    <h2 class=" mt-5 txt-white ft-h2 br-wd"><span class="">
                         {{$site['mobile6_title'] ?? ''}}
                     </span>
                     </h2>
                     <p class="typ-os-regular txt-white f-sz-m mt-3">
                         {!! $site['mobile6_text1'] ?? '' !!}
                     </p>
-                    <button class="modalPruebaGratis btn btn-orange f-sz-sm my-3 p-2 typ-montserrat effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                    <button class="modalPruebaGratis btn btn-orange f-sz-m px-4 my-3 p-2 effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                         <b>{{$site['mobile6_btn'] ?? ''}}</b>
                     </button>
                 </div>

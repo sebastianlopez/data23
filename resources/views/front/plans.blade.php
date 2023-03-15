@@ -106,14 +106,14 @@
                 {{$site['plans_gray_title'] ?? ''}}
             </h2>
             <div class="row py-4 mt-4 movil" >
-                <div class="col-md-12" align="left">
+                <div class="col-md-12 text-left" >
                    
                     <ul class="f-sz-sm list-none-dots">
                         {!! features_list($site['plans_gray_features'] ?? '','circle') !!}
                     </ul>                    
                 </div>
                 
-                <div class="col-12 text-center" align="center">
+                <div class="col-12 text-center">
                     
                     <div class="space"></div>
 
@@ -190,7 +190,7 @@
                 </div>
 
                 <div class="col-12 text-center">
-                    <button class="modalPruebaGratis btn btn-orange text-uppercase p-2 f-sz-m mt-5  effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                    <button class="modalPruebaGratis btn btn-orange text-uppercase p-2 f-sz-m mt-5 px-4 effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                         <b>{{$site['faq_btn'] ?? ''}}</b>
                     </button>
                 </div>

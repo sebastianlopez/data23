@@ -71,7 +71,7 @@
                             <p class="txt-orange typ-montserrat">                
                                 {!! $site['p2_home_seccion_plangratuito_funcionalidades'] ?? '' !!}
                             </p>    
-                            <ul class="typ-montserrat text-left" align="left" style="font-size: 0.8rem;">                  
+                            <ul class="typ-montserrat text-left"  style="font-size: 0.8rem;">                  
                                 @for($i=1;$i<6;$i++)
                                     @if($site['p2_home_seccion_plangratuito_funcionalidad' . $i])
                                         <li>{!! $site['p2_home_seccion_plangratuito_funcionalidad' . $i] ?? '' !!}</li>
@@ -277,10 +277,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-               
             </div>
         </div>
     </div>

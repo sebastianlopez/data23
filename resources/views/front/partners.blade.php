@@ -20,7 +20,6 @@
 @endsection
 
 
-
 @section('content')
 
     <div class="container p-0 pt-3 ">
@@ -36,7 +35,7 @@
                 <div class="row ">
                     <div class="col-lg-5 col-md-5 col-12 mt-3">
                         <a href="#bepartner" name="bepartner"
-                            class=" typ-montserrat p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
+                            class=" typ-montserrat p-2 f-sz-m btn btn-orange btn-lg px-4 effect-zoom">
                             <b> {{$site['partners_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -105,7 +104,7 @@
             <div class="col-12 text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-5 col-12 mb-5">
-                        <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-sm p-2 btn btn-outline-success effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                        <a href="" class="modalPruebaGratis  f-sz-sm px-4 p-2 btn btn-outline-success effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                             <b>{{$site['partners4_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -120,20 +119,20 @@
     <div class="space hide-mobile"></div><div class="space "></div>
 
 
-    <div class="container p-0  mt-5 mb-5 font-fm-montserrat" id="myHomeSeccion5">
+    <div class="container p-0  mt-5 mb-5 font-fm-montserrat" id="">
         <div class="row section-resize ">
 
             <div class="col-md-6 order-2 order-lg-1">
                 <h2 class="mt-5 txt-orange typ-montserrat ft-h2">
                     {!! $site['partners5_title'] ?? '' !!}
                 </h2>
-                <p class="\ txt- f-sz-m mt-4">
+                <p class="txt- f-sz-m mt-4 stronggreen">
                     {!! $site['partners5_text'] ?? ''!!}
                 </p>
 
                 <div class="row left">
                     <div class="col-4 mt-2">
-                        <a href="#bepartner" name="bepartner" class="text-uppercase typ-montserrat btn-lg btn f-sz-m btn-orange-outline effect-zoom">
+                        <a href="#bepartner" name="bepartner" class="text-uppercase typ-montserrat btn-lg btn px-4 f-sz-m btn-orange-outline effect-zoom">
                             <b>{{$site['partners5_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -163,13 +162,13 @@
                 <h2 class="mt-5 myTitleGreen typ-montserrat ft-h2">
                     {!! $site['partners5_1_title'] ?? '' !!}
                 </h2>
-                <p class=" txt- f-sz-m mt-4">
+                <p class="txt- f-sz-m mt-4 stronggreen">
                     {!! $site['partners5_1_text'] ?? ''!!}
                 </p>
 
-                <div class="row left">
+                <div class="row">
                     <div class="col-4 mt-2">
-                        <a href="#bepartner" name="bepartner" class="text-uppercase typ-montserrat btn-lg btn btn-green-outline2 f-sz-m effect-zoom">
+                        <a href="#bepartner" name="bepartner" class="btn-lg px-4 btn btn-green-outline2 f-sz-m effect-zoom">
                             <b>{{$site['partners5_1_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -197,9 +196,9 @@
                     </p>    
                     
                     <div class="row ">
-                        <div class="col-lg-5 col-md-5 col-12 mt-3">
+                        <div class="col-lg-5 col-md-5 col-12 mt-3 mb-5">
                             <a href="https://landing.datacrm.com/plan_referidos_datacrm" target="_blank"
-                                class=" typ-montserrat p-2 f-sz-m btn btn-orange btn-lg pr-5 pl-5 effect-zoom">
+                                class=" typ-montserrat p-2 f-sz-m btn btn-orange btn-lg pr-5 pl-5 px-4 effect-zoom">
                                 <b> {{$site['partners6_btn'] ?? ''}}</b>
                             </a>
                         </div>
@@ -244,8 +243,9 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div role="main" id="form-pag-sector-5892720dec6abb38b543"></div>
-                <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script><script type="text/javascript"> new RDStationForms('form-pag-sector-5892720dec6abb38b543', 'UA-19986828-1').createForm();</script>
+                <div role="main" id="form-pag-partner-ca6431af6c200e98ac58"></div><script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script><script type="text/javascript"> new RDStationForms('form-pag-partner-ca6431af6c200e98ac58', 'UA-19986828-1').createForm();</script>
+            </div>
+                
             </div>
         </div>
     </div>
@@ -253,7 +253,7 @@
     <!-- Seccion Testimoniales -->
 
     <div class="row justify-content-center section-resize">
-        <div class="container pt-5"  id="myTestimonialsSeccion">
+        <div class="container pt-5"  id="">
             <div class="row justify-content-center section-resize">
                 <style>
 
@@ -263,11 +263,11 @@
                 $(document).ready(function(){
                     $("#testimonial-slider").owlCarousel({
                         items: 3,
-                        autoplay: 2500,
-                        autoplayHoverPause: true,
+                        autoplay: 0,
+                        autoplayHoverPause: false,
                         nav: true,
-                        navText : ['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
-                        loop: true,
+                        
+                        loop: false,
                         margin: 30,
                         responsive: {
                             1280: {
@@ -300,7 +300,7 @@
 
 
                             <div class="item">
-                              <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                              <div class="testimonial-wrapp"> <span class="quoted"><img src="{{ asset('front/images/partners/Recurso-12-8.webp') }}" alt="" class="img-fluid"></span>
                                 <div class="testimonial-text">
                                   <p class="bottom40">Mi experiencia ha sido excelente, consideramos que DataCRM es un gran aliado porque no solo nos ayuda a fortalecer nuestras relaciones con los clientes, sino que también impulsa el crecimiento propio como compañía. Trabajamos muy de la mano para poder generar el valor que queremos darle a nuestros clientes finales.
                                         Como aliado, DataCRM es una empresa que quiere crecer con sus clientes, indiscutiblemente tenemos muy buen apoyo. Constantemente escuchan cómo queremos que ese plan de partner crezca o se desarrolle y cuáles son los beneficios que más nos generan a nosotros.
@@ -314,7 +314,7 @@
 
 
                             <div class="item">
-                              <div class="testimonial-wrapp"> <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                              <div class="testimonial-wrapp"> <span class="quoted"><img src="{{ asset('front/images/partners/Recurso-13-8.webp') }}" alt="" class="img-fluid"></span>
                                 <div class="testimonial-text">
                                   <p class="bottom40">Estoy muy complacido con esta alianza.
                                     DataCRM da la posibilidad de tener cómo hacer que las empresas, empresarios o emprendedores, entiendan del proceso comercial porque es muy versátil, ya que tiene la posibilidad de que el vendedor, jefe de ventas o gerente, puedan integrarse fácilmente; esto la hace una herramienta fácil de comercializar si uno la sabe explicar y si hace un buen acompañamiento.
@@ -322,11 +322,24 @@
                                     </p>
                                 </div>
                                 <div class="testimonial-base">
-                                
                                     <h4 class="darkcolor ">Edgar García </h4>
                                     <small class="defaultcolor ">Fundador Rebase</small> </div>
                                </div>
                             </div> 
+
+                            <div class="item">
+                                <div class="testimonial-wrapp"> <span class="quoted"><img src="{{ asset('front/images/partners/Recurso-11-8.webp') }}" alt="" class="img-fluid"></span>
+                                  <div class="testimonial-text">
+                                    <p class="bottom40">Estoy muy complacido con esta alianza.
+                                      DataCRM da la posibilidad de tener cómo hacer que las empresas, empresarios o emprendedores, entiendan del proceso comercial porque es muy versátil, ya que tiene la posibilidad de que el vendedor, jefe de ventas o gerente, puedan integrarse fácilmente; esto la hace una herramienta fácil de comercializar si uno la sabe explicar y si hace un buen acompañamiento.
+                                      Todo esto complementado con el apoyo que hace DataCRM con su soporte y su equipo en general, hace que la alianza sea simple al ejercicio mismo de poder vender el producto.
+                                      </p>
+                                  </div>
+                                  <div class="testimonial-base">
+                                      <h4 class="darkcolor "> Carlos Cháves</h4>
+                                      <small class="defaultcolor ">Gerente de Marketing</small> </div>
+                                 </div>
+                              </div> 
                           </div>
                         </div>
                       </div>

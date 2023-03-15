@@ -2878,11 +2878,19 @@ _ .nav {
  .faq_question_title{
 
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 600;
     vertical-align: middle;
  }
 
  .faq_question_anwser{
+
+    font-size: 18px;
+    text-align: left;
+    height: 110px;
+    
+ }
+
+ .faq_question_{
 
     font-size: 18px;
     text-align: left;
@@ -6092,6 +6100,14 @@ _ .nav {
     font-family: Montserrat-SemiBold !important;
     border-radius: 12px;
   }
+
+    [data-toggle="collapse"] .fa:before {   
+    content: "\f139";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f13a";
+}
   #reset-this-root {
     all: unset;
      all: initial;
@@ -6703,6 +6719,9 @@ _ .nav {
  }
  .txt-greenblue {
      color: #41c3ac !important;
+ }
+ .stronggreen a{
+    color:$color1;
  }
  .txt-greenblue-strong {
     color: #41c3ac !important;
@@ -7814,7 +7833,6 @@ _ .nav {
    display: inline-block;
 }
 .testimonial-wrapp .quoted {
-    background: white;
     line-height: 50px;
     height: 100px;
     width: 100px;
@@ -7843,24 +7861,7 @@ _ .nav {
     -webkit-border-radius: 50%;
     border-radius: 50%;   
 }
-#testimonial-slider .owl-item:nth-child(2n) .testimonial-wrapp .quoted,
 
- 
-/*Testimonial Quotes*/
-.testimonial-bg{
-    background: url(../images/bg-testimonial.jpg) no-repeat;
-}
-.testimonial-bg-light {
-    background: url(../images/bg-testimonial-light.jpg) no-repeat;
-}
-.testimonial-bg, .testimonial-bg-light{
-    background-position: center center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    width: 100%;
-}
  
  
 .testimonial-quote {
@@ -7948,7 +7949,7 @@ _ .nav {
 .testimonial-base{
     background: #DEE0E2;
     padding-top: 15px;
-    padding-left: 15px;
+    padding-bottom: 15px;
 }
  
 /*-------------------------------*/
@@ -7958,108 +7959,3 @@ _ .nav {
 /*-------------------------------*/
     /*OWl Slider*/
 /*-------------------------------*/
-/*Dots*/
-.owl-dots {
-   margin-top: 2rem;
-   text-align: center;
-}
-.vertical-dot .owl-dots {
-   display: inline-table;
-   width: 24px;
-   position: absolute;
-   top: 50%;
-   -webkit-transform: translateY(-50%);
-   -ms-transform: translateY(-50%);
-   -o-transform: translateY(-50%);
-   transform: translateY(-50%);
-   right: 40px;
-}
-.owl-dots .owl-dot {
-   height: 12px;
-   width: 12px;
-   background: transparent;
-   margin: 2px 3px;
-   position: relative;
-   border: 1px solid #00bcd4;
-   display: inline-block;
-   -webkit-border-radius: 50%;
-   border-radius: 50%;
-   background: rgba(255, 255, 255, .35);
-   cursor: pointer;
-}
-#text-fading .owl-dots .owl-dot {
-    background: #fff;
-    border: none;
-}s
-.vertical-dot .owl-dots .owl-dot {
-   border: none;
-   background: rgba(255, 255, 255, .5);
-}
- 
-.owl-dots .owl-dot::after {
-   background-color: #00bcd4;
-   -webkit-border-radius: 50%;
-   border-radius: 50%;
-   content: "";
-   height: 100%;
-   left: 0;
-   opacity: 0;
-   position: absolute;
-   -webkit-transform: translate3d(0, 100%, 0);
-   transform: translate3d(0, 100%, 0);
-   visibility: hidden;
-   width: 100%;
-}
-.vertical-dot .owl-dots .owl-dot::after {
-   display: none;
-}
-.vertical-dot .owl-dots .owl-dot.active {
-   height: 15px;
-   width: 15px;
-   background: #fff;
-}
-.owl-dots .owl-dot.active::after,
-.owl-dots .owl-dot:hover:after {
-   opacity: 1;
-   -webkit-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0);
-   visibility: visible;
-}
- 
-.animate-out {
-  -webkit-animation-delay : 0ms;
-  -o-animation-delay : 0ms;
-  animation-delay : 0ms;
-}
- 
-/*Buttons*/
-.owl-nav .owl-prev{
-    left: 5px;
-}
-.owl-nav .owl-next{
-    right: 5px;
-}
-.owl-nav .owl-prev, .owl-nav .owl-next{
-    background: #00bcd4;
-    font-size: 14px;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: #fff;
-    opacity: 0;
-    visibility: hidden;
-}
-.owl-carousel:hover .owl-nav .owl-prev, 
-.owl-carousel:hover .owl-nav .owl-next {
-   opacity: 1;
-   visibility: visible;
-}

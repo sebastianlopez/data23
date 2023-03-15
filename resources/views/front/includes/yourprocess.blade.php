@@ -20,7 +20,7 @@
                 <div class="container mt-4 mb-5">
                     <div class="row">
                         <div class="col-lg-5 col-md-5 col-12 mt-5">
-                            <button class="modalPruebaGratis text-uppercase typ-montserrat p-2 f-sz-sm btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                            <button class="modalPruebaGratis text-uppercase typ-montserrat p-2 f-sz-sm px-4 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                                 <b>{{$site['software2_btn'] ?? ''}}</b>
                             </button>
                         </div>

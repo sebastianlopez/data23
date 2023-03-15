@@ -92,7 +92,7 @@
                           <div class="card-header" id="heading{{ $i }}" >
                             <h5 class="mb-0 text-left f-sz-sm">
                               <a class="txt-white f-sz-sm" data-toggle="collapse" data-target="#collapse{{ $i }}" aria-expanded="true" aria-controls="collapseOne" >
-                               {{ $site['contact_faq'.$i] ?? '' }}
+                                <i class="fa fa-circle txt-white"></i> {{ $site['contact_faq'.$i] ?? '' }}
                               </a>
                             </h5>
                           </div>

@@ -40,8 +40,8 @@
                 </p>
                 <div class="row ">
                     <div class="col-lg-5 col-md-5 col-12 mt-3">
-                        <a data-toggle="modal"  href="#modalVideo" id="open-modalVideo" href="" 
-                            class=" typ-montserrat p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
+                        <a data-toggle="modal"  href="#modalVideo" id="open-modalVideo"
+                            class="px-4 typ-montserrat p-2 px-4 f-sz-m btn btn-orange btn-lg effect-zoom">
                             <b> {{$site['software1_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -91,7 +91,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-5 col-12 mt-5">
-                        <a href="#" class="modalPruebaGratis text-uppercase typ-montserrat p-2 f-sz-sm btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                        <a href="#" class="modalPruebaGratis text-uppercase typ-montserrat p-2 px-4 f-sz-m btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                             <b>{{$site['software2_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -99,28 +99,29 @@
             </div>
         </div>
 
-        <div class="space hide-mobile"></div><div class="space hide-mobile"></div>
+        <div class="space hide-mobile"></div>
         @include('front.includes.acknowledged')
-        <div class="space hide-mobile"></div><div class="space"></div>
+        <div class="space"></div>
     </div>    
     
-    <div class="myDivGreen1 myDivDiagonalRightA p" >
-        <div class="container  mt-5 MB-5  myDivDiagonalRightB section-resize " id="myHomeSeccion5">
+   
+
+<div class="myDivGreen1 myDivDiagonalRightA" >
+    <div class="container  mt-5  myDivDiagonalRightB section-resize" id="5">
             <div class="row section-init-index justify-content-center " >
-    
                 <div class="col-lg-7 col-md-7 col-12  mt-5 px-max-5 order-2 order-lg-1">      
                 
                     <h2 class="text-left txt-white mt-3 ft-h2 br-wd">
                         {!! $site['software3_title'] ?? '' !!}
                     </h2>
             
-                    <div class=" ">
-                        <p> {{$site['software3_text'] ?? ''}}</p>
-                    </div>  
+                 
+                    <p class="typ-os-regular f-sz-m"> {{$site['software3_text'] ?? ''}}</p>
+                
                     
                     <div class="row ">
                         <div class="col-lg-5 col-md-5 col-12 mt-5 ">
-                            <a href="#" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-m p-2 btn btn-blue effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                            <a href="#" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-m p-2 px-4 btn btn-blue effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                                 <b>{{$site['software3_btn'] ?? ''}}</b>
                             </a>
                             <div class="space"></div>
@@ -160,7 +161,7 @@
             <div class="col-12 text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-5 col-12 mt-5">
-                        <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-m p-2 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                        <a href="" class="modalPruebaGratis text-uppercase typ-montserrat px-4 f-sz-m p-2 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                             <b>{{$site['software5_btn'] ?? ''}}</b>
                         </a>
                     </div>
@@ -242,7 +243,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-5 col-12 mt-5">
-                        <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-m pr-4 pl-4 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                        <a href="" class="modalPruebaGratis text-uppercase typ-montserrat f-sz-m pr-4 px-4 pl-4 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                             <b>{{$site['software6_btn'] ?? ''}}</b>
                         </a>
                     </div>

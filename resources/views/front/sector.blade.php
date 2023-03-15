@@ -34,7 +34,7 @@
                 <div class="row ">
                     <div class="col-lg-5 col-md-5 col-12 mt-3">
                         <a data-toggle="modal" data-target="#modalPruebaGratis" href="#"
-                            class="modalPruebaGratis  p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
+                            class="modalPruebaGratis  p-2 f-sz-m px-4 btn btn-orange btn-lg effect-zoom">
                             <b> {{$site['sector_btn'] ?? ''}}</b>
                         </a>
                         <div class="space"></div> 
@@ -59,7 +59,7 @@
             <div class="row section-resize section-init-index justify-content-center" >
                 <div class="col-lg-7 col-md-7 col-12  order-2 order-sm-1  ">      
                    
-                    <h2 class="mt-5  strongorange ft-h2">
+                    <h2 class="mt-5 strongorange ft-h2">
                          {!! $site['sector2_title'] ?? '' !!} 
                     </h2>
                     
@@ -73,7 +73,7 @@
                     <div class="row ">
                         <div class="col-lg-5 col-md-5 col-12 mt-3">
                             <a data-toggle="modal" data-target="#modalPruebaGratis" href="#"
-                            class="modalPruebaGratis  p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
+                            class="modalPruebaGratis  p-2 f-sz-m px-4 btn btn-orange btn-lg effect-zoom">
                                 <b> {{$site['sector2_btn'] ?? ''}}</b>
                             </a>
                             <div class="space"></div> 
@@ -121,7 +121,7 @@
                <div class="row ">
                    <div class="col-lg-5 col-md-5 col-12 mt-3">
                        <a data-toggle="modal" data-target="#modalPruebaGratis" href="#"
-                           class="modalPruebaGratis p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
+                           class="modalPruebaGratis p-2 f-sz-m btn btn-orange btn-lg px-4 effect-zoom">
                            <b> {{$site['sector3_btn'] ?? ''}}</b>
                        </a>
                    </div>
@@ -152,7 +152,7 @@
                     
                     <div class="row">
                         <div class="col-lg-5 col-md-5 col-12 mt-3">
-                            <a href="#" class="modalPruebaGratis text-uppercase  f-sz-m p-2 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
+                            <a href="#" class="modalPruebaGratis text-uppercase  f-sz-m p-2 px-4 btn btn-orange effect-zoom" data-toggle="modal" data-target="#modalPruebaGratis">
                                 <b>{{$site['sector4_btn'] ?? ''}}</b>
                             </a>
                             <div class="space"></div> 
@@ -195,7 +195,7 @@
                <div class="row ">
                    <div class="col-lg-5 col-md-5 col-12 mt-3">
                     <a data-toggle="modal" data-target="#modalPruebaGratis" href="#"
-                        class="modalPruebaGratis  p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
+                        class="modalPruebaGratis  p-2 f-sz-m btn btn-orange px-4 btn-lg effect-zoom">
                            <b> {{ $site['sector5_btn'] ?? ''}}</b>
                        </a>
                    </div>
@@ -227,7 +227,7 @@
                     <div class="row ">
                         <div class="col-lg-5 col-md-5 col-12 mt-3">
                             <a data-toggle="modal" data-target="#modalPruebaGratis" href="#"
-                            class="modalPruebaGratis  p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
+                            class="modalPruebaGratis px-4  p-2 f-sz-m btn btn-orange btn-lg effect-zoom">
                                 <b> {{$site['sector6_btn'] ?? ''}}</b>
                             </a>
                             <div class="space"></div>
@@ -268,8 +268,7 @@
         <div class="row"> 
             <div class="col-md-4"></div>
             <div class="col-md-4">
-           <div role="main" id="form-pag-sector-5892720dec6abb38b543"></div><script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script><script type="text/javascript"> new RDStationForms('form-pag-sector-5892720dec6abb38b543', 'UA-19986828-1').createForm();</script>
-            </div>
+                <div role="main" id="form-pag-sector-5892720dec6abb38b543"></div><script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script><script type="text/javascript"> new RDStationForms('form-pag-sector-5892720dec6abb38b543', 'UA-19986828-1').createForm();</script>
         </div>
     </div>
 
