@@ -201,7 +201,7 @@ if ( ! function_exists('faq_box_question ')) {
     function faq_box_question($text)
     {
         $arr    = explode(' ', $text);
-        $arr[0] = '<i class="fa fa-circle item-feature" aria-hidden="true"></i>  ' .$text . '</span>';
+        $arr[0] = '<i class="fa fa-circle item-feature txt-orange" aria-hidden="true"></i>  ' .$text . '</span>';
         unset($arr[1]);
         $text = implode(' ', $arr);
 

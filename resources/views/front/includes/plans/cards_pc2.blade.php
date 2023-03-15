@@ -71,7 +71,7 @@
                             <p class="txt-orange typ-montserrat">                
                                 {!! $site['p2_home_seccion_plangratuito_funcionalidades'] ?? '' !!}
                             </p>    
-                            <ul class="typ-montserrat text-left"  style="font-size: 0.8rem;">                  
+                            <ul class="typ-montserrat text-left" style="font-size: 0.8rem;">                  
                                 @for($i=1;$i<6;$i++)
                                     @if($site['p2_home_seccion_plangratuito_funcionalidad' . $i])
                                         <li>{!! $site['p2_home_seccion_plangratuito_funcionalidad' . $i] ?? '' !!}</li>
@@ -93,7 +93,7 @@
                         </div>
 
                     
-                        <div class="mt-5 pt-2">
+                        <div class="mt-4 pt-2">
                             <p>
                                 <span class="txt-blackgray typ-txt-light txt-display ">
                                     {!! $site['p2_home_seccion_plangratuito_usuarios'] ?? '' !!}
