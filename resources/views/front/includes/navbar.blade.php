@@ -4,7 +4,7 @@
                 <button class="navbar-toggler d-lg-none d-inline-block txt-white" onclick="closeNav()">
                     <i class="fas fa-times fa-x"></i>      
                 </button>
-                <a href="{{route('home')}}">
+                <a href="{{ route('home')}}">
                     <picture>
                         <source type="image/png" 
                             srcset="{{asset('front/images/Logodata_Horizontalblanco180x58.png')}}">

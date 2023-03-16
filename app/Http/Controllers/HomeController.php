@@ -1029,9 +1029,7 @@ class HomeController extends Controller
         $info->views = $info->views + 1;
         $info = $info->attributesToArray();
 
-        //dd($article->id);
-        //InfoArticle::where(['article_id' => $article->id, 'lang' => \Lang::locale()])->update($info);
-
+        
         return view('front.detail', $reg);
     }
 
@@ -1079,10 +1077,14 @@ class HomeController extends Controller
     public function changeLang()
     {
 
-        $lang = request()->lang;
+        $lang = request()->langs;
         $url  = url()->previous();
         $arr  = explode(env('APP_URL'), $url);
 
+
+        if( $lang == null)
+            $lang  = 'es';
+       
         // \Log::info('*** HomeController -> change_lang -> step 1 -> $lang  Solicitado ' . $lang);
         // \Log::info('*** HomeController -> change_lang -> step 1 -> $url ' . $url);
         // \Log::info('*** HomeController -> change_lang -> step 1 -> $arr ' . json_encode($arr) );
@@ -1092,11 +1094,27 @@ class HomeController extends Controller
 
         // \Log::info('HomeController -> change_lang -> step 1 -> $search ' . $search);
 
-        // $arr[0]  = preg_replace($search, $lang, $arr[0], 1);
+         if($lang == 'es'){   
+            $arr[1]  = ltrim(preg_replace($search, '', $arr[1], 1), '/'); ;
+            $new_url = implode(env('APP_URL'), $arr);
+            //dd($arr,$search,$new_url );
+         }
+
+
+        if($lang == 'en'){ 
+         
+            $arr[1] =  $lang.'/'.$arr[1];
+            $new_url = implode(env('APP_URL'), $arr);
+        
+        }
+
+       
 
         // \Log::info('HomeController -> change_lang -> step 1 -> $$arr[0]  ' . $arr[0] );
 
-        $new_url = implode(env('APP_URL'), $arr);
+       
+
+       // dd($new_url);
         
         Session::put('locale', $lang);
         // return redirect(url(URL::previous()));

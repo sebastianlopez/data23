@@ -2,7 +2,21 @@
 
 // Crear demos desde paginas externas
 
+if(!function_exists('parseLocale')) {
+    function parseLocale()
+    {
+        $locale = request()->segment(1);
+        if (array_key_exists($locale, config('arrays.langs'))) {
+            app()->setLocale($locale);
+            return $locale;
+        }else{
+            app()->setLocale('es');  // this default locale
+            return '/';
+        }
+    }
+}
 
+Route::prefix(parseLocale())->group(function () {
 // Clear caché
 Route::get('/clear-cache', function () {
     echo Artisan::call('config:clear');
@@ -29,7 +43,7 @@ Route::get('extern/company-demoname', 'DemoController@transformDemoNameFromExter
 Route::get('/', 'HomeController@index')->name('home');
 
 
-Route::get('change-lang/{lang}', 'HomeController@changeLang')->name('lang.switch.front');
+Route::get('change-lang/{langs}', 'HomeController@changeLang')->name('lang.switch.front');
 
 Route::get('crm-colombia/', 'HomeController@indexPaises')->name('Colombia');
 Route::get('crm-mexico/', 'HomeController@indexPaises')->name('Mexico');
@@ -140,6 +154,8 @@ Route::get('refer-payu-whatsapp', 'PayUController@ReferPayuWhatsApp')->name('ref
 Route::get('DataMKT/{country?}', 'PayUDataMKTController@ReferPayu')->name('DataMKT');
 Route::post('DataMKT-payu', 'PayUDataMKTController@SendPayu')->name('DataMKT-payu');
 
+});
+
 Route::group(['middleware' => ['auth']], function () {
  //   Route::group(['middleware' => ['role:admin']], function () {
         //Configsite
@@ -148,7 +164,7 @@ Route::group(['middleware' => ['auth']], function () {
         })->name('dashboard');
 
 
-        Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
+        Route::get('lang/{langs}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
 
         //mis rutas
 
